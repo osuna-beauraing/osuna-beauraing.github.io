@@ -38,32 +38,48 @@
     const tousLesMatchsAVenir = donnees.equipes
       .flatMap((eq) => eq.matchs.map((m) => ({ ...m, equipe: eq.nom })))
       .filter((m) => !estPasse(m.date))
-      .sort((a, b) => `${a.date} ${a.heure || ""}`.localeCompare(`${b.date} ${b.heure || ""}`));
+      .sort((a, b) => `${a.date} ${a.heure || "99:99"}`.localeCompare(`${b.date} ${b.heure || "99:99"}`));
 
     if (tousLesMatchsAVenir.length === 0) {
       panneau.innerHTML = `
-        <p class="panneau-eyebrow">Prochain match</p>
-        <p style="grid-column:1/-1; margin:0; color:var(--creme-dim);">
+        <p class="panneau-eyebrow">Prochains matchs</p>
+        <p style="margin:0; color:var(--creme-dim);">
           Aucun match à venir pour l'instant — le calendrier de la prochaine saison sera synchronisé automatiquement dès sa publication.
         </p>`;
       return;
     }
 
-    const m = tousLesMatchsAVenir[0];
-    const domicile = m.lieu === "domicile";
-    const nousEt = domicile ? "Osuna Volley Beauraing" : m.adversaire;
-    const euxEt = domicile ? m.adversaire : "Osuna Volley Beauraing";
+    // On prend TOUS les matchs de la date la plus proche, toutes équipes confondues
+    // (il peut y en avoir plusieurs le même jour), pas seulement le tout premier.
+    const prochaineDate = tousLesMatchsAVenir[0].date;
+    const matchsDuJour = tousLesMatchsAVenir
+      .filter((m) => m.date === prochaineDate)
+      .sort((a, b) => (a.heure || "99:99").localeCompare(b.heure || "99:99"));
+
+    const lignes = matchsDuJour
+      .map((m) => {
+        const domicile = m.lieu === "domicile";
+        const nousEt = domicile ? "Osuna Volley Beauraing" : m.adversaire;
+        const euxEt = domicile ? m.adversaire : "Osuna Volley Beauraing";
+        const badgeCls = domicile ? "domicile" : "exterieur";
+        const badgeTxt = domicile ? "Domicile" : "Extérieur";
+
+        return `
+          <div class="panneau-match-row">
+            <p class="panneau-match-equipe">${m.equipe}${m.coupe ? " · Coupe" : ""}</p>
+            <div class="panneau-match-versus">${nousEt}<span class="panneau-vs-mini">vs</span>${euxEt}</div>
+            <div class="panneau-match-meta">
+              <span>${m.heure || "heure à confirmer"}</span>
+              <span class="badge ${badgeCls}">${badgeTxt}</span>
+              <span>${m.salle || "salle à confirmer"}</span>
+            </div>
+          </div>`;
+      })
+      .join("");
 
     panneau.innerHTML = `
-      <p class="panneau-eyebrow">Prochain match — ${m.equipe}</p>
-      <div class="panneau-equipe">${nousEt}</div>
-      <div class="panneau-vs">VS</div>
-      <div class="panneau-equipe" style="text-align:right">${euxEt}</div>
-      <div class="panneau-meta">
-        <span><strong>Date</strong> — ${formaterDate(m.date)}${m.heure ? " à " + m.heure : ""}</span>
-        <span><strong>Salle</strong> — ${m.salle || "à confirmer"}</span>
-        <span><strong>Compétition</strong> — ${m.competition}</span>
-      </div>`;
+      <p class="panneau-eyebrow">Prochains matchs — ${formaterDate(prochaineDate)}</p>
+      <div class="panneau-match-liste">${lignes}</div>`;
   }
 
   // ---------- Page horaires : sélecteur d'équipe + calendrier ----------
