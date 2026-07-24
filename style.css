@@ -1,0 +1,416 @@
+/* ============================================================
+   VBC — feuille de style
+   Palette : panneau de salle de sport (marine + ambre)
+   ============================================================ */
+
+:root {
+  --marine-950: #0d1526;
+  --marine-900: #131f38;
+  --marine-800: #1b2a4a;
+  --marine-700: #263a5e;
+  --ligne: rgba(247, 245, 241, 0.12);
+  --creme: #f7f5f1;
+  --creme-dim: #cdd2dc;
+  --ambre: #e8a23d;
+  --ambre-vif: #ffb84d;
+  --vert-domicile: #6fae7e;
+
+  --police-affiche: "Oswald", "Arial Narrow", sans-serif;
+  --police-texte: "Source Sans 3", "Segoe UI", sans-serif;
+  --police-chiffres: "Oswald", sans-serif;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--marine-950);
+  color: var(--creme);
+  font-family: var(--police-texte);
+  line-height: 1.55;
+}
+
+a { color: var(--ambre-vif); }
+a:focus-visible, button:focus-visible, .tab:focus-visible {
+  outline: 2px solid var(--ambre-vif);
+  outline-offset: 3px;
+}
+
+img { max-width: 100%; }
+
+/* ---------- structure générale ---------- */
+
+.wrap {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header.site {
+  background: linear-gradient(180deg, var(--marine-900), var(--marine-950));
+  border-bottom: 3px solid var(--ambre);
+  padding: 22px 0 0;
+}
+
+.site-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding-bottom: 18px;
+}
+
+.club-id { display: flex; align-items: center; gap: 12px; }
+
+.logo-club {
+  height: 64px;
+  width: auto;
+  display: block;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: var(--creme);
+}
+
+.club-nom {
+  font-family: var(--police-affiche);
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.club-sous-titre {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--creme-dim);
+  letter-spacing: 0.5px;
+}
+
+nav.principale { display: flex; gap: 4px; }
+
+nav.principale a {
+  color: var(--creme-dim);
+  text-decoration: none;
+  font-family: var(--police-affiche);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.85rem;
+  padding: 8px 14px;
+  border-radius: 3px 3px 0 0;
+  border-bottom: 3px solid transparent;
+}
+
+nav.principale a:hover { color: var(--creme); }
+
+nav.principale a[aria-current="page"] {
+  color: var(--ambre-vif);
+  border-bottom-color: var(--ambre);
+}
+
+main { padding: 32px 0 64px; }
+
+footer.site {
+  border-top: 1px solid var(--ligne);
+  padding: 22px 0 40px;
+  color: var(--creme-dim);
+  font-size: 0.85rem;
+}
+
+/* ---------- panneau "prochain match" (signature) ---------- */
+
+.panneau-score {
+  background: var(--marine-800);
+  border: 1px solid var(--ligne);
+  border-radius: 6px;
+  padding: 22px 24px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+.panneau-score::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0 38px,
+    var(--ligne) 38px 39px
+  );
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.panneau-eyebrow {
+  grid-column: 1 / -1;
+  font-family: var(--police-affiche);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  color: var(--ambre);
+  margin: 0 0 4px;
+}
+
+.panneau-equipe {
+  font-family: var(--police-affiche);
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.panneau-vs {
+  font-family: var(--police-chiffres);
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  color: var(--ambre-vif);
+  text-align: center;
+  font-weight: 600;
+}
+
+.panneau-meta {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  font-size: 0.9rem;
+  color: var(--creme-dim);
+  border-top: 1px solid var(--ligne);
+  padding-top: 12px;
+  margin-top: 4px;
+}
+
+.panneau-meta strong { color: var(--creme); }
+
+/* ---------- actualités ---------- */
+
+.section-titre {
+  font-family: var(--police-affiche);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.05rem;
+  color: var(--ambre-vif);
+  margin: 40px 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--ligne);
+}
+
+.section-titre:first-of-type { margin-top: 36px; }
+
+.actu-carte {
+  background: var(--marine-800);
+  border: 1px solid var(--ligne);
+  border-left: 3px solid var(--ambre);
+  border-radius: 4px;
+  padding: 16px 20px;
+  margin-bottom: 14px;
+}
+
+.actu-date {
+  font-family: var(--police-affiche);
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--ambre);
+}
+
+.actu-carte h3 { margin: 4px 0 6px; font-size: 1.05rem; }
+.actu-carte p { margin: 0; color: var(--creme-dim); }
+
+.fb-embed-wrap {
+  background: var(--marine-800);
+  border: 1px solid var(--ligne);
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 28px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.fb-embed-wrap .fb-page,
+.fb-embed-wrap span,
+.fb-embed-wrap iframe {
+  width: 100% !important;
+}
+
+/* ---------- horaires ---------- */
+
+.equipe-label {
+  display: block;
+  font-family: var(--police-affiche);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.72rem;
+  color: var(--creme-dim);
+  margin-bottom: 6px;
+}
+
+.selecteur-equipe {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  background: var(--marine-800);
+  color: var(--creme);
+  border: 1px solid var(--ligne);
+  border-radius: 4px;
+  padding: 10px 12px;
+  font-family: var(--police-texte);
+  font-size: 0.95rem;
+  margin-bottom: 22px;
+}
+
+.selecteur-equipe:focus-visible {
+  outline: 2px solid var(--ambre-vif);
+  outline-offset: 2px;
+}
+
+.maj-info {
+  font-size: 0.8rem;
+  color: var(--creme-dim);
+  margin: -8px 0 20px;
+}
+
+.maj-info button {
+  background: none;
+  border: 1px solid var(--ligne);
+  color: var(--creme-dim);
+  border-radius: 3px;
+  padding: 3px 9px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  margin-left: 8px;
+}
+.maj-info button:hover { color: var(--creme); border-color: var(--ambre); }
+
+table.calendrier {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+table.calendrier caption {
+  text-align: left;
+  font-family: var(--police-affiche);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--ambre);
+  font-size: 0.8rem;
+  margin-bottom: 8px;
+}
+
+table.calendrier th {
+  text-align: left;
+  font-family: var(--police-affiche);
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  letter-spacing: 0.5px;
+  color: var(--creme-dim);
+  border-bottom: 1px solid var(--ligne);
+  padding: 8px 10px;
+}
+
+table.calendrier td {
+  padding: 10px;
+  border-bottom: 1px solid var(--ligne);
+  vertical-align: top;
+}
+
+table.calendrier tbody tr:hover { background: rgba(247,245,241,0.03); }
+
+.badge {
+  display: inline-block;
+  font-family: var(--police-affiche);
+  font-size: 0.68rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  border-radius: 3px;
+}
+.badge.domicile { background: rgba(111,174,126,0.18); color: var(--vert-domicile); }
+.badge.exterieur { background: rgba(232,162,61,0.18); color: var(--ambre); }
+
+.match-passe { opacity: 0.55; }
+.match-jour { background: rgba(232,162,61,0.08); }
+
+@media (max-width: 640px) {
+  table.calendrier thead { display: none; }
+  table.calendrier, table.calendrier tbody, table.calendrier tr, table.calendrier td {
+    display: block; width: 100%;
+  }
+  table.calendrier tr {
+    border-bottom: 1px solid var(--ligne);
+    padding: 10px 0;
+  }
+  table.calendrier td {
+    border-bottom: none;
+    padding: 2px 0;
+  }
+  table.calendrier td::before {
+    content: attr(data-label);
+    display: inline-block;
+    width: 90px;
+    color: var(--creme-dim);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+  }
+}
+
+/* ---------- page comité ---------- */
+
+.comite-intro {
+  color: var(--creme-dim);
+  max-width: 640px;
+  margin: 0 0 28px;
+}
+
+.comite-grille {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 22px;
+}
+
+.comite-carte {
+  background: var(--marine-800);
+  border: 1px solid var(--ligne);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.comite-photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  display: block;
+  border-bottom: 3px solid var(--ambre);
+}
+
+.comite-texte {
+  padding: 14px 16px 18px;
+}
+
+.comite-fonction {
+  font-family: var(--police-affiche);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.72rem;
+  color: var(--ambre);
+  margin: 0 0 4px;
+}
+
+.comite-nom {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.comite-nom.a-completer {
+  color: var(--creme-dim);
+  font-weight: 400;
+  font-style: italic;
+}
