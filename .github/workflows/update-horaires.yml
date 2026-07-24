@@ -1,0 +1,32 @@
+name: Mise à jour des horaires
+
+on:
+  schedule:
+    - cron: "0 5 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Installer Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Générer horaires.json
+        run: node scripts/update-horaires.mjs
+
+      - name: Publier les changements (s'il y en a)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add horaires.json
+          git diff --staged --quiet || git commit -m "Mise à jour automatique des horaires"
+          git push
