@@ -353,6 +353,8 @@ table.calendrier tbody tr:hover { background: rgba(247,245,241,0.03); }
 
 .match-passe { opacity: 0.55; }
 .match-jour { background: rgba(232,162,61,0.08); }
+.match-domicile { box-shadow: inset 4px 0 0 var(--vert-domicile); }
+.match-domicile td:first-child { padding-left: 16px; }
 
 @media (max-width: 640px) {
   table.calendrier thead { display: none; }

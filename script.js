@@ -62,7 +62,7 @@
         const nousEt = domicile ? "Osuna Volley Beauraing" : m.adversaire;
         const euxEt = domicile ? m.adversaire : "Osuna Volley Beauraing";
         const badgeCls = domicile ? "domicile" : "exterieur";
-        const badgeTxt = domicile ? "Domicile" : "Extérieur";
+        const badgeTxt = domicile ? "🏠 Domicile" : "🚌 Extérieur";
 
         return `
           <div class="panneau-match-row">
@@ -96,9 +96,12 @@
     function rendreLigne(match) {
       const passe = estPasse(match.date);
       const aujourdhui = estAujourdhui(match.date);
-      const cls = [passe ? "match-passe" : "", aujourdhui ? "match-jour" : ""].filter(Boolean).join(" ");
-      const badgeCls = match.lieu === "domicile" ? "domicile" : "exterieur";
-      const badgeTxt = match.lieu === "domicile" ? "Domicile" : "Extérieur";
+      const domicile = match.lieu === "domicile";
+      const cls = [passe ? "match-passe" : "", aujourdhui ? "match-jour" : "", domicile ? "match-domicile" : ""]
+        .filter(Boolean)
+        .join(" ");
+      const badgeCls = domicile ? "domicile" : "exterieur";
+      const badgeTxt = domicile ? "🏠 Domicile" : "🚌 Extérieur";
 
       return `
         <tr class="${cls}">
