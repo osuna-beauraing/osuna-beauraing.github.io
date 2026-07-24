@@ -30,8 +30,6 @@
     return reponse.json();
   }
 
-  // ---------- Page d'accueil : panneau "prochain match" ----------
-
   function initPanneauProchainMatch(donnees) {
     const panneau = document.getElementById("panneau-prochain-match");
 
@@ -65,8 +63,6 @@
         <span><strong>Compétition</strong> — ${m.competition}</span>
       </div>`;
   }
-
-  // ---------- Page horaires : sélecteur d'équipe + calendrier ----------
 
   function initPageHoraires(donnees) {
     const select = document.getElementById("selecteur-equipe");
@@ -102,7 +98,7 @@
       caption.textContent = equipe.nom;
 
       const matchs = equipe.matchs
-        .filter((m) => !estPasse(m.date)) // sécurité : un match déjà joué ne s'affiche jamais
+        .filter((m) => !estPasse(m.date))
         .sort((a, b) => `${a.date} ${a.heure || ""}`.localeCompare(`${b.date} ${b.heure || ""}`));
 
       corps.innerHTML = matchs.length
@@ -112,7 +108,6 @@
 
     select.addEventListener("change", () => afficherEquipe(select.value));
 
-    // Équipe par défaut : celle qui a le prochain match le plus proche
     const prochaine = donnees.equipes
       .flatMap((eq) => eq.matchs.map((m) => ({ id: eq.id, date: m.date })))
       .filter((m) => !estPasse(m.date))
@@ -124,8 +119,6 @@
       afficherEquipe(idParDefaut);
     }
   }
-
-  // ---------- Point d'entrée ----------
 
   async function demarrer() {
     const majInfo = document.getElementById("maj-info");
