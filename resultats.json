@@ -1,0 +1,15 @@
+{
+  "derniere_maj": "2026-07-24",
+  "_note": "Exemple de structure en attendant la connexion au formulaire Google. Une fois le formulaire créé, ce fichier sera régénéré automatiquement à partir des réponses (même principe que horaires.json).",
+  "weekends": [
+    {
+      "id": "2026-09-05",
+      "label": "5-6 septembre 2026",
+      "matchs": [
+        { "equipe": "P4 Dames", "adversaire": "Gedinne V.C. C", "lieu": "domicile", "score_osuna": 3, "score_adversaire": 1, "detail": "25-20, 25-18, 22-25, 25-19" },
+        { "equipe": "P4 Dames", "adversaire": "Gembloux V.C. A", "lieu": "domicile", "score_osuna": 2, "score_adversaire": 3, "detail": "25-22, 20-25, 25-23, 19-25, 12-15" },
+        { "equipe": "P2 Dames", "adversaire": "ANHEE V.C. C", "lieu": "exterieur", "score_osuna": 3, "score_adversaire": 0, "detail": "25-19, 25-17, 25-21" }
+      ]
+    }
+  ]
+}

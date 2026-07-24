@@ -1,0 +1,16 @@
+{
+  "derniere_maj": "2026-07-24",
+  "_note": "Exemple de structure en attendant la connexion au formulaire Google. Une fois le formulaire créé, ce fichier sera régénéré automatiquement à partir des réponses.",
+  "equipes": [
+    { "id": "prom-h", "nom": "Promotion Messieurs", "joueurs": [
+      { "nom": "Exemple Joueur 1", "licence": "000000", "vareuse": "4" },
+      { "nom": "Exemple Joueur 2", "licence": "000000", "vareuse": "7" }
+    ] },
+    { "id": "prom-d", "nom": "Promotion Dames", "joueurs": [] },
+    { "id": "p1-h", "nom": "P1 Messieurs", "joueurs": [] },
+    { "id": "p2-h", "nom": "P2 Messieurs", "joueurs": [] },
+    { "id": "p2-d", "nom": "P2 Dames", "joueurs": [] },
+    { "id": "p4-d", "nom": "P4 Dames", "joueurs": [] },
+    { "id": "u13-d", "nom": "U13 Filles", "joueurs": [] }
+  ]
+}

@@ -24,9 +24,9 @@
     return new Date(iso + "T00:00:00") < auj;
   }
 
-  async function chargerDonnees() {
-    const reponse = await fetch("horaires.json", { cache: "no-store" });
-    if (!reponse.ok) throw new Error("horaires.json introuvable");
+  async function chargerJSON(nomFichier) {
+    const reponse = await fetch(nomFichier, { cache: "no-store" });
+    if (!reponse.ok) throw new Error(`${nomFichier} introuvable`);
     return reponse.json();
   }
 
@@ -152,32 +152,156 @@
     }
   }
 
+  // ---------- Page résultats : sélecteur de week-end ----------
+
+  function initPageResultats(donnees) {
+    const select = document.getElementById("selecteur-weekend");
+    const corps = document.getElementById("corps-resultats");
+    const caption = document.getElementById("caption-resultats");
+
+    const weekends = [...donnees.weekends].sort((a, b) => b.id.localeCompare(a.id)); // plus récent en premier
+
+    select.innerHTML = weekends
+      .map((we) => `<option value="${we.id}">${we.label}</option>`)
+      .join("");
+
+    function rendreLigneResultat(m) {
+      const domicile = m.lieu === "domicile";
+      const badgeCls = domicile ? "domicile" : "exterieur";
+      const badgeTxt = domicile ? "🏠 Domicile" : "🚌 Extérieur";
+      const victoire = m.score_osuna > m.score_adversaire;
+      const scoreTxt = `${m.score_osuna} - ${m.score_adversaire}`;
+
+      return `
+        <tr>
+          <td data-label="Équipe">${m.equipe}</td>
+          <td data-label="Adversaire">${m.adversaire}</td>
+          <td data-label="Lieu"><span class="badge ${badgeCls}">${badgeTxt}</span></td>
+          <td data-label="Score">
+            <span class="badge ${victoire ? "domicile" : "exterieur"}">${scoreTxt}</span>
+            ${m.detail ? `<div style="font-size:0.78rem; color:var(--creme-dim); margin-top:4px;">${m.detail}</div>` : ""}
+          </td>
+        </tr>`;
+    }
+
+    function afficherWeekend(id) {
+      const we = weekends.find((w) => w.id === id);
+      if (!we) return;
+      caption.textContent = we.label;
+      corps.innerHTML = we.matchs.length
+        ? we.matchs.map(rendreLigneResultat).join("")
+        : `<tr><td colspan="4">Aucun résultat enregistré pour ce week-end.</td></tr>`;
+    }
+
+    select.addEventListener("change", () => afficherWeekend(select.value));
+
+    if (weekends.length) {
+      select.value = weekends[0].id;
+      afficherWeekend(weekends[0].id);
+    } else {
+      corps.innerHTML = `<tr><td colspan="4">Aucun résultat enregistré pour l'instant.</td></tr>`;
+    }
+  }
+
+  // ---------- Page licences : sélecteur d'équipe ----------
+
+  function initPageLicences(donnees) {
+    const select = document.getElementById("selecteur-equipe-licences");
+    const corps = document.getElementById("corps-licences");
+    const caption = document.getElementById("caption-licences");
+
+    select.innerHTML = donnees.equipes
+      .map((eq) => `<option value="${eq.id}">${eq.nom}</option>`)
+      .join("");
+
+    function afficherEquipeLicences(id) {
+      const equipe = donnees.equipes.find((eq) => eq.id === id);
+      if (!equipe) return;
+      caption.textContent = equipe.nom;
+
+      const joueurs = [...(equipe.joueurs || [])].sort((a, b) => a.nom.localeCompare(b.nom));
+
+      corps.innerHTML = joueurs.length
+        ? joueurs
+            .map(
+              (j) => `
+        <tr>
+          <td data-label="Nom">${j.nom}</td>
+          <td data-label="N° de licence">${j.licence || "à compléter"}</td>
+          <td data-label="N° de vareuse">${j.vareuse || "à compléter"}</td>
+        </tr>`
+            )
+            .join("")
+        : `<tr><td colspan="3">Aucun joueur renseigné pour cette équipe pour l'instant.</td></tr>`;
+    }
+
+    select.addEventListener("change", () => afficherEquipeLicences(select.value));
+
+    if (donnees.equipes.length) {
+      select.value = donnees.equipes[0].id;
+      afficherEquipeLicences(donnees.equipes[0].id);
+    }
+  }
+
   // ---------- Point d'entrée ----------
 
   async function demarrer() {
     const majInfo = document.getElementById("maj-info");
-    try {
-      const donnees = await chargerDonnees();
+    const pageHoraires = document.getElementById("corps-calendrier");
+    const pagePanneau = document.getElementById("panneau-prochain-match");
+    const pageResultats = document.getElementById("corps-resultats");
+    const pageLicences = document.getElementById("corps-licences");
 
-      if (majInfo) {
-        majInfo.textContent = donnees.derniere_maj
-          ? `Dernière synchronisation : ${formaterDate(donnees.derniere_maj)}`
-          : "Dernière synchronisation inconnue";
+    if (pageHoraires || pagePanneau) {
+      try {
+        const donnees = await chargerJSON("horaires.json");
+        if (majInfo) {
+          majInfo.textContent = donnees.derniere_maj
+            ? `Dernière synchronisation : ${formaterDate(donnees.derniere_maj)}`
+            : "Dernière synchronisation inconnue";
+        }
+        if (pagePanneau) initPanneauProchainMatch(donnees);
+        if (pageHoraires) initPageHoraires(donnees);
+      } catch (err) {
+        console.error(err);
+        if (majInfo) majInfo.textContent = "Impossible de charger les horaires (horaires.json manquant ou invalide).";
+        if (pagePanneau) pagePanneau.innerHTML = `<p class="panneau-eyebrow">Horaires indisponibles pour le moment</p>`;
+        if (pageHoraires) pageHoraires.innerHTML = `<tr><td colspan="7">Aucune donnée disponible.</td></tr>`;
       }
+    }
 
-      if (document.getElementById("panneau-prochain-match")) {
-        initPanneauProchainMatch(donnees);
+    if (pageResultats) {
+      const majInfoResultats = document.getElementById("maj-info-resultats");
+      try {
+        const donnees = await chargerJSON("resultats.json");
+        if (majInfoResultats) {
+          majInfoResultats.textContent = donnees.derniere_maj
+            ? `Dernière mise à jour : ${formaterDate(donnees.derniere_maj)}`
+            : "Dernière mise à jour inconnue";
+        }
+        initPageResultats(donnees);
+      } catch (err) {
+        console.error(err);
+        if (majInfoResultats) majInfoResultats.textContent = "Impossible de charger les résultats.";
+        pageResultats.innerHTML = `<tr><td colspan="4">Aucune donnée disponible.</td></tr>`;
       }
-      if (document.getElementById("corps-calendrier")) {
-        initPageHoraires(donnees);
+    }
+
+    if (pageLicences) {
+      const majInfoLicences = document.getElementById("maj-info-licences");
+      try {
+        const donnees = await chargerJSON("licences.json");
+        if (majInfoLicences) {
+          majInfoLicences.textContent = donnees.derniere_maj
+            ? `Dernière mise à jour : ${formaterDate(donnees.derniere_maj)}`
+            : "Dernière mise à jour inconnue";
+        }
+        initPageLicences(donnees);
+      } catch (err) {
+        console.error(err);
+        if (majInfoLicences) majInfoLicences.textContent = "Impossible de charger les licences.";
+        pageLicences.innerHTML = `<tr><td colspan="3">Aucune donnée disponible.</td></tr>`;
       }
-    } catch (err) {
-      console.error(err);
-      if (majInfo) majInfo.textContent = "Impossible de charger les horaires (horaires.json manquant ou invalide).";
-      const panneau = document.getElementById("panneau-prochain-match");
-      if (panneau) panneau.innerHTML = `<p class="panneau-eyebrow">Horaires indisponibles pour le moment</p>`;
-      const corps = document.getElementById("corps-calendrier");
-      if (corps) corps.innerHTML = `<tr><td colspan="7">Aucune donnée disponible.</td></tr>`;
     }
   }
 
