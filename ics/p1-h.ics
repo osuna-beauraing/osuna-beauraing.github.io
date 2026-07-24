@@ -1,0 +1,232 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Osuna Volley Beauraing//Calendrier des matchs//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Osuna Volley Beauraing - P1 Messieurs
+X-WR-TIMEZONE:Europe/Brussels
+BEGIN:VTIMEZONE
+TZID:Europe/Brussels
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:P1-Messieurs-2026-09-12-Floor-F-V.C.-D@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20260912T170000
+DTEND;TZID=Europe/Brussels:20260912T190000
+SUMMARY:Osuna Volley Beauraing - Floor F V.C. D
+LOCATION:Beauraing Complexe Communal - C1\, rue de la Couture\, 46\, 5570 B
+ eauraing
+DESCRIPTION:Équipe : P1 Messieurs\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:P1-Messieurs-2026-09-19-Floor-F-V.C.-C@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20260919T173000
+DTEND;TZID=Europe/Brussels:20260919T193000
+SUMMARY:Floor F V.C. C - Osuna Volley Beauraing
+LOCATION:Floreffe Centre sportif - L2\, rue Joseph Hanse 6\, 5150 Floreffe
+DESCRIPTION:Équipe : P1 Messieurs\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:P1-Messieurs-2026-09-26-VC-Lesse-et-Lhomme-C@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20260926T133000
+DTEND;TZID=Europe/Brussels:20260926T153000
+SUMMARY:Osuna Volley Beauraing - VC Lesse et Lhomme C
+LOCATION:Beauraing Complexe Communal - C1\, rue de la Couture\, 46\, 5570 B
+ eauraing
+DESCRIPTION:Équipe : P1 Messieurs\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:P1-Messieurs-2026-10-03-Ciney-V.C.-A@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20261003T201500
+DTEND;TZID=Europe/Brussels:20261003T221500
+SUMMARY:Ciney V.C. A - Osuna Volley Beauraing
+LOCATION:Ciney Hall Omnisports - C1\, Place du Roi Baudouin\, 5590 Ciney
+DESCRIPTION:Équipe : P1 Messieurs\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:P1-Messieurs-2026-10-10-Walhain-V.C.-C@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20261010T133000
+DTEND;TZID=Europe/Brussels:20261010T153000
+SUMMARY:Osuna Volley Beauraing - Walhain V.C. C
+LOCATION:Beauraing Complexe Communal - C1\, rue de la Couture\, 46\, 5570 B
+ eauraing
+DESCRIPTION:Équipe : P1 Messieurs\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:P1-Messieurs-2026-10-17-Jemeppe-V.C.-A@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20261017T203000
+DTEND;TZID=Europe/Brussels:20261017T223000
+SUMMARY:Osuna Volley Beauraing - Jemeppe V.C. A
+LOCATION:Beauraing Complexe Communal - C1\, rue de la Couture\, 46\, 5570 B
+ eauraing
+DESCRIPTION:Équipe : P1 Messieurs\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:P1-Messieurs-2026-11-07-Gembloux-V.C.-A@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20261107T180000
+DTEND;TZID=Europe/Brussels:20261107T200000
+SUMMARY:Gembloux V.C. A - Osuna Volley Beauraing
+LOCATION:Gembloux Complexe Chapelle Dieu - C1\, Rue Chapelle Dieu\, 48\, 50
+ 30 Gembloux
+DESCRIPTION:Équipe : P1 Messieurs\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:P1-Messieurs-2026-11-28-NAMUR-VOLLEY-C@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20261128T163000
+DTEND;TZID=Europe/Brussels:20261128T183000
+SUMMARY:NAMUR VOLLEY C - Osuna Volley Beauraing
+LOCATION:Bouge Centre sportif - L3\, Rue des Etourneaux\, 28\, 5004 Bouge
+DESCRIPTION:Équipe : P1 Messieurs\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:P1-Messieurs-2026-12-05-Etoile-Volley-Arsimont-A@osuna-beauraing.github
+ .io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20261205T133000
+DTEND;TZID=Europe/Brussels:20261205T153000
+SUMMARY:Osuna Volley Beauraing - Etoile Volley Arsimont A
+LOCATION:Beauraing Complexe Communal - C1\, rue de la Couture\, 46\, 5570 B
+ eauraing
+DESCRIPTION:Équipe : P1 Messieurs\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:P1-Messieurs-2026-12-12-Volley-Smars-Dinant-A@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20261212T203000
+DTEND;TZID=Europe/Brussels:20261212T223000
+SUMMARY:Volley Smars Dinant A - Osuna Volley Beauraing
+LOCATION:Dinant Salle Omnisports Jean-Pierre Burny - C1\, Rue Caussin\, 7\,
+  5500 Dinant
+DESCRIPTION:Équipe : P1 Messieurs\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:P1-Messieurs-2027-01-09-Floor-F-V.C.-C@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20270109T203000
+DTEND;TZID=Europe/Brussels:20270109T223000
+SUMMARY:Osuna Volley Beauraing - Floor F V.C. C
+LOCATION:Beauraing Complexe Communal - C1\, rue de la Couture\, 46\, 5570 B
+ eauraing
+DESCRIPTION:Équipe : P1 Messieurs\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:P1-Messieurs-2027-01-17-Floor-F-V.C.-D@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20270117T140000
+DTEND;TZID=Europe/Brussels:20270117T160000
+SUMMARY:Floor F V.C. D - Osuna Volley Beauraing
+LOCATION:Floreffe Centre sportif - L2\, rue Joseph Hanse 6\, 5150 Floreffe
+DESCRIPTION:Équipe : P1 Messieurs\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:P1-Messieurs-2027-01-23-Ciney-V.C.-A@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20270123T133000
+DTEND;TZID=Europe/Brussels:20270123T153000
+SUMMARY:Osuna Volley Beauraing - Ciney V.C. A
+LOCATION:Beauraing Complexe Communal - C1\, rue de la Couture\, 46\, 5570 B
+ eauraing
+DESCRIPTION:Équipe : P1 Messieurs\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:P1-Messieurs-2027-01-30-VC-Lesse-et-Lhomme-C@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20270130T170000
+DTEND;TZID=Europe/Brussels:20270130T190000
+SUMMARY:VC Lesse et Lhomme C - Osuna Volley Beauraing
+LOCATION:Hall Omnisports de Tellin - C1\, Mont du Carillon 24\, 6927 Tellin
+DESCRIPTION:Équipe : P1 Messieurs\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:P1-Messieurs-2027-02-06-Jemeppe-V.C.-A@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20270206T210000
+DTEND;TZID=Europe/Brussels:20270206T230000
+SUMMARY:Jemeppe V.C. A - Osuna Volley Beauraing
+LOCATION:Hall Omnisports de Jemeppe - L4\, Rue Saint Martin\, 21\, 5190 Jem
+ eppe-sur-Sambre
+DESCRIPTION:Équipe : P1 Messieurs\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:P1-Messieurs-2027-02-13-Walhain-V.C.-C@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20270213T170000
+DTEND;TZID=Europe/Brussels:20270213T190000
+SUMMARY:Walhain V.C. C - Osuna Volley Beauraing
+LOCATION:Complexe Omnisports Walhain - L2\, Rue Chapelle Ste Anne\, 13\, 14
+ 57 Walhain
+DESCRIPTION:Équipe : P1 Messieurs\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:P1-Messieurs-2027-03-06-Gembloux-V.C.-A@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20270306T133000
+DTEND;TZID=Europe/Brussels:20270306T153000
+SUMMARY:Osuna Volley Beauraing - Gembloux V.C. A
+LOCATION:Beauraing Complexe Communal - C1\, rue de la Couture\, 46\, 5570 B
+ eauraing
+DESCRIPTION:Équipe : P1 Messieurs\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:P1-Messieurs-2027-03-13-Volley-Smars-Dinant-A@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20270313T170000
+DTEND;TZID=Europe/Brussels:20270313T190000
+SUMMARY:Osuna Volley Beauraing - Volley Smars Dinant A
+LOCATION:Beauraing Complexe Communal - C1\, rue de la Couture\, 46\, 5570 B
+ eauraing
+DESCRIPTION:Équipe : P1 Messieurs\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:P1-Messieurs-2027-04-10-NAMUR-VOLLEY-C@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20270410T133000
+DTEND;TZID=Europe/Brussels:20270410T153000
+SUMMARY:Osuna Volley Beauraing - NAMUR VOLLEY C
+LOCATION:Beauraing Complexe Communal - C1\, rue de la Couture\, 46\, 5570 B
+ eauraing
+DESCRIPTION:Équipe : P1 Messieurs\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:P1-Messieurs-2027-04-17-Etoile-Volley-Arsimont-A@osuna-beauraing.github
+ .io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20270417T194500
+DTEND;TZID=Europe/Brussels:20270417T214500
+SUMMARY:Etoile Volley Arsimont A - Osuna Volley Beauraing
+LOCATION:Auvelais Au relais Sportsa - L2\, Rue des Auges\, 22\, 5060 Auvela
+ is
+DESCRIPTION:Équipe : P1 Messieurs\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:P1-Messieurs-2026-10-31-ANHEE-V.C.-B@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261031
+SUMMARY:ANHEE V.C. B - Osuna Volley Beauraing
+LOCATION:Salle à confirmer
+DESCRIPTION:Équipe : P1 Messieurs\nMatch de coupe provinciale\nMatch à l'ex
+ térieur\nHeure encore à confirmer par la fédération
+END:VEVENT
+END:VCALENDAR

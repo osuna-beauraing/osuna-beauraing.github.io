@@ -1,5 +1,15 @@
 # Site du club — Osuna Volley Beauraing
 
+## Abonnement calendrier (Google Agenda / Apple / Outlook)
+
+La page horaires propose, pour l'équipe sélectionnée, deux boutons d'abonnement :
+- **Google Agenda** : ouvre directement la fenêtre "Ajouter un agenda" de Google Calendar.
+- **Apple / Outlook** : utilise le protocole `webcal://`, reconnu nativement par ces applications.
+
+Techniquement, un fichier `.ics` est généré par équipe dans le dossier `ics/` (ex. `ics/p1-h.ics`) par le script `scripts/generate-ics.mjs`, à partir de `horaires.json`. Comme il s'agit d'un **abonnement** et non d'un import ponctuel, l'application de calendrier de la personne re-télécharge régulièrement ce fichier (en général une fois par jour) : toute correction d'horaire, de salle ou nouvelle date apparaît automatiquement, sans que personne n'ait à renvoyer quoi que ce soit.
+
+Ce script tourne automatiquement à la suite de `update-horaires.mjs` dans le workflow GitHub Actions — rien à faire manuellement. Si tu changes un jour le nom de domaine du site, mets à jour l'URL codée en dur dans `script.js` (recherche `osuna-beauraing.github.io`).
+
 ## Ce que contient ce dossier
 
 - `index.html` — page d'actualités, avec le panneau du prochain match (toutes équipes confondues)

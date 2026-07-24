@@ -1,0 +1,221 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Osuna Volley Beauraing//Calendrier des matchs//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Osuna Volley Beauraing - P4 Dames
+X-WR-TIMEZONE:Europe/Brussels
+BEGIN:VTIMEZONE
+TZID:Europe/Brussels
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:P4-Dames-2026-09-12-Gedinne-V.C.-C@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20260912T130000
+DTEND;TZID=Europe/Brussels:20260912T150000
+SUMMARY:Osuna Volley Beauraing - Gedinne V.C. C
+LOCATION:Beauraing Complexe Communal - L2\, rue de la Couture\, 46\, 5570 B
+ eauraing
+DESCRIPTION:Équipe : P4 Dames\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:P4-Dames-2026-09-26-Couvin-U.S.V.-86-A@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20260926T164500
+DTEND;TZID=Europe/Brussels:20260926T184500
+SUMMARY:Couvin U.S.V. 86 A - Osuna Volley Beauraing
+LOCATION:Couvidome Bernard Pignon - L2\, rue de la Foulerie\, 12/2\, 5660 C
+ ouvin
+DESCRIPTION:Équipe : P4 Dames\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:P4-Dames-2026-10-04-VC-Lesse-et-Lhomme-E@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20261004T110000
+DTEND;TZID=Europe/Brussels:20261004T130000
+SUMMARY:VC Lesse et Lhomme E - Osuna Volley Beauraing
+LOCATION:Hall Omnisports de Tellin - C1\, Mont du Carillon 24\, 6927 Tellin
+DESCRIPTION:Équipe : P4 Dames\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:P4-Dames-2026-10-17-Jemeppe-V.C.-F@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20261017T140000
+DTEND;TZID=Europe/Brussels:20261017T160000
+SUMMARY:Jemeppe V.C. F - Osuna Volley Beauraing
+LOCATION:Hall Omnisports de Jemeppe - L4\, Rue Saint Martin\, 21\, 5190 Jem
+ eppe-sur-Sambre
+DESCRIPTION:Équipe : P4 Dames\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:P4-Dames-2026-11-07-Doische-V.-Fagnard-C@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20261107T134500
+DTEND;TZID=Europe/Brussels:20261107T154500
+SUMMARY:Doische V. Fagnard C - Osuna Volley Beauraing
+LOCATION:Doische Lycée d'Etat\, 141 Rue Martin Sandron\, 5680 Doische
+DESCRIPTION:Équipe : P4 Dames\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:P4-Dames-2026-11-22-Gembloux-V.C.-B@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20261122T180000
+DTEND;TZID=Europe/Brussels:20261122T200000
+SUMMARY:Gembloux V.C. B - Osuna Volley Beauraing
+LOCATION:Gembloux Complexe Chapelle Dieu - C1\, Rue Chapelle Dieu\, 48\, 50
+ 30 Gembloux
+DESCRIPTION:Équipe : P4 Dames\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:P4-Dames-2026-11-28-Tellinam-V.C.-D@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20261128T133000
+DTEND;TZID=Europe/Brussels:20261128T153000
+SUMMARY:Osuna Volley Beauraing - Tellinam V.C. D
+LOCATION:Beauraing Complexe Communal - L2\, rue de la Couture\, 46\, 5570 B
+ eauraing
+DESCRIPTION:Équipe : P4 Dames\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:P4-Dames-2026-12-05-Ciney-V.C.-F@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20261205T170000
+DTEND;TZID=Europe/Brussels:20261205T190000
+SUMMARY:Ciney V.C. F - Osuna Volley Beauraing
+LOCATION:Ciney Hall Omnisports - L2\, Place du Roi Baudouin\, 5590 Ciney
+DESCRIPTION:Équipe : P4 Dames\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:P4-Dames-2026-12-12-Romedenne-Smash-V.C.-D@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20261212T133000
+DTEND;TZID=Europe/Brussels:20261212T153000
+SUMMARY:Osuna Volley Beauraing - Romedenne Smash V.C. D
+LOCATION:Beauraing Complexe Communal - L2\, rue de la Couture\, 46\, 5570 B
+ eauraing
+DESCRIPTION:Équipe : P4 Dames\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:P4-Dames-2027-01-17-Gedinne-V.C.-C@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20270117T113000
+DTEND;TZID=Europe/Brussels:20270117T133000
+SUMMARY:Gedinne V.C. C - Osuna Volley Beauraing
+LOCATION:Gedinne C. S. de la Houille - C1\, Rue de la Morie\, 7\, 5575 Gedi
+ nne
+DESCRIPTION:Équipe : P4 Dames\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:P4-Dames-2027-01-24-VC-Lesse-et-Lhomme-E@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20270124T140000
+DTEND;TZID=Europe/Brussels:20270124T160000
+SUMMARY:Osuna Volley Beauraing - VC Lesse et Lhomme E
+LOCATION:Beauraing Complexe Communal - L2\, rue de la Couture\, 46\, 5570 B
+ eauraing
+DESCRIPTION:Équipe : P4 Dames\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:P4-Dames-2027-01-30-Couvin-U.S.V.-86-A@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20270130T133000
+DTEND;TZID=Europe/Brussels:20270130T153000
+SUMMARY:Osuna Volley Beauraing - Couvin U.S.V. 86 A
+LOCATION:Beauraing Complexe Communal - L2\, rue de la Couture\, 46\, 5570 B
+ eauraing
+DESCRIPTION:Équipe : P4 Dames\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:P4-Dames-2027-02-06-Jemeppe-V.C.-F@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20270206T133000
+DTEND;TZID=Europe/Brussels:20270206T153000
+SUMMARY:Osuna Volley Beauraing - Jemeppe V.C. F
+LOCATION:Beauraing Complexe Communal - L2\, rue de la Couture\, 46\, 5570 B
+ eauraing
+DESCRIPTION:Équipe : P4 Dames\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:P4-Dames-2027-02-13-Doische-V.-Fagnard-C@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20270213T170000
+DTEND;TZID=Europe/Brussels:20270213T190000
+SUMMARY:Osuna Volley Beauraing - Doische V. Fagnard C
+LOCATION:Beauraing Complexe Communal - L2\, rue de la Couture\, 46\, 5570 B
+ eauraing
+DESCRIPTION:Équipe : P4 Dames\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:P4-Dames-2027-03-14-Romedenne-Smash-V.C.-D@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20270314T143000
+DTEND;TZID=Europe/Brussels:20270314T163000
+SUMMARY:Romedenne Smash V.C. D - Osuna Volley Beauraing
+LOCATION:Philippeville Complexe Sportif - L2\, rue de la Gendarmerie 30\, 5
+ 600 Philippeville
+DESCRIPTION:Équipe : P4 Dames\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:P4-Dames-2027-03-20-Gembloux-V.C.-B@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20270320T170000
+DTEND;TZID=Europe/Brussels:20270320T190000
+SUMMARY:Osuna Volley Beauraing - Gembloux V.C. B
+LOCATION:Beauraing Complexe Communal - L2\, rue de la Couture\, 46\, 5570 B
+ eauraing
+DESCRIPTION:Équipe : P4 Dames\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:P4-Dames-2027-04-11-Tellinam-V.C.-D@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20270411T110000
+DTEND;TZID=Europe/Brussels:20270411T130000
+SUMMARY:Tellinam V.C. D - Osuna Volley Beauraing
+LOCATION:Tellinam Hall Omnisports - C1\, Mont du Carillon 24\, 6927 Tellin
+DESCRIPTION:Équipe : P4 Dames\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:P4-Dames-2027-04-17-Ciney-V.C.-F@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20270417T133000
+DTEND;TZID=Europe/Brussels:20270417T153000
+SUMMARY:Osuna Volley Beauraing - Ciney V.C. F
+LOCATION:Beauraing Complexe Communal - L2\, rue de la Couture\, 46\, 5570 B
+ eauraing
+DESCRIPTION:Équipe : P4 Dames\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:P4-Dames-2026-09-05-Gedinne-V.C.-C@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20260905T103000
+DTEND;TZID=Europe/Brussels:20260905T123000
+SUMMARY:Osuna Volley Beauraing - Gedinne V.C. C
+LOCATION:Beauraing Complexe Communal - L2\, rue de la Couture\, 46\, 5570 B
+ eauraing
+DESCRIPTION:Équipe : P4 Dames\nMatch de coupe provinciale\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:P4-Dames-2026-09-05-Gembloux-V.C.-A@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20260905T120000
+DTEND;TZID=Europe/Brussels:20260905T140000
+SUMMARY:Osuna Volley Beauraing - Gembloux V.C. A
+LOCATION:Beauraing Complexe Communal - L4\, rue de la Couture\, 46\, 5570 B
+ eauraing
+DESCRIPTION:Équipe : P4 Dames\nMatch de coupe provinciale\nMatch à domicile
+END:VEVENT
+END:VCALENDAR

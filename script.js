@@ -120,6 +120,14 @@
       if (!equipe) return;
       caption.textContent = equipe.nom;
 
+      // Liens d'abonnement au calendrier de cette équipe (mis à jour à chaque changement)
+      const urlIcsHttps = `https://osuna-beauraing.github.io/ics/${equipe.id}.ics`;
+      const urlIcsWebcal = urlIcsHttps.replace(/^https:\/\//, "webcal://");
+      const lienGoogle = document.getElementById("lien-google-agenda");
+      const lienWebcal = document.getElementById("lien-webcal");
+      if (lienGoogle) lienGoogle.href = `https://calendar.google.com/calendar/render?cid=${encodeURIComponent(urlIcsHttps)}`;
+      if (lienWebcal) lienWebcal.href = urlIcsWebcal;
+
       const matchs = equipe.matchs
         .filter((m) => !estPasse(m.date)) // sécurité : un match déjà joué ne s'affiche jamais
         .sort((a, b) => `${a.date} ${a.heure || ""}`.localeCompare(`${b.date} ${b.heure || ""}`));

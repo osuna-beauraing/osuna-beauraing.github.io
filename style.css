@@ -285,6 +285,44 @@ footer.site {
   outline-offset: 2px;
 }
 
+.abonnement-calendrier {
+  background: var(--marine-800);
+  border: 1px solid var(--ligne);
+  border-radius: 6px;
+  padding: 14px 18px;
+  margin-bottom: 24px;
+}
+
+.abonnement-label {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--creme-dim);
+  margin-bottom: 10px;
+}
+
+.bouton-abonnement {
+  display: inline-block;
+  background: var(--ambre);
+  color: var(--marine-950);
+  font-family: var(--police-affiche);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  font-size: 0.78rem;
+  padding: 8px 14px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin: 0 8px 8px 0;
+}
+
+.bouton-abonnement:hover { background: var(--ambre-vif); }
+
+.abonnement-note {
+  margin: 6px 0 0;
+  font-size: 0.78rem;
+  color: var(--creme-dim);
+  line-height: 1.5;
+}
+
 .maj-info {
   font-size: 0.8rem;
   color: var(--creme-dim);

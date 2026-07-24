@@ -66,7 +66,7 @@ function dateEnISO(ddmmyyyy) {
   return `${a}-${m}-${j}`;
 }
 
-async function recupererMatchsEquipe(teamId) {
+async function recupererMatchsEquipe(teamId, nomEquipe) {
   const url = `https://easyscore.be/club/${CLUB_SLUG}/team/${teamId}/games.csv`;
   const reponse = await fetch(url);
   if (!reponse.ok) throw new Error(`HTTP ${reponse.status} pour l'équipe ${teamId}`);
@@ -78,16 +78,21 @@ async function recupererMatchsEquipe(teamId) {
 
   return rangees
     .map((ligne) => {
-      const [competition, domicile, visiteur, date, heure, salle, adresse, matchId] =
+      const [competitionBrute, domicile, visiteur, date, heure, salle, adresse, matchId] =
         parserLigneCSV(ligne);
       if (!date) return null;
 
       const estDomicile = domicile.includes("Osuna");
       const adversaireBrut = estDomicile ? visiteur : domicile;
       const adresseValide = adresse && adresse.trim() !== ", 0" ? adresse.trim() : null;
+      const estCoupe = /^coupe/i.test(competitionBrute.trim());
 
       return {
-        competition,
+        // La colonne "compétition" du site représente l'équipe du club (cohérent
+        // avec le sélecteur d'équipe) ; le flag "coupe" signale à part les matchs
+        // de coupe provinciale plutôt que d'écraser cette information.
+        competition: nomEquipe,
+        coupe: estCoupe,
         date: dateEnISO(date),
         heure: heure && heure !== "00:00" ? heure : null,
         adversaire: adversaireBrut.replace(/\s*\(\s*Dro\s*\)\s*/gi, "").trim(),
@@ -110,7 +115,7 @@ async function main() {
 
   for (const equipe of EQUIPES) {
     try {
-      const matchs = await recupererMatchsEquipe(equipe.team_id);
+      const matchs = await recupererMatchsEquipe(equipe.team_id, equipe.nom);
       equipes.push({ ...equipe, matchs });
       console.log(`✓ ${equipe.nom} : ${matchs.length} match(s)`);
     } catch (err) {

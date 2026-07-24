@@ -1,0 +1,262 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Osuna Volley Beauraing//Calendrier des matchs//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Osuna Volley Beauraing - P2 Dames
+X-WR-TIMEZONE:Europe/Brussels
+BEGIN:VTIMEZONE
+TZID:Europe/Brussels
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:P2-Dames-2026-09-12-NAMUR-VOLLEY-C@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20260912T130000
+DTEND;TZID=Europe/Brussels:20260912T150000
+SUMMARY:NAMUR VOLLEY C - Osuna Volley Beauraing
+LOCATION:Bouge Centre sportif - L3\, Rue des Etourneaux\, 28\, 5004 Bouge
+DESCRIPTION:Équipe : P2 Dames\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:P2-Dames-2026-09-19-The-Dragonflies-V.C-Profondeville-A@osuna-beauraing
+ .github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20260919T200000
+DTEND;TZID=Europe/Brussels:20260919T220000
+SUMMARY:The Dragonflies V.C Profondeville A - Osuna Volley Beauraing
+LOCATION:Profondeville Centre Sportif de la Hulle - C1\, Avenue Roquebrune 
+ Cap Martin\, 32\, 5170 Profondeville
+DESCRIPTION:Équipe : P2 Dames\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:P2-Dames-2026-09-26-Ciney-V.C.-C@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20260926T203000
+DTEND;TZID=Europe/Brussels:20260926T223000
+SUMMARY:Osuna Volley Beauraing - Ciney V.C. C
+LOCATION:Beauraing Complexe Communal - L2\, rue de la Couture\, 46\, 5570 B
+ eauraing
+DESCRIPTION:Équipe : P2 Dames\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:P2-Dames-2026-10-03-VC-Lesse-et-Lhomme-C@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20261003T210000
+DTEND;TZID=Europe/Brussels:20261003T230000
+SUMMARY:VC Lesse et Lhomme C - Osuna Volley Beauraing
+LOCATION:Hall Omnisports de Tellin - C1\, Mont du Carillon 24\, 6927 Tellin
+DESCRIPTION:Équipe : P2 Dames\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:P2-Dames-2026-10-10-Volley-Ohey-C@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20261010T173000
+DTEND;TZID=Europe/Brussels:20261010T193000
+SUMMARY:Volley Ohey C - Osuna Volley Beauraing
+LOCATION:Ohey Centre Sportif Communal - L2\, Voie du Rauyisse\, 1\, 5350 Oh
+ ey
+DESCRIPTION:Équipe : P2 Dames\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:P2-Dames-2026-10-17-Jemeppe-V.C.-C@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20261017T173000
+DTEND;TZID=Europe/Brussels:20261017T193000
+SUMMARY:Jemeppe V.C. C - Osuna Volley Beauraing
+LOCATION:Jemeppe Hall Omnisports - L2\, Rue Saint Martin\, 21\, 5190 Jemepp
+ e-sur-Sambre
+DESCRIPTION:Équipe : P2 Dames\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:P2-Dames-2026-11-07-ANHEE-V.C.-B@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20261107T133000
+DTEND;TZID=Europe/Brussels:20261107T153000
+SUMMARY:Osuna Volley Beauraing - ANHEE V.C. B
+LOCATION:Beauraing Complexe Communal - L2\, rue de la Couture\, 46\, 5570 B
+ eauraing
+DESCRIPTION:Équipe : P2 Dames\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:P2-Dames-2026-11-21-Gembloux-V.C.-A@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20261121T180000
+DTEND;TZID=Europe/Brussels:20261121T200000
+SUMMARY:Gembloux V.C. A - Osuna Volley Beauraing
+LOCATION:Gembloux Complexe Chapelle Dieu - C1\, Rue Chapelle Dieu\, 48\, 50
+ 30 Gembloux
+DESCRIPTION:Équipe : P2 Dames\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:P2-Dames-2026-11-28-Etoile-Volley-Arsimont-A@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20261128T170000
+DTEND;TZID=Europe/Brussels:20261128T190000
+SUMMARY:Osuna Volley Beauraing - Etoile Volley Arsimont A
+LOCATION:Beauraing Complexe Communal - L2\, rue de la Couture\, 46\, 5570 B
+ eauraing
+DESCRIPTION:Équipe : P2 Dames\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:P2-Dames-2026-12-05-Le-Roux-R.V.C.-B@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20261205T133000
+DTEND;TZID=Europe/Brussels:20261205T153000
+SUMMARY:Le Roux R.V.C. B - Osuna Volley Beauraing
+LOCATION:Le Roux salle Michel Dargent - C1\, rue Grande\, 33\, 5070 Le Roux
+DESCRIPTION:Équipe : P2 Dames\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:P2-Dames-2026-12-12-Romedenne-Smash-V.C.-C@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20261212T133000
+DTEND;TZID=Europe/Brussels:20261212T153000
+SUMMARY:Osuna Volley Beauraing - Romedenne Smash V.C. C
+LOCATION:Beauraing Complexe Communal - L2\, rue de la Couture\, 46\, 5570 B
+ eauraing
+DESCRIPTION:Équipe : P2 Dames\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:P2-Dames-2027-01-09-The-Dragonflies-V.C-Profondeville-A@osuna-beauraing
+ .github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20270109T133000
+DTEND;TZID=Europe/Brussels:20270109T153000
+SUMMARY:Osuna Volley Beauraing - The Dragonflies V.C Profondeville A
+LOCATION:Beauraing Complexe Communal - L2\, rue de la Couture\, 46\, 5570 B
+ eauraing
+DESCRIPTION:Équipe : P2 Dames\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:P2-Dames-2027-01-16-NAMUR-VOLLEY-C@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20270116T133000
+DTEND;TZID=Europe/Brussels:20270116T153000
+SUMMARY:Osuna Volley Beauraing - NAMUR VOLLEY C
+LOCATION:Beauraing Complexe Communal - L2\, rue de la Couture\, 46\, 5570 B
+ eauraing
+DESCRIPTION:Équipe : P2 Dames\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:P2-Dames-2027-01-24-VC-Lesse-et-Lhomme-C@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20270124T180000
+DTEND;TZID=Europe/Brussels:20270124T200000
+SUMMARY:Osuna Volley Beauraing - VC Lesse et Lhomme C
+LOCATION:Beauraing Complexe Communal - L2\, rue de la Couture\, 46\, 5570 B
+ eauraing
+DESCRIPTION:Équipe : P2 Dames\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:P2-Dames-2027-01-30-Ciney-V.C.-C@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20270130T170000
+DTEND;TZID=Europe/Brussels:20270130T190000
+SUMMARY:Ciney V.C. C - Osuna Volley Beauraing
+LOCATION:Ciney Hall Omnisports - L2\, Place du Roi Baudouin\, 5590 Ciney
+DESCRIPTION:Équipe : P2 Dames\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:P2-Dames-2027-02-06-Jemeppe-V.C.-C@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20270206T133000
+DTEND;TZID=Europe/Brussels:20270206T153000
+SUMMARY:Osuna Volley Beauraing - Jemeppe V.C. C
+LOCATION:Beauraing Complexe Communal - L2\, rue de la Couture\, 46\, 5570 B
+ eauraing
+DESCRIPTION:Équipe : P2 Dames\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:P2-Dames-2027-02-13-Volley-Ohey-C@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20270213T170000
+DTEND;TZID=Europe/Brussels:20270213T190000
+SUMMARY:Osuna Volley Beauraing - Volley Ohey C
+LOCATION:Beauraing Complexe Communal - L2\, rue de la Couture\, 46\, 5570 B
+ eauraing
+DESCRIPTION:Équipe : P2 Dames\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:P2-Dames-2027-03-06-ANHEE-V.C.-B@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20270306T173000
+DTEND;TZID=Europe/Brussels:20270306T193000
+SUMMARY:ANHEE V.C. B - Osuna Volley Beauraing
+LOCATION:Anhee Complexe Sportif - L2\, Chemin Saint-Stampe\, 1\, 5537 Anhee
+DESCRIPTION:Équipe : P2 Dames\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:P2-Dames-2027-03-14-Romedenne-Smash-V.C.-C@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20270314T180000
+DTEND;TZID=Europe/Brussels:20270314T200000
+SUMMARY:Romedenne Smash V.C. C - Osuna Volley Beauraing
+LOCATION:Philippeville Complexe Sportif - L2\, rue de la Gendarmerie 30\, 5
+ 600 Philippeville
+DESCRIPTION:Équipe : P2 Dames\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:P2-Dames-2027-03-20-Gembloux-V.C.-A@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20270320T133000
+DTEND;TZID=Europe/Brussels:20270320T153000
+SUMMARY:Osuna Volley Beauraing - Gembloux V.C. A
+LOCATION:Beauraing Complexe Communal - L2\, rue de la Couture\, 46\, 5570 B
+ eauraing
+DESCRIPTION:Équipe : P2 Dames\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:P2-Dames-2027-04-10-Etoile-Volley-Arsimont-A@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20270410T140000
+DTEND;TZID=Europe/Brussels:20270410T160000
+SUMMARY:Etoile Volley Arsimont A - Osuna Volley Beauraing
+LOCATION:Salle à confirmer
+DESCRIPTION:Équipe : P2 Dames\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:P2-Dames-2027-04-17-Le-Roux-R.V.C.-B@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20270417T133000
+DTEND;TZID=Europe/Brussels:20270417T153000
+SUMMARY:Osuna Volley Beauraing - Le Roux R.V.C. B
+LOCATION:Beauraing Complexe Communal - L2\, rue de la Couture\, 46\, 5570 B
+ eauraing
+DESCRIPTION:Équipe : P2 Dames\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:P2-Dames-2026-09-05-ANHEE-V.C.-C@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;TZID=Europe/Brussels:20260905T150000
+DTEND;TZID=Europe/Brussels:20260905T170000
+SUMMARY:ANHEE V.C. C - Osuna Volley Beauraing
+LOCATION:Anhee Complexe Sportif - L2\, Chemin Saint-Stampe\, 1\, 5537 Anhee
+DESCRIPTION:Équipe : P2 Dames\nMatch de coupe provinciale\nMatch à l'extéri
+ eur
+END:VEVENT
+BEGIN:VEVENT
+UID:P2-Dames-2026-09-05-Floor-F-V.C.-E@osuna-beauraing.github.io
+DTSTAMP:20260724T083106Z
+DTSTART;VALUE=DATE:20260905
+DTEND;VALUE=DATE:20260905
+SUMMARY:Osuna Volley Beauraing - Floor F V.C. E
+LOCATION:Beauraing Complexe Communal\, rue de la Couture\, 46\, 5570 Beaura
+ ing
+DESCRIPTION:Équipe : P2 Dames\nMatch de coupe provinciale\nMatch à domicile
+ \nHeure encore à confirmer par la fédération
+END:VEVENT
+END:VCALENDAR
