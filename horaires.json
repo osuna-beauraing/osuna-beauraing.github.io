@@ -1,7 +1,7 @@
 {
-  "derniere_maj": "2026-07-16",
+  "derniere_maj": "2026-07-24",
   "club": "Osuna Volley Beauraing",
-  "_note": "Saison 2026-2027, donnees recuperees sur le portail FVWB (pages de resultats par serie + coupes provinciales + pages de detail de chaque match pour la salle exacte). Toutes les equipes ont maintenant leur championnat, y compris Promotion Messieurs desormais publie. U13 Filles : pas encore de serie trouvee pour cette categorie. La synchronisation quotidienne (easyscore.be) prendra le relais automatiquement une fois ce site miroir a jour.",
+  "_note": "Saison 2026-2027. La colonne 'Compétition' indique désormais l'équipe du club concernée ; le champ 'coupe' (true/false) signale les matchs de coupe provinciale, affichés avec un badge dédié sur le site. Heure du match P2 Dames vs Floor F V.C. E (05/09) encore à confirmer. Promotion Messieurs et toutes les autres équipes ont leur championnat complet avec salles. U13 Filles : pas encore de série trouvée. La synchronisation quotidienne (easyscore.be) prendra le relais automatiquement une fois ce site miroir à jour (le script scripts/update-horaires.mjs devra alors être adapté pour reproduire ce même format 'coupe').",
   "equipes": [
     {
       "id": "prom-h",
@@ -15,7 +15,8 @@
           "adversaire": "Walhain V.C. B",
           "lieu": "exterieur",
           "salle": "Walhain Complexe Omnisports - C1",
-          "adresse": "Rue Chapelle Ste Anne, 13, 1457 Walhain"
+          "adresse": "Rue Chapelle Ste Anne, 13, 1457 Walhain",
+          "coupe": false
         },
         {
           "competition": "Promotion Messieurs",
@@ -24,7 +25,8 @@
           "adversaire": "Chaumont V.C. B",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - C1",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "Promotion Messieurs",
@@ -33,7 +35,8 @@
           "adversaire": "Floor F V.C. B",
           "lieu": "exterieur",
           "salle": "Floreffe Centre sportif - C1",
-          "adresse": "rue Joseph Hanse 6, 5150 Floreffe"
+          "adresse": "rue Joseph Hanse 6, 5150 Floreffe",
+          "coupe": false
         },
         {
           "competition": "Promotion Messieurs",
@@ -42,7 +45,8 @@
           "adversaire": "BW Nivelles Volley D",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - C1",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "Promotion Messieurs",
@@ -51,7 +55,8 @@
           "adversaire": "NAMUR VOLLEY B",
           "lieu": "exterieur",
           "salle": "Bouge Centre sportif - C1",
-          "adresse": "Rue des Etourneaux, 28, 5004 Bouge"
+          "adresse": "Rue des Etourneaux, 28, 5004 Bouge",
+          "coupe": false
         },
         {
           "competition": "Promotion Messieurs",
@@ -60,7 +65,8 @@
           "adversaire": "VBC Guibertin E",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - C1",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "Promotion Messieurs",
@@ -69,7 +75,8 @@
           "adversaire": "Bruxelles Est V.C. B",
           "lieu": "exterieur",
           "salle": "centre sportif d'Auderghem Willegems",
-          "adresse": "chaussée de Wavre, 1690, 1160 Auderghem"
+          "adresse": "chaussée de Wavre, 1690, 1160 Auderghem",
+          "coupe": false
         },
         {
           "competition": "Promotion Messieurs",
@@ -78,7 +85,8 @@
           "adversaire": "Bruxelles Est V.C. C",
           "lieu": "exterieur",
           "salle": "centre sportif d'Auderghem - Vrijdaghs",
-          "adresse": "1690 Chaussée de Wavre, 1160 Auderghem"
+          "adresse": "1690 Chaussée de Wavre, 1160 Auderghem",
+          "coupe": false
         },
         {
           "competition": "Promotion Messieurs",
@@ -87,7 +95,8 @@
           "adversaire": "VC Lesse et Lhomme B",
           "lieu": "exterieur",
           "salle": "Jemelle Hall Multisports - L3",
-          "adresse": "rue des Jardins, 46, 5580 Jemelle"
+          "adresse": "rue des Jardins, 46, 5580 Jemelle",
+          "coupe": false
         },
         {
           "competition": "Promotion Messieurs",
@@ -96,7 +105,8 @@
           "adversaire": "Volley Ohey A",
           "lieu": "exterieur",
           "salle": "Ohey Centre Sportif Communal - L2",
-          "adresse": "Voie du Rauyisse, 1, 5350 Ohey"
+          "adresse": "Voie du Rauyisse, 1, 5350 Ohey",
+          "coupe": false
         },
         {
           "competition": "Promotion Messieurs",
@@ -105,7 +115,8 @@
           "adversaire": "Floor F V.C. A",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - C1",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "Promotion Messieurs",
@@ -114,7 +125,8 @@
           "adversaire": "Walhain V.C. B",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - C1",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "Promotion Messieurs",
@@ -123,7 +135,8 @@
           "adversaire": "Chaumont V.C. B",
           "lieu": "exterieur",
           "salle": "Centre Sportif André Docquier - C1",
-          "adresse": "Avenue du Ronvau, 8, 1325 Chaumont-Gistoux"
+          "adresse": "Avenue du Ronvau, 8, 1325 Chaumont-Gistoux",
+          "coupe": false
         },
         {
           "competition": "Promotion Messieurs",
@@ -132,7 +145,8 @@
           "adversaire": "Floor F V.C. B",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - C1",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "Promotion Messieurs",
@@ -141,7 +155,8 @@
           "adversaire": "BW Nivelles Volley D",
           "lieu": "exterieur",
           "salle": "salle omnisport de Baulers - C1",
-          "adresse": "Rue de l'Eglise 3B, 1401 Baulers"
+          "adresse": "Rue de l'Eglise 3B, 1401 Baulers",
+          "coupe": false
         },
         {
           "competition": "Promotion Messieurs",
@@ -150,7 +165,8 @@
           "adversaire": "NAMUR VOLLEY B",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - C1",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "Promotion Messieurs",
@@ -159,7 +175,8 @@
           "adversaire": "VBC Guibertin E",
           "lieu": "exterieur",
           "salle": "Centre Sportif Jean Moisse - L2",
-          "adresse": "27a Rue des Hayeffes, 1435 Mont-Saint-Guibert"
+          "adresse": "27a Rue des Hayeffes, 1435 Mont-Saint-Guibert",
+          "coupe": false
         },
         {
           "competition": "Promotion Messieurs",
@@ -168,7 +185,8 @@
           "adversaire": "Bruxelles Est V.C. B",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - C1",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "Promotion Messieurs",
@@ -177,7 +195,8 @@
           "adversaire": "Floor F V.C. A",
           "lieu": "exterieur",
           "salle": "Floreffe Centre sportif - C1",
-          "adresse": "rue Joseph Hanse 6, 5150 Floreffe"
+          "adresse": "rue Joseph Hanse 6, 5150 Floreffe",
+          "coupe": false
         },
         {
           "competition": "Promotion Messieurs",
@@ -186,7 +205,8 @@
           "adversaire": "Bruxelles Est V.C. C",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - C1",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "Promotion Messieurs",
@@ -195,7 +215,8 @@
           "adversaire": "VC Lesse et Lhomme B",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - C1",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "Promotion Messieurs",
@@ -204,16 +225,18 @@
           "adversaire": "Volley Ohey A",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - C1",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
-          "competition": "Coupe Messieurs",
+          "competition": "Promotion Messieurs",
           "date": "2026-10-31",
           "heure": null,
           "adversaire": "Walhain V.C. C",
           "lieu": "exterieur",
           "salle": null,
-          "adresse": null
+          "adresse": null,
+          "coupe": true
         }
       ]
     },
@@ -229,7 +252,8 @@
           "adversaire": "Stabulois Etalle V.C. A",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - C1",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "Promotion Dames",
@@ -238,7 +262,8 @@
           "adversaire": "Jemeppe V.C. A",
           "lieu": "exterieur",
           "salle": "Jemeppe Hall Omnisports - L3",
-          "adresse": "Rue Saint Martin, 21, 5190 Jemeppe-sur-Sambre"
+          "adresse": "Rue Saint Martin, 21, 5190 Jemeppe-sur-Sambre",
+          "coupe": false
         },
         {
           "competition": "Promotion Dames",
@@ -247,7 +272,8 @@
           "adversaire": "VC Lesse et Lhomme A",
           "lieu": "exterieur",
           "salle": "Hall Omnisports de Tellin - C1",
-          "adresse": "Mont du Carillon 24, 6927 Tellin"
+          "adresse": "Mont du Carillon 24, 6927 Tellin",
+          "coupe": false
         },
         {
           "competition": "Promotion Dames",
@@ -256,7 +282,8 @@
           "adversaire": "Chaumont V.C. C",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - C1",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "Promotion Dames",
@@ -265,7 +292,8 @@
           "adversaire": "Jemeppe V.C. B",
           "lieu": "exterieur",
           "salle": "Hall Omnisports de Jemeppe - L4",
-          "adresse": "Rue Saint Martin, 21, 5190 Jemeppe-sur-Sambre"
+          "adresse": "Rue Saint Martin, 21, 5190 Jemeppe-sur-Sambre",
+          "coupe": false
         },
         {
           "competition": "Promotion Dames",
@@ -274,7 +302,8 @@
           "adversaire": "VC Marche A",
           "lieu": "exterieur",
           "salle": "Marche Centre Culturel et Sportif",
-          "adresse": "Chaussée de l'Ourthe, 74, 6900 Marche-en-Famenne"
+          "adresse": "Chaussée de l'Ourthe, 74, 6900 Marche-en-Famenne",
+          "coupe": false
         },
         {
           "competition": "Promotion Dames",
@@ -283,7 +312,8 @@
           "adversaire": "Floor F V.C. A",
           "lieu": "exterieur",
           "salle": "Floreffe Centre sportif - L2",
-          "adresse": "rue Joseph Hanse 6, 5150 Floreffe"
+          "adresse": "rue Joseph Hanse 6, 5150 Floreffe",
+          "coupe": false
         },
         {
           "competition": "Promotion Dames",
@@ -292,7 +322,8 @@
           "adversaire": "Tellinam V.C. A",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - C1",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "Promotion Dames",
@@ -301,7 +332,8 @@
           "adversaire": "Bertrix V.C. Prom D A",
           "lieu": "exterieur",
           "salle": "Bertrix C.S. Communal - L4",
-          "adresse": "44 Rue du Culot, 6880 Bertrix"
+          "adresse": "44 Rue du Culot, 6880 Bertrix",
+          "coupe": false
         },
         {
           "competition": "Promotion Dames",
@@ -310,7 +342,8 @@
           "adversaire": "Champlon V.C. A",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - C1",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "Promotion Dames",
@@ -319,7 +352,8 @@
           "adversaire": "Jemeppe V.C. A",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - C1",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "Promotion Dames",
@@ -328,7 +362,8 @@
           "adversaire": "ANHEE V.C. A",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - C1",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "Promotion Dames",
@@ -337,7 +372,8 @@
           "adversaire": "VC Lesse et Lhomme A",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - C1",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "Promotion Dames",
@@ -346,7 +382,8 @@
           "adversaire": "Chaumont V.C. C",
           "lieu": "exterieur",
           "salle": "Centre Sportif André Docquier - C1",
-          "adresse": "Avenue du Ronvau, 8, 1325 Chaumont-Gistoux"
+          "adresse": "Avenue du Ronvau, 8, 1325 Chaumont-Gistoux",
+          "coupe": false
         },
         {
           "competition": "Promotion Dames",
@@ -355,7 +392,8 @@
           "adversaire": "Jemeppe V.C. B",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - C1",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "Promotion Dames",
@@ -364,7 +402,8 @@
           "adversaire": "VC Marche A",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - C1",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "Promotion Dames",
@@ -373,7 +412,8 @@
           "adversaire": "Champlon V.C. A",
           "lieu": "exterieur",
           "salle": "Champlon Centre sportif - C1",
-          "adresse": "Rue St Quoilin 17, 6971 Champlon"
+          "adresse": "Rue St Quoilin 17, 6971 Champlon",
+          "coupe": false
         },
         {
           "competition": "Promotion Dames",
@@ -382,7 +422,8 @@
           "adversaire": "Floor F V.C. A",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - C1",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "Promotion Dames",
@@ -391,7 +432,8 @@
           "adversaire": "Stabulois Etalle V.C. A",
           "lieu": "exterieur",
           "salle": "Chantemelle Complexe Sportif - C1",
-          "adresse": "Rue de la Gravalle, 57, 6742 Chantemelle"
+          "adresse": "Rue de la Gravalle, 57, 6742 Chantemelle",
+          "coupe": false
         },
         {
           "competition": "Promotion Dames",
@@ -400,7 +442,8 @@
           "adversaire": "Tellinam V.C. A",
           "lieu": "exterieur",
           "salle": "Tellinam Hall Omnisports - C1",
-          "adresse": "Mont du Carillon 24, 6927 Tellin"
+          "adresse": "Mont du Carillon 24, 6927 Tellin",
+          "coupe": false
         },
         {
           "competition": "Promotion Dames",
@@ -409,7 +452,8 @@
           "adversaire": "Bertrix V.C. Prom D A",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - C1",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "Promotion Dames",
@@ -418,7 +462,8 @@
           "adversaire": "ANHEE V.C. A",
           "lieu": "exterieur",
           "salle": "Anhee Complexe Sportif - C1",
-          "adresse": "Chemin Saint-Stampe, 1, 5537 Anhee"
+          "adresse": "Chemin Saint-Stampe, 1, 5537 Anhee",
+          "coupe": false
         }
       ]
     },
@@ -434,7 +479,8 @@
           "adversaire": "Floor F V.C. D",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - C1",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P1 Messieurs",
@@ -443,7 +489,8 @@
           "adversaire": "Floor F V.C. C",
           "lieu": "exterieur",
           "salle": "Floreffe Centre sportif - L2",
-          "adresse": "rue Joseph Hanse 6, 5150 Floreffe"
+          "adresse": "rue Joseph Hanse 6, 5150 Floreffe",
+          "coupe": false
         },
         {
           "competition": "P1 Messieurs",
@@ -452,7 +499,8 @@
           "adversaire": "VC Lesse et Lhomme C",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - C1",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P1 Messieurs",
@@ -461,7 +509,8 @@
           "adversaire": "Ciney V.C. A",
           "lieu": "exterieur",
           "salle": "Ciney Hall Omnisports - C1",
-          "adresse": "Place du Roi Baudouin, 5590 Ciney"
+          "adresse": "Place du Roi Baudouin, 5590 Ciney",
+          "coupe": false
         },
         {
           "competition": "P1 Messieurs",
@@ -470,7 +519,8 @@
           "adversaire": "Walhain V.C. C",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - C1",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P1 Messieurs",
@@ -479,7 +529,8 @@
           "adversaire": "Jemeppe V.C. A",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - C1",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P1 Messieurs",
@@ -488,7 +539,8 @@
           "adversaire": "Gembloux V.C. A",
           "lieu": "exterieur",
           "salle": "Gembloux Complexe Chapelle Dieu - C1",
-          "adresse": "Rue Chapelle Dieu, 48, 5030 Gembloux"
+          "adresse": "Rue Chapelle Dieu, 48, 5030 Gembloux",
+          "coupe": false
         },
         {
           "competition": "P1 Messieurs",
@@ -497,7 +549,8 @@
           "adversaire": "NAMUR VOLLEY C",
           "lieu": "exterieur",
           "salle": "Bouge Centre sportif - L3",
-          "adresse": "Rue des Etourneaux, 28, 5004 Bouge"
+          "adresse": "Rue des Etourneaux, 28, 5004 Bouge",
+          "coupe": false
         },
         {
           "competition": "P1 Messieurs",
@@ -506,7 +559,8 @@
           "adversaire": "Etoile Volley Arsimont A",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - C1",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P1 Messieurs",
@@ -515,7 +569,8 @@
           "adversaire": "Volley Smars Dinant A",
           "lieu": "exterieur",
           "salle": "Dinant Salle Omnisports Jean-Pierre Burny - C1",
-          "adresse": "Rue Caussin, 7, 5500 Dinant"
+          "adresse": "Rue Caussin, 7, 5500 Dinant",
+          "coupe": false
         },
         {
           "competition": "P1 Messieurs",
@@ -524,7 +579,8 @@
           "adversaire": "Floor F V.C. C",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - C1",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P1 Messieurs",
@@ -533,7 +589,8 @@
           "adversaire": "Floor F V.C. D",
           "lieu": "exterieur",
           "salle": "Floreffe Centre sportif - L2",
-          "adresse": "rue Joseph Hanse 6, 5150 Floreffe"
+          "adresse": "rue Joseph Hanse 6, 5150 Floreffe",
+          "coupe": false
         },
         {
           "competition": "P1 Messieurs",
@@ -542,7 +599,8 @@
           "adversaire": "Ciney V.C. A",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - C1",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P1 Messieurs",
@@ -551,7 +609,8 @@
           "adversaire": "VC Lesse et Lhomme C",
           "lieu": "exterieur",
           "salle": "Hall Omnisports de Tellin - C1",
-          "adresse": "Mont du Carillon 24, 6927 Tellin"
+          "adresse": "Mont du Carillon 24, 6927 Tellin",
+          "coupe": false
         },
         {
           "competition": "P1 Messieurs",
@@ -560,7 +619,8 @@
           "adversaire": "Jemeppe V.C. A",
           "lieu": "exterieur",
           "salle": "Hall Omnisports de Jemeppe - L4",
-          "adresse": "Rue Saint Martin, 21, 5190 Jemeppe-sur-Sambre"
+          "adresse": "Rue Saint Martin, 21, 5190 Jemeppe-sur-Sambre",
+          "coupe": false
         },
         {
           "competition": "P1 Messieurs",
@@ -569,7 +629,8 @@
           "adversaire": "Walhain V.C. C",
           "lieu": "exterieur",
           "salle": "Complexe Omnisports Walhain - L2",
-          "adresse": "Rue Chapelle Ste Anne, 13, 1457 Walhain"
+          "adresse": "Rue Chapelle Ste Anne, 13, 1457 Walhain",
+          "coupe": false
         },
         {
           "competition": "P1 Messieurs",
@@ -578,7 +639,8 @@
           "adversaire": "Gembloux V.C. A",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - C1",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P1 Messieurs",
@@ -587,7 +649,8 @@
           "adversaire": "Volley Smars Dinant A",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - C1",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P1 Messieurs",
@@ -596,7 +659,8 @@
           "adversaire": "NAMUR VOLLEY C",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - C1",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P1 Messieurs",
@@ -605,16 +669,18 @@
           "adversaire": "Etoile Volley Arsimont A",
           "lieu": "exterieur",
           "salle": "Auvelais Au relais Sportsa - L2",
-          "adresse": "Rue des Auges, 22, 5060 Auvelais"
+          "adresse": "Rue des Auges, 22, 5060 Auvelais",
+          "coupe": false
         },
         {
-          "competition": "Coupe Messieurs",
+          "competition": "P1 Messieurs",
           "date": "2026-10-31",
           "heure": null,
           "adversaire": "ANHEE V.C. B",
           "lieu": "exterieur",
           "salle": null,
-          "adresse": null
+          "adresse": null,
+          "coupe": true
         }
       ]
     },
@@ -630,7 +696,8 @@
           "adversaire": "Floor F V.C. E",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - L2",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P2 Messieurs",
@@ -639,7 +706,8 @@
           "adversaire": "Doische V. Fagnard A",
           "lieu": "exterieur",
           "salle": "Doische Lycée d'Etat",
-          "adresse": "141 Rue Martin Sandron, 5680 Doische"
+          "adresse": "141 Rue Martin Sandron, 5680 Doische",
+          "coupe": false
         },
         {
           "competition": "P2 Messieurs",
@@ -648,7 +716,8 @@
           "adversaire": "VC Lesse et Lhomme E",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - L2",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P2 Messieurs",
@@ -657,7 +726,8 @@
           "adversaire": "VC Lesse et Lhomme D",
           "lieu": "exterieur",
           "salle": "Hall Omnisports de Tellin - C1",
-          "adresse": "Mont du Carillon 24, 6927 Tellin"
+          "adresse": "Mont du Carillon 24, 6927 Tellin",
+          "coupe": false
         },
         {
           "competition": "P2 Messieurs",
@@ -666,7 +736,8 @@
           "adversaire": "Volley Ohey B",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - L2",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P2 Messieurs",
@@ -675,7 +746,8 @@
           "adversaire": "Gembloux V.C. B",
           "lieu": "exterieur",
           "salle": "Gembloux Complexe Chapelle Dieu - C1",
-          "adresse": "Rue Chapelle Dieu, 48, 5030 Gembloux"
+          "adresse": "Rue Chapelle Dieu, 48, 5030 Gembloux",
+          "coupe": false
         },
         {
           "competition": "P2 Messieurs",
@@ -684,7 +756,8 @@
           "adversaire": "ANHEE V.C. A",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - L2",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P2 Messieurs",
@@ -693,7 +766,8 @@
           "adversaire": "The Dragonflies V.C Profondeville A",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - L2",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P2 Messieurs",
@@ -702,7 +776,8 @@
           "adversaire": "Tellinam V.C. A",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - L2",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P2 Messieurs",
@@ -711,7 +786,8 @@
           "adversaire": "Le Roux R.V.C. A",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - L2",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P2 Messieurs",
@@ -720,7 +796,8 @@
           "adversaire": "Couvin U.S.V. 86 A",
           "lieu": "exterieur",
           "salle": "Couvidome Bernard Pignon - L2",
-          "adresse": "rue de la Foulerie, 12/2, 5660 Couvin"
+          "adresse": "rue de la Foulerie, 12/2, 5660 Couvin",
+          "coupe": false
         },
         {
           "competition": "P2 Messieurs",
@@ -729,7 +806,8 @@
           "adversaire": "Doische V. Fagnard A",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - L2",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P2 Messieurs",
@@ -738,7 +816,8 @@
           "adversaire": "Floor F V.C. E",
           "lieu": "exterieur",
           "salle": "Floreffe Centre sportif - L2",
-          "adresse": "rue Joseph Hanse 6, 5150 Floreffe"
+          "adresse": "rue Joseph Hanse 6, 5150 Floreffe",
+          "coupe": false
         },
         {
           "competition": "P2 Messieurs",
@@ -747,7 +826,8 @@
           "adversaire": "VC Lesse et Lhomme D",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - L2",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P2 Messieurs",
@@ -756,7 +836,8 @@
           "adversaire": "VC Lesse et Lhomme E",
           "lieu": "exterieur",
           "salle": "Jemelle Hall Multisports - L2",
-          "adresse": "rue des Jardins, 46, 5580 Jemelle"
+          "adresse": "rue des Jardins, 46, 5580 Jemelle",
+          "coupe": false
         },
         {
           "competition": "P2 Messieurs",
@@ -765,7 +846,8 @@
           "adversaire": "Gembloux V.C. B",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - L2",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P2 Messieurs",
@@ -774,7 +856,8 @@
           "adversaire": "Volley Ohey B",
           "lieu": "exterieur",
           "salle": "Ohey Centre Sportif Communal - L2",
-          "adresse": "Voie du Rauyisse, 1, 5350 Ohey"
+          "adresse": "Voie du Rauyisse, 1, 5350 Ohey",
+          "coupe": false
         },
         {
           "competition": "P2 Messieurs",
@@ -783,7 +866,8 @@
           "adversaire": "ANHEE V.C. A",
           "lieu": "exterieur",
           "salle": "Anhee Complexe Sportif - L2",
-          "adresse": "Chemin Saint-Stampe, 1, 5537 Anhee"
+          "adresse": "Chemin Saint-Stampe, 1, 5537 Anhee",
+          "coupe": false
         },
         {
           "competition": "P2 Messieurs",
@@ -792,7 +876,8 @@
           "adversaire": "Couvin U.S.V. 86 A",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - L2",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P2 Messieurs",
@@ -801,7 +886,8 @@
           "adversaire": "The Dragonflies V.C Profondeville A",
           "lieu": "exterieur",
           "salle": "Hall Sportif Collège Notre Dame de la Paix - C1",
-          "adresse": "Allée de la Closerie, 5101 Erpent"
+          "adresse": "Allée de la Closerie, 5101 Erpent",
+          "coupe": false
         },
         {
           "competition": "P2 Messieurs",
@@ -810,7 +896,8 @@
           "adversaire": "Tellinam V.C. A",
           "lieu": "exterieur",
           "salle": "Tellinam Hall Omnisports - C1",
-          "adresse": "Mont du Carillon 24, 6927 Tellin"
+          "adresse": "Mont du Carillon 24, 6927 Tellin",
+          "coupe": false
         },
         {
           "competition": "P2 Messieurs",
@@ -819,16 +906,18 @@
           "adversaire": "Le Roux R.V.C. A",
           "lieu": "exterieur",
           "salle": "Le Roux salle Michel Dargent - C1",
-          "adresse": "rue Grande, 33, 5070 Le Roux"
+          "adresse": "rue Grande, 33, 5070 Le Roux",
+          "coupe": false
         },
         {
-          "competition": "Coupe Messieurs",
+          "competition": "P2 Messieurs",
           "date": "2026-10-31",
           "heure": null,
           "adversaire": "VC Lesse et Lhomme B",
           "lieu": "domicile",
           "salle": null,
-          "adresse": null
+          "adresse": null,
+          "coupe": true
         }
       ]
     },
@@ -844,7 +933,8 @@
           "adversaire": "NAMUR VOLLEY C",
           "lieu": "exterieur",
           "salle": "Bouge Centre sportif - L3",
-          "adresse": "Rue des Etourneaux, 28, 5004 Bouge"
+          "adresse": "Rue des Etourneaux, 28, 5004 Bouge",
+          "coupe": false
         },
         {
           "competition": "P2 Dames",
@@ -853,7 +943,8 @@
           "adversaire": "The Dragonflies V.C Profondeville A",
           "lieu": "exterieur",
           "salle": "Profondeville Centre Sportif de la Hulle - C1",
-          "adresse": "Avenue Roquebrune Cap Martin, 32, 5170 Profondeville"
+          "adresse": "Avenue Roquebrune Cap Martin, 32, 5170 Profondeville",
+          "coupe": false
         },
         {
           "competition": "P2 Dames",
@@ -862,7 +953,8 @@
           "adversaire": "Ciney V.C. C",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - L2",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P2 Dames",
@@ -871,7 +963,8 @@
           "adversaire": "VC Lesse et Lhomme C",
           "lieu": "exterieur",
           "salle": "Hall Omnisports de Tellin - C1",
-          "adresse": "Mont du Carillon 24, 6927 Tellin"
+          "adresse": "Mont du Carillon 24, 6927 Tellin",
+          "coupe": false
         },
         {
           "competition": "P2 Dames",
@@ -880,7 +973,8 @@
           "adversaire": "Volley Ohey C",
           "lieu": "exterieur",
           "salle": "Ohey Centre Sportif Communal - L2",
-          "adresse": "Voie du Rauyisse, 1, 5350 Ohey"
+          "adresse": "Voie du Rauyisse, 1, 5350 Ohey",
+          "coupe": false
         },
         {
           "competition": "P2 Dames",
@@ -889,7 +983,8 @@
           "adversaire": "Jemeppe V.C. C",
           "lieu": "exterieur",
           "salle": "Jemeppe Hall Omnisports - L2",
-          "adresse": "Rue Saint Martin, 21, 5190 Jemeppe-sur-Sambre"
+          "adresse": "Rue Saint Martin, 21, 5190 Jemeppe-sur-Sambre",
+          "coupe": false
         },
         {
           "competition": "P2 Dames",
@@ -898,7 +993,8 @@
           "adversaire": "ANHEE V.C. B",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - L2",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P2 Dames",
@@ -907,7 +1003,8 @@
           "adversaire": "Gembloux V.C. A",
           "lieu": "exterieur",
           "salle": "Gembloux Complexe Chapelle Dieu - C1",
-          "adresse": "Rue Chapelle Dieu, 48, 5030 Gembloux"
+          "adresse": "Rue Chapelle Dieu, 48, 5030 Gembloux",
+          "coupe": false
         },
         {
           "competition": "P2 Dames",
@@ -916,7 +1013,8 @@
           "adversaire": "Etoile Volley Arsimont A",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - L2",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P2 Dames",
@@ -925,7 +1023,8 @@
           "adversaire": "Le Roux R.V.C. B",
           "lieu": "exterieur",
           "salle": "Le Roux salle Michel Dargent - C1",
-          "adresse": "rue Grande, 33, 5070 Le Roux"
+          "adresse": "rue Grande, 33, 5070 Le Roux",
+          "coupe": false
         },
         {
           "competition": "P2 Dames",
@@ -934,7 +1033,8 @@
           "adversaire": "Romedenne Smash V.C. C",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - L2",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P2 Dames",
@@ -943,7 +1043,8 @@
           "adversaire": "The Dragonflies V.C Profondeville A",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - L2",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P2 Dames",
@@ -952,7 +1053,8 @@
           "adversaire": "NAMUR VOLLEY C",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - L2",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P2 Dames",
@@ -961,7 +1063,8 @@
           "adversaire": "VC Lesse et Lhomme C",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - L2",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P2 Dames",
@@ -970,7 +1073,8 @@
           "adversaire": "Ciney V.C. C",
           "lieu": "exterieur",
           "salle": "Ciney Hall Omnisports - L2",
-          "adresse": "Place du Roi Baudouin, 5590 Ciney"
+          "adresse": "Place du Roi Baudouin, 5590 Ciney",
+          "coupe": false
         },
         {
           "competition": "P2 Dames",
@@ -979,7 +1083,8 @@
           "adversaire": "Jemeppe V.C. C",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - L2",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P2 Dames",
@@ -988,7 +1093,8 @@
           "adversaire": "Volley Ohey C",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - L2",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P2 Dames",
@@ -997,7 +1103,8 @@
           "adversaire": "ANHEE V.C. B",
           "lieu": "exterieur",
           "salle": "Anhee Complexe Sportif - L2",
-          "adresse": "Chemin Saint-Stampe, 1, 5537 Anhee"
+          "adresse": "Chemin Saint-Stampe, 1, 5537 Anhee",
+          "coupe": false
         },
         {
           "competition": "P2 Dames",
@@ -1006,7 +1113,8 @@
           "adversaire": "Romedenne Smash V.C. C",
           "lieu": "exterieur",
           "salle": "Philippeville Complexe Sportif - L2",
-          "adresse": "rue de la Gendarmerie 30, 5600 Philippeville"
+          "adresse": "rue de la Gendarmerie 30, 5600 Philippeville",
+          "coupe": false
         },
         {
           "competition": "P2 Dames",
@@ -1015,7 +1123,8 @@
           "adversaire": "Gembloux V.C. A",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - L2",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P2 Dames",
@@ -1024,7 +1133,8 @@
           "adversaire": "Etoile Volley Arsimont A",
           "lieu": "exterieur",
           "salle": null,
-          "adresse": null
+          "adresse": null,
+          "coupe": false
         },
         {
           "competition": "P2 Dames",
@@ -1033,25 +1143,28 @@
           "adversaire": "Le Roux R.V.C. B",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - L2",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
-          "competition": "Coupe Dames",
+          "competition": "P2 Dames",
           "date": "2026-09-05",
           "heure": "15:00",
           "adversaire": "ANHEE V.C. C",
           "lieu": "exterieur",
           "salle": "Anhee Complexe Sportif - L2",
-          "adresse": "Chemin Saint-Stampe, 1, 5537 Anhee"
+          "adresse": "Chemin Saint-Stampe, 1, 5537 Anhee",
+          "coupe": true
         },
         {
-          "competition": "Coupe Dames",
+          "competition": "P2 Dames",
           "date": "2026-09-05",
-          "heure": "15:00",
+          "heure": "?",
           "adversaire": "Floor F V.C. E",
           "lieu": "domicile",
           "salle": "Anhee Complexe Sportif - L4",
-          "adresse": "1 Chemin Saint-Stampe, 5537 Anhée"
+          "adresse": "1 Chemin Saint-Stampe, 5537 Anhée",
+          "coupe": true
         }
       ]
     },
@@ -1067,7 +1180,8 @@
           "adversaire": "Gedinne V.C. C",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - L2",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P4 Dames",
@@ -1076,7 +1190,8 @@
           "adversaire": "Couvin U.S.V. 86 A",
           "lieu": "exterieur",
           "salle": "Couvidome Bernard Pignon - L2",
-          "adresse": "rue de la Foulerie, 12/2, 5660 Couvin"
+          "adresse": "rue de la Foulerie, 12/2, 5660 Couvin",
+          "coupe": false
         },
         {
           "competition": "P4 Dames",
@@ -1085,7 +1200,8 @@
           "adversaire": "VC Lesse et Lhomme E",
           "lieu": "exterieur",
           "salle": "Hall Omnisports de Tellin - C1",
-          "adresse": "Mont du Carillon 24, 6927 Tellin"
+          "adresse": "Mont du Carillon 24, 6927 Tellin",
+          "coupe": false
         },
         {
           "competition": "P4 Dames",
@@ -1094,7 +1210,8 @@
           "adversaire": "Jemeppe V.C. F",
           "lieu": "exterieur",
           "salle": "Hall Omnisports de Jemeppe - L4",
-          "adresse": "Rue Saint Martin, 21, 5190 Jemeppe-sur-Sambre"
+          "adresse": "Rue Saint Martin, 21, 5190 Jemeppe-sur-Sambre",
+          "coupe": false
         },
         {
           "competition": "P4 Dames",
@@ -1103,7 +1220,8 @@
           "adversaire": "Doische V. Fagnard C",
           "lieu": "exterieur",
           "salle": "Doische Lycée d'Etat",
-          "adresse": "141 Rue Martin Sandron, 5680 Doische"
+          "adresse": "141 Rue Martin Sandron, 5680 Doische",
+          "coupe": false
         },
         {
           "competition": "P4 Dames",
@@ -1112,7 +1230,8 @@
           "adversaire": "Gembloux V.C. B",
           "lieu": "exterieur",
           "salle": "Gembloux Complexe Chapelle Dieu - C1",
-          "adresse": "Rue Chapelle Dieu, 48, 5030 Gembloux"
+          "adresse": "Rue Chapelle Dieu, 48, 5030 Gembloux",
+          "coupe": false
         },
         {
           "competition": "P4 Dames",
@@ -1121,7 +1240,8 @@
           "adversaire": "Tellinam V.C. D",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - L2",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P4 Dames",
@@ -1130,7 +1250,8 @@
           "adversaire": "Ciney V.C. F",
           "lieu": "exterieur",
           "salle": "Ciney Hall Omnisports - L2",
-          "adresse": "Place du Roi Baudouin, 5590 Ciney"
+          "adresse": "Place du Roi Baudouin, 5590 Ciney",
+          "coupe": false
         },
         {
           "competition": "P4 Dames",
@@ -1139,7 +1260,8 @@
           "adversaire": "Romedenne Smash V.C. D",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - L2",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P4 Dames",
@@ -1148,7 +1270,8 @@
           "adversaire": "Gedinne V.C. C",
           "lieu": "exterieur",
           "salle": "Gedinne C. S. de la Houille - C1",
-          "adresse": "Rue de la Morie, 7, 5575 Gedinne"
+          "adresse": "Rue de la Morie, 7, 5575 Gedinne",
+          "coupe": false
         },
         {
           "competition": "P4 Dames",
@@ -1157,7 +1280,8 @@
           "adversaire": "VC Lesse et Lhomme E",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - L2",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P4 Dames",
@@ -1166,7 +1290,8 @@
           "adversaire": "Couvin U.S.V. 86 A",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - L2",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P4 Dames",
@@ -1175,7 +1300,8 @@
           "adversaire": "Jemeppe V.C. F",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - L2",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P4 Dames",
@@ -1184,7 +1310,8 @@
           "adversaire": "Doische V. Fagnard C",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - L2",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P4 Dames",
@@ -1193,7 +1320,8 @@
           "adversaire": "Romedenne Smash V.C. D",
           "lieu": "exterieur",
           "salle": "Philippeville Complexe Sportif - L2",
-          "adresse": "rue de la Gendarmerie 30, 5600 Philippeville"
+          "adresse": "rue de la Gendarmerie 30, 5600 Philippeville",
+          "coupe": false
         },
         {
           "competition": "P4 Dames",
@@ -1202,7 +1330,8 @@
           "adversaire": "Gembloux V.C. B",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - L2",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
           "competition": "P4 Dames",
@@ -1211,7 +1340,8 @@
           "adversaire": "Tellinam V.C. D",
           "lieu": "exterieur",
           "salle": "Tellinam Hall Omnisports - C1",
-          "adresse": "Mont du Carillon 24, 6927 Tellin"
+          "adresse": "Mont du Carillon 24, 6927 Tellin",
+          "coupe": false
         },
         {
           "competition": "P4 Dames",
@@ -1220,25 +1350,28 @@
           "adversaire": "Ciney V.C. F",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - L2",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": false
         },
         {
-          "competition": "Coupe Dames",
+          "competition": "P4 Dames",
           "date": "2026-09-05",
           "heure": "10:30",
           "adversaire": "Gedinne V.C. C",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - L2",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": true
         },
         {
-          "competition": "Coupe Dames",
+          "competition": "P4 Dames",
           "date": "2026-09-05",
           "heure": "12:00",
           "adversaire": "Gembloux V.C. A",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - L4",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "adresse": "rue de la Couture, 46, 5570 Beauraing",
+          "coupe": true
         }
       ]
     },
