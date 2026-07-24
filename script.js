@@ -88,7 +88,8 @@
         <tr class="${cls}">
           <td data-label="Date">${formaterDate(match.date)}</td>
           <td data-label="Heure">${match.heure || "—"}</td>
-          <td data-label="Compétition">${match.competition || "—"}</td>
+          <td data-label="Équipe">${match.competition || "—"}</td>
+          <td data-label="Coupe">${match.coupe ? '<span class="badge coupe">Coupe</span>' : ""}</td>
           <td data-label="Adversaire">${match.adversaire || "—"}</td>
           <td data-label="Lieu"><span class="badge ${badgeCls}">${badgeTxt}</span></td>
           <td data-label="Salle">${match.salle || "à confirmer"}</td>
@@ -106,7 +107,7 @@
 
       corps.innerHTML = matchs.length
         ? matchs.map(rendreLigne).join("")
-        : `<tr><td colspan="6">Aucun match à venir pour cette équipe pour l'instant.</td></tr>`;
+        : `<tr><td colspan="7">Aucun match à venir pour cette équipe pour l'instant.</td></tr>`;
     }
 
     select.addEventListener("change", () => afficherEquipe(select.value));
@@ -149,7 +150,7 @@
       const panneau = document.getElementById("panneau-prochain-match");
       if (panneau) panneau.innerHTML = `<p class="panneau-eyebrow">Horaires indisponibles pour le moment</p>`;
       const corps = document.getElementById("corps-calendrier");
-      if (corps) corps.innerHTML = `<tr><td colspan="6">Aucune donnée disponible.</td></tr>`;
+      if (corps) corps.innerHTML = `<tr><td colspan="7">Aucune donnée disponible.</td></tr>`;
     }
   }
 
