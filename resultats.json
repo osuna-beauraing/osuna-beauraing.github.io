@@ -1,6 +1,6 @@
 {
   "derniere_maj": "2026-07-25",
-  "_note": "Tous les week-ends de la saison sont pre-crees ici (bases sur les dates de horaires.json), mais sans aucun resultat pour l'instant -- ils seront ajoutes via l'outil d'encodage (encodage-resultats.html) au fil de la saison.",
+  "_note": "Tous les week-ends de la saison 2026-2027 sont pre-crees ici (bases sur horaires.json, limites a la periode reelle du championnat), mais sans aucun resultat pour l'instant -- ils seront ajoutes via l'outil d'encodage (encodage-resultats.html) au fil de la saison.",
   "weekends": [
     {
       "id": "2026-09-05",
@@ -125,11 +125,6 @@
     {
       "id": "2027-04-17",
       "label": "17-18 avril 2027",
-      "matchs": []
-    },
-    {
-      "id": "2027-09-25",
-      "label": "25-26 septembre 2027",
       "matchs": []
     }
   ]

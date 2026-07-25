@@ -159,7 +159,7 @@
     const corps = document.getElementById("corps-resultats");
     const caption = document.getElementById("caption-resultats");
 
-    const weekends = [...donnees.weekends].sort((a, b) => b.id.localeCompare(a.id)); // plus récent en premier
+    const weekends = [...donnees.weekends].sort((a, b) => a.id.localeCompare(b.id)); // ordre chronologique
 
     select.innerHTML = weekends
       .map((we) => `<option value="${we.id}">${we.label}</option>`)
