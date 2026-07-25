@@ -174,7 +174,7 @@
 
       return `
         <tr>
-          <td data-label="Équipe">${m.equipe}</td>
+          <td data-label="Équipe">${m.equipe}${m.type ? ` <span style="color:var(--creme-dim); font-size:0.82em;">(${m.type})</span>` : ""}</td>
           <td data-label="Adversaire">${m.adversaire}</td>
           <td data-label="Lieu"><span class="badge ${badgeCls}">${badgeTxt}</span></td>
           <td data-label="Score">

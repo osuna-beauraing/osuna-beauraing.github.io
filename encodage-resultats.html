@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Osuna Volley Beauraing — Résultats</title>
-<meta name="description" content="Résultats des matchs du week-end, toutes équipes.">
+<title>Osuna Volley Beauraing — Encodage des résultats</title>
+<meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -21,9 +21,9 @@
       </div>
     </div>
     <nav class="principale" aria-label="Navigation principale">
-      <a href="index.html" >Actualités</a>
+      <a href="index.html">Actualités</a>
       <a href="horaires.html">Horaires</a>
-      <a href="resultats.html" aria-current="page">Résultats</a>
+      <a href="resultats.html">Résultats</a>
       <a href="licences.html">Licences</a>
       <a href="comite.html">Comité</a>
       <a href="sponsoring.html">Sponsoring</a>
@@ -32,41 +32,346 @@
 </header>
 
 <main class="wrap">
-  <h2 class="section-titre" style="margin-top:0">Résultats du week-end</h2>
+  <h2 class="section-titre" style="margin-top:0">Encoder les résultats du week-end</h2>
+  <p class="comite-intro">
+    Outil personnel — pas besoin de compte, rien n'est envoyé nulle part. Tu remplis les matchs du week-end
+    ci-dessous, puis tu télécharges le fichier <code>resultats.json</code> mis à jour, que tu uploades sur GitHub
+    à la place de l'ancien (comme pour les autres fichiers du site).
+  </p>
 
-  <p class="maj-info" id="maj-info-resultats">Chargement des résultats…</p>
+  <div class="panneau-score" style="display:block; padding:20px 22px;">
+    <p class="panneau-eyebrow">1. Date du week-end</p>
+    <label class="equipe-label" for="date-weekend">Date du samedi</label>
+    <input type="date" id="date-weekend" class="selecteur-equipe" style="max-width:220px;">
+  </div>
 
-  <label class="equipe-label" for="selecteur-weekend">Week-end</label>
-  <select id="selecteur-weekend" class="selecteur-equipe" aria-label="Choisir un week-end">
-    <option>Chargement…</option>
-  </select>
+  <h2 class="section-titre">2. Ajouter un match</h2>
 
-  <table class="calendrier" id="table-resultats">
-    <caption id="caption-resultats"></caption>
+  <div class="panneau-score" style="display:block; padding:20px 22px;">
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px,1fr)); gap:14px;">
+      <div>
+        <label class="equipe-label" for="f-equipe">Équipe</label>
+        <select id="f-equipe" class="selecteur-equipe"></select>
+      </div>
+      <div>
+        <label class="equipe-label" for="f-type">Match</label>
+        <select id="f-type" class="selecteur-equipe">
+          <option value="Premier">Premier</option>
+          <option value="Réserve">Réserve</option>
+        </select>
+      </div>
+      <div>
+        <label class="equipe-label" for="f-adversaire">Adversaire</label>
+        <input type="text" id="f-adversaire" class="selecteur-equipe" placeholder="Nom de l'adversaire">
+      </div>
+      <div>
+        <label class="equipe-label" for="f-lieu">Lieu</label>
+        <select id="f-lieu" class="selecteur-equipe">
+          <option value="domicile">Domicile</option>
+          <option value="exterieur">Extérieur</option>
+        </select>
+      </div>
+      <div>
+        <label class="equipe-label" for="f-coupe">Match de coupe ?</label>
+        <select id="f-coupe" class="selecteur-equipe">
+          <option value="non">Non</option>
+          <option value="oui">Oui</option>
+        </select>
+      </div>
+    </div>
+
+    <p class="equipe-label" style="margin-top:18px;">Score par set (laisse vide un set non joué)</p>
+    <div id="grille-sets" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(150px,1fr)); gap:14px;">
+      <div id="bloc-set-1">
+        <label class="equipe-label" for="set-1-osuna">Set 1 (à 25) — Osuna / Adversaire</label>
+        <div style="display:flex; gap:6px;">
+          <input type="number" id="set-1-osuna" class="selecteur-equipe" min="0" max="99" style="margin-bottom:0;">
+          <input type="number" id="set-1-adv" class="selecteur-equipe" min="0" max="99" style="margin-bottom:0;">
+        </div>
+      </div>
+      <div id="bloc-set-2">
+        <label class="equipe-label" for="set-2-osuna">Set 2 (à 25) — Osuna / Adversaire</label>
+        <div style="display:flex; gap:6px;">
+          <input type="number" id="set-2-osuna" class="selecteur-equipe" min="0" max="99" style="margin-bottom:0;">
+          <input type="number" id="set-2-adv" class="selecteur-equipe" min="0" max="99" style="margin-bottom:0;">
+        </div>
+      </div>
+      <div id="bloc-set-3">
+        <label class="equipe-label" for="set-3-osuna" id="label-set-3">Set 3 (à 25) — Osuna / Adversaire</label>
+        <div style="display:flex; gap:6px;">
+          <input type="number" id="set-3-osuna" class="selecteur-equipe" min="0" max="99" style="margin-bottom:0;">
+          <input type="number" id="set-3-adv" class="selecteur-equipe" min="0" max="99" style="margin-bottom:0;">
+        </div>
+      </div>
+      <div id="bloc-set-4">
+        <label class="equipe-label" for="set-4-osuna">Set 4 (à 25) — Osuna / Adversaire</label>
+        <div style="display:flex; gap:6px;">
+          <input type="number" id="set-4-osuna" class="selecteur-equipe" min="0" max="99" style="margin-bottom:0;">
+          <input type="number" id="set-4-adv" class="selecteur-equipe" min="0" max="99" style="margin-bottom:0;">
+        </div>
+      </div>
+      <div id="bloc-set-5">
+        <label class="equipe-label" for="set-5-osuna">Set 5 (décisif, à 15) — Osuna / Adversaire</label>
+        <div style="display:flex; gap:6px;">
+          <input type="number" id="set-5-osuna" class="selecteur-equipe" min="0" max="99" style="margin-bottom:0;">
+          <input type="number" id="set-5-adv" class="selecteur-equipe" min="0" max="99" style="margin-bottom:0;">
+        </div>
+      </div>
+    </div>
+    <p style="font-size:0.78rem; color:var(--creme-dim); margin-top:4px;">
+      Réserve : 2 sets à 25, 3<sup>e</sup> set décisif à 15 · Premier : 4 sets à 25, 5<sup>e</sup> set décisif à 15
+    </p>
+    <p id="score-calcule" style="font-size:0.85rem; color:var(--creme-dim); margin-top:10px;">Score (sets) : — </p>
+
+    <button id="btn-ajouter" class="bouton-abonnement" style="margin-top:10px; border:none; cursor:pointer;">+ Ajouter ce match à la liste</button>
+    <p id="message-ajout" style="font-size:0.85rem; color:var(--creme-dim); margin-top:8px;"></p>
+  </div>
+
+  <h2 class="section-titre">3. Matchs de ce week-end (à télécharger ensuite)</h2>
+
+  <table class="calendrier" id="table-preview">
     <thead>
       <tr>
         <th scope="col">Équipe</th>
         <th scope="col">Adversaire</th>
         <th scope="col">Lieu</th>
         <th scope="col">Score</th>
+        <th scope="col"></th>
       </tr>
     </thead>
-    <tbody id="corps-resultats">
-      <tr><td colspan="4">Chargement…</td></tr>
+    <tbody id="corps-preview">
+      <tr><td colspan="5">Aucun match ajouté pour l'instant.</td></tr>
     </tbody>
   </table>
 
-  <p style="color:var(--creme-dim); font-size:0.85rem; margin-top:24px;">
-    Tu encodes les résultats du week-end ? <a href="encodage-resultats.html">Ouvrir l'outil d'encodage</a> — toujours le même lien, à réutiliser chaque week-end.
-  </p>
+  <div style="margin-top:24px;">
+    <button id="btn-generer" class="bouton-abonnement" style="border:none; cursor:pointer; font-size:0.95rem; padding:12px 22px;">
+      ⬇ Télécharger resultats.json mis à jour
+    </button>
+    <button id="btn-reset" style="margin-left:10px; background:none; border:1px solid var(--ligne); color:var(--creme-dim); border-radius:4px; padding:11px 18px; cursor:pointer; font-family:var(--police-affiche); text-transform:uppercase; font-size:0.85rem;">
+      Réinitialiser
+    </button>
+    <p id="message-generer" style="font-size:0.85rem; color:var(--creme-dim); margin-top:10px;"></p>
+  </div>
+
 </main>
 
 <footer class="site">
   <div class="wrap">
-    Osuna Volley Beauraing · Site géré par le club
+    Osuna Volley Beauraing · Outil interne — <a href="resultats.html">retour à la page Résultats</a>
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script>
+(function () {
+  const EQUIPES = [
+    { id: "prom-h", nom: "Promotion Messieurs" },
+    { id: "prom-d", nom: "Promotion Dames" },
+    { id: "p1-h", nom: "P1 Messieurs" },
+    { id: "p2-h", nom: "P2 Messieurs" },
+    { id: "p2-d", nom: "P2 Dames" },
+    { id: "p4-d", nom: "P4 Dames" },
+    { id: "u13-d", nom: "U13 Filles" },
+  ];
+
+  const selEquipe = document.getElementById("f-equipe");
+  selEquipe.innerHTML = EQUIPES.map(e => `<option value="${e.nom}">${e.nom}</option>`).join("");
+
+  const dateInput = document.getElementById("date-weekend");
+  const todayStr = new Date().toISOString().slice(0, 10);
+  dateInput.value = todayStr;
+
+  let matchsSession = [];
+
+  const selType = document.getElementById("f-type");
+
+  function appliquerTypeMatch() {
+    const estReserve = selType.value === "Réserve";
+    document.getElementById("bloc-set-4").style.display = estReserve ? "none" : "";
+    document.getElementById("bloc-set-5").style.display = estReserve ? "none" : "";
+    document.getElementById("label-set-3").textContent = estReserve
+      ? "Set 3 (décisif, à 15) — Osuna / Adversaire"
+      : "Set 3 (à 25) — Osuna / Adversaire";
+    if (estReserve) {
+      document.getElementById("set-4-osuna").value = "";
+      document.getElementById("set-4-adv").value = "";
+      document.getElementById("set-5-osuna").value = "";
+      document.getElementById("set-5-adv").value = "";
+    }
+    majAffichageScore();
+  }
+
+  selType.addEventListener("change", appliquerTypeMatch);
+
+  function lireSets() {
+    const sets = [];
+    for (let i = 1; i <= 5; i++) {
+      const o = document.getElementById(`set-${i}-osuna`).value;
+      const a = document.getElementById(`set-${i}-adv`).value;
+      if (o !== "" && a !== "") {
+        sets.push({ osuna: parseInt(o, 10), adv: parseInt(a, 10) });
+      }
+    }
+    return sets;
+  }
+
+  function calculerScore(sets) {
+    let scoreOsuna = 0;
+    let scoreAdv = 0;
+    sets.forEach((s) => {
+      if (s.osuna > s.adv) scoreOsuna++;
+      else if (s.adv > s.osuna) scoreAdv++;
+    });
+    return { scoreOsuna, scoreAdv };
+  }
+
+  function majAffichageScore() {
+    const sets = lireSets();
+    const { scoreOsuna, scoreAdv } = calculerScore(sets);
+    const el = document.getElementById("score-calcule");
+    el.textContent = sets.length
+      ? `Score (sets) : ${scoreOsuna} - ${scoreAdv}`
+      : "Score (sets) : — (remplis au moins un set)";
+  }
+
+  document.getElementById("grille-sets").addEventListener("input", majAffichageScore);
+
+  function rendrePreview() {
+    const corps = document.getElementById("corps-preview");
+    if (matchsSession.length === 0) {
+      corps.innerHTML = `<tr><td colspan="5">Aucun match ajouté pour l'instant.</td></tr>`;
+      return;
+    }
+    corps.innerHTML = matchsSession.map((m, i) => `
+      <tr>
+        <td data-label="Équipe">${m.equipe} <span style="color:var(--creme-dim); font-size:0.85em;">(${m.type})</span>${m.coupe ? " · Coupe" : ""}</td>
+        <td data-label="Adversaire">${m.adversaire}</td>
+        <td data-label="Lieu">${m.lieu === "domicile" ? "🏠 Domicile" : "🚌 Extérieur"}</td>
+        <td data-label="Score">${m.score_osuna} - ${m.score_adversaire}${m.detail ? `<div style="font-size:0.78rem; color:var(--creme-dim);">${m.detail}</div>` : ""}</td>
+        <td><button data-i="${i}" class="btn-supprimer" style="background:none;border:none;color:var(--ambre);cursor:pointer;">✕</button></td>
+      </tr>`).join("");
+
+    document.querySelectorAll(".btn-supprimer").forEach(btn => {
+      btn.addEventListener("click", () => {
+        matchsSession.splice(parseInt(btn.dataset.i, 10), 1);
+        rendrePreview();
+      });
+    });
+  }
+
+  document.getElementById("btn-ajouter").addEventListener("click", () => {
+    const equipe = selEquipe.value;
+    const type = document.getElementById("f-type").value;
+    const adversaire = document.getElementById("f-adversaire").value.trim();
+    const lieu = document.getElementById("f-lieu").value;
+    const coupe = document.getElementById("f-coupe").value === "oui";
+    const sets = lireSets();
+
+    const msg = document.getElementById("message-ajout");
+    if (!adversaire || sets.length === 0) {
+      msg.textContent = "Merci de remplir au moins l'adversaire et le score d'un set.";
+      msg.style.color = "var(--ambre)";
+      return;
+    }
+
+    const { scoreOsuna, scoreAdv } = calculerScore(sets);
+    const detail = sets.map(s => `${s.osuna}-${s.adv}`).join(", ");
+
+    matchsSession.push({
+      equipe,
+      type,
+      adversaire,
+      lieu,
+      score_osuna: scoreOsuna,
+      score_adversaire: scoreAdv,
+      coupe,
+      detail,
+    });
+
+    document.getElementById("f-adversaire").value = "";
+    for (let i = 1; i <= 5; i++) {
+      document.getElementById(`set-${i}-osuna`).value = "";
+      document.getElementById(`set-${i}-adv`).value = "";
+    }
+    majAffichageScore();
+    msg.textContent = "Match ajouté à la liste ci-dessous.";
+    msg.style.color = "var(--creme-dim)";
+    rendrePreview();
+  });
+
+  document.getElementById("btn-reset").addEventListener("click", () => {
+    matchsSession = [];
+    rendrePreview();
+    document.getElementById("message-generer").textContent = "";
+  });
+
+  function formaterLabelWeekend(dateStr) {
+    const MOIS = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
+    const d = new Date(dateStr + "T00:00:00");
+    const dimanche = new Date(d);
+    dimanche.setDate(d.getDate() + 1);
+    return `${d.getDate()}-${dimanche.getDate()} ${MOIS[d.getMonth()]} ${d.getFullYear()}`;
+  }
+
+  document.getElementById("btn-generer").addEventListener("click", async () => {
+    const msg = document.getElementById("message-generer");
+    if (matchsSession.length === 0) {
+      msg.textContent = "Ajoute au moins un match avant de générer le fichier.";
+      msg.style.color = "var(--ambre)";
+      return;
+    }
+
+    let donnees;
+    try {
+      const reponse = await fetch("resultats.json", { cache: "no-store" });
+      donnees = reponse.ok ? await reponse.json() : { weekends: [] };
+    } catch (e) {
+      donnees = { weekends: [] };
+    }
+    if (!donnees.weekends) donnees.weekends = [];
+
+    const idWeekend = dateInput.value;
+    const labelWeekend = formaterLabelWeekend(idWeekend);
+    const matchsAEnvoyer = matchsSession.map(m => ({
+      equipe: m.equipe,
+      type: m.type,
+      adversaire: m.adversaire,
+      lieu: m.lieu,
+      score_osuna: m.score_osuna,
+      score_adversaire: m.score_adversaire,
+      coupe: m.coupe,
+      detail: m.detail,
+    }));
+
+    const existant = donnees.weekends.find(w => w.id === idWeekend);
+    if (existant) {
+      existant.matchs = existant.matchs.concat(matchsAEnvoyer);
+      existant.label = labelWeekend;
+    } else {
+      donnees.weekends.push({ id: idWeekend, label: labelWeekend, matchs: matchsAEnvoyer });
+    }
+
+    donnees.derniere_maj = todayStr;
+    delete donnees._note;
+
+    const blob = new Blob([JSON.stringify(donnees, null, 2)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "resultats.json";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+
+    msg.textContent = "Fichier téléchargé — remplace maintenant resultats.json sur GitHub avec celui-ci.";
+    msg.style.color = "var(--vert-domicile)";
+  });
+
+  rendrePreview();
+  appliquerTypeMatch();
+})();
+</script>
+
 </body>
 </html>
