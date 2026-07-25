@@ -250,60 +250,17 @@ footer.site {
 .actu-carte h3 { margin: 4px 0 6px; font-size: 1.05rem; }
 .actu-carte p { margin: 0; color: var(--creme-dim); }
 
-.fb-section {
-  display: grid;
-  grid-template-columns: minmax(280px, 500px) 1fr;
-  gap: 22px;
-  align-items: start;
-  margin-bottom: 28px;
-}
-
 .fb-embed-wrap {
   background: var(--marine-800);
   border: 1px solid var(--ligne);
   border-radius: 6px;
   padding: 16px;
+  margin-bottom: 28px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  width: 532px;          /* widget Facebook (500px max) + le padding : ≈ la moitié du site, collé à gauche */
+  max-width: 100%;       /* sur mobile, la boîte ne déborde jamais de l'écran */
   overflow: hidden;
-}
-
-.fb-side-panel {
-  background: var(--marine-800);
-  border: 1px solid var(--ligne);
-  border-radius: 6px;
-  padding: 22px 24px;
-  align-self: stretch;
-}
-
-.fb-liens-rapides {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.fb-liens-rapides li a {
-  display: block;
-  padding: 10px 12px;
-  border-radius: 4px;
-  border: 1px solid var(--ligne);
-  color: var(--creme);
-  text-decoration: none;
-  font-size: 0.92rem;
-}
-
-.fb-liens-rapides li a:hover {
-  border-color: var(--ambre);
-  color: var(--ambre-vif);
-}
-
-@media (max-width: 720px) {
-  .fb-section {
-    grid-template-columns: 1fr;
-  }
 }
 
 /* ---------- horaires ---------- */
