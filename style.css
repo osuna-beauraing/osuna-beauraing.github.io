@@ -155,6 +155,18 @@ footer.site {
   margin: 0 0 14px;
 }
 
+.panneau-titre-prochain {
+  position: relative;
+  font-family: var(--police-affiche);
+  text-transform: uppercase;
+  font-size: clamp(1.3rem, 4vw, 1.9rem);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: var(--ambre);
+  margin: 0 0 16px;
+  line-height: 1.2;
+}
+
 .panneau-match-liste {
   position: relative;
   display: flex;
@@ -242,16 +254,11 @@ footer.site {
   background: var(--marine-800);
   border: 1px solid var(--ligne);
   border-radius: 6px;
-  padding: 12px;
+  padding: 16px;
   margin-bottom: 28px;
-  width: 100%;
+  display: flex;
+  justify-content: center;
   overflow: hidden;
-}
-
-.fb-embed-wrap .fb-page,
-.fb-embed-wrap span,
-.fb-embed-wrap iframe {
-  width: 100% !important;
 }
 
 /* ---------- horaires ---------- */

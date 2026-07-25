@@ -42,7 +42,7 @@
 
     if (tousLesMatchsAVenir.length === 0) {
       panneau.innerHTML = `
-        <p class="panneau-eyebrow">Prochains matchs</p>
+        <p class="panneau-titre-prochain">Prochains matchs</p>
         <p style="margin:0; color:var(--creme-dim);">
           Aucun match à venir pour l'instant — le calendrier de la prochaine saison sera synchronisé automatiquement dès sa publication.
         </p>`;
@@ -78,7 +78,7 @@
       .join("");
 
     panneau.innerHTML = `
-      <p class="panneau-eyebrow">Prochains matchs — ${formaterDate(prochaineDate)}</p>
+      <p class="panneau-titre-prochain">Prochains matchs — ${formaterDate(prochaineDate)}</p>
       <div class="panneau-match-liste">${lignes}</div>`;
   }
 

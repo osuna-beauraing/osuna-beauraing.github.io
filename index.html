@@ -40,11 +40,14 @@
   <h2 class="section-titre">Actualités du club</h2>
 
   <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v19.0"></script>
 
   <div class="fb-embed-wrap">
-    <div class="fb-page" id="fb-page-actus"
+    <div class="fb-page"
       data-href="https://www.facebook.com/OsunaVolleyBeauraing/"
       data-tabs="timeline"
+      data-width="500"
       data-height="700"
       data-small-header="false"
       data-hide-cover="false"
@@ -54,29 +57,6 @@
       </blockquote>
     </div>
   </div>
-
-  <script>
-    // Le plugin Facebook respecte mal "adapt_container_width" tout seul :
-    // on mesure la largeur réellement disponible et on la lui impose avant
-    // de charger le SDK, plutôt que de compter sur son auto-adaptation.
-    (function () {
-      var conteneur = document.querySelector(".fb-embed-wrap");
-      var pageFb = document.getElementById("fb-page-actus");
-      if (conteneur && pageFb) {
-        var style = getComputedStyle(conteneur);
-        var largeur = Math.floor(
-          conteneur.clientWidth - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight)
-        );
-        pageFb.setAttribute("data-width", Math.max(largeur, 280));
-      }
-      var script = document.createElement("script");
-      script.async = true;
-      script.defer = true;
-      script.crossOrigin = "anonymous";
-      script.src = "https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v19.0";
-      document.body.appendChild(script);
-    })();
-  </script>
 
   <h2 class="section-titre">Autres annonces : Rien actuellement.</h2>
 
