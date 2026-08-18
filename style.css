@@ -479,3 +479,100 @@ table.calendrier tbody tr:hover { background: rgba(247,245,241,0.03); }
   font-weight: 400;
   font-style: italic;
 }
+
+/* ---------- coordonnées comité ---------- */
+
+.comite-coords {
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.comite-coords li {
+  font-size: 0.85rem;
+  color: var(--creme-dim);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  word-break: break-word;
+}
+
+.comite-coords a { color: var(--ambre-vif); text-decoration: none; }
+.comite-coords a:hover { text-decoration: underline; }
+
+.comite-fonction.a-preciser {
+  color: var(--creme-dim);
+  font-style: italic;
+}
+
+/* ---------- page homologation ---------- */
+
+.homolog-faits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 10px 22px;
+  background: var(--marine-800);
+  border: 1px solid var(--ligne);
+  border-radius: 6px;
+  padding: 18px 22px;
+  margin-bottom: 24px;
+}
+
+.homolog-fait {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 4px 0;
+}
+
+.homolog-fait-label {
+  font-family: var(--police-affiche);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.7rem;
+  color: var(--ambre);
+}
+
+.homolog-fait-valeur {
+  font-size: 0.92rem;
+  color: var(--creme);
+}
+
+.homolog-pdf-wrap {
+  background: var(--marine-800);
+  border: 1px solid var(--ligne);
+  border-radius: 6px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.homolog-pdf {
+  width: 100%;
+  height: 80vh;
+  min-height: 520px;
+  border: none;
+  border-radius: 4px;
+  background: #fff;
+}
+
+/* ---------- page tâches (tableau partagé) ---------- */
+
+.taches-tableau-wrap {
+  background: var(--marine-800);
+  border: 1px solid var(--ligne);
+  border-radius: 6px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.taches-tableau {
+  width: 100%;
+  height: 80vh;
+  min-height: 520px;
+  border: none;
+  border-radius: 4px;
+  background: #fff;
+}
