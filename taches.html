@@ -8,6 +8,28 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<style>
+  /* Le tableau déborde le conteneur pour occuper toute la largeur de la fenêtre */
+  .taches-tableau-wrap {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 0 clamp(12px, 3vw, 40px);
+    box-sizing: border-box;
+  }
+  .taches-tableau {
+    display: block;
+    width: 100%;
+    height: 88vh;
+    min-height: 600px;
+    border: 1px solid var(--ligne);
+    border-radius: 6px;
+    background: #fff;
+  }
+</style>
 </head>
 <body>
 
@@ -39,6 +61,17 @@
     Chaque joueur·se doit réaliser un certain nombre de tâches au cours de la saison. Le tableau ci-dessous
     (document partagé) reprend le suivi pour l'ensemble du club.
   </p>
+
+  <div class="panneau-score" style="display:block; padding:20px 24px; margin-bottom:24px;">
+    <p class="panneau-eyebrow" style="margin-bottom:10px;">À retenir</p>
+    <p style="margin:0 0 8px; color:var(--creme);">
+      Chaque joueur·se doit choisir <strong>3 tâches obligatoires</strong> pour la saison, à décider
+      <strong>avant le 30 septembre</strong>.
+    </p>
+    <p style="margin:0; color:var(--creme-dim);">
+      Passé cette date, toute tâche non choisie sera <strong>attribuée d'office par le comité</strong>.
+    </p>
+  </div>
 
   <div class="taches-tableau-wrap">
     <iframe class="taches-tableau" src="https://docs.google.com/spreadsheets/d/1YRMdIEwZAYK7BZ5H-mEbVTjOYS11-Mg8/preview" title="Tableau des tâches de la saison" loading="lazy"></iframe>

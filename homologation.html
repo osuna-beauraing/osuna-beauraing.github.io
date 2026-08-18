@@ -8,6 +8,48 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<style>
+  /* Styles propres à la page homologation (intégrés ici pour être autonomes) */
+  .homolog-faits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 12px 26px;
+    background: var(--marine-800);
+    border: 1px solid var(--ligne);
+    border-radius: 6px;
+    padding: 18px 22px;
+    margin-bottom: 24px;
+  }
+  .homolog-fait { display: flex; flex-direction: column; gap: 3px; padding: 4px 0; }
+  .homolog-fait-label {
+    font-family: var(--police-affiche);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.72rem;
+    color: var(--ambre);
+  }
+  .homolog-fait-valeur { font-size: 0.95rem; color: var(--creme); }
+  /* Le document déborde le conteneur pour occuper toute la largeur de la fenêtre */
+  .homolog-pdf-wrap {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 0 clamp(12px, 3vw, 40px);
+    box-sizing: border-box;
+  }
+  .homolog-pdf {
+    display: block;
+    width: 100%;
+    height: 92vh;
+    min-height: 680px;
+    border: 1px solid var(--ligne);
+    border-radius: 6px;
+    background: #fff;
+  }
+</style>
 </head>
 <body>
 
