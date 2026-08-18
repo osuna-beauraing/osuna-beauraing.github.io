@@ -24,7 +24,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:Promotion-Messieurs-2026-09-11-Walhain-V.C.-B@osuna-beauraing.github.io
-DTSTAMP:20260724T083106Z
+DTSTAMP:20260818T135235Z
 DTSTART;TZID=Europe/Brussels:20260911T211500
 DTEND;TZID=Europe/Brussels:20260911T231500
 SUMMARY:Walhain V.C. B - Osuna Volley Beauraing
@@ -35,7 +35,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:Promotion-Messieurs-2026-09-19-Chaumont-V.C.-B@osuna-beauraing.github.i
  o
-DTSTAMP:20260724T083106Z
+DTSTAMP:20260818T135235Z
 DTSTART;TZID=Europe/Brussels:20260919T170000
 DTEND;TZID=Europe/Brussels:20260919T190000
 SUMMARY:Osuna Volley Beauraing - Chaumont V.C. B
@@ -45,7 +45,7 @@ DESCRIPTION:Équipe : Promotion Messieurs\nMatch à domicile
 END:VEVENT
 BEGIN:VEVENT
 UID:Promotion-Messieurs-2026-09-27-Floor-F-V.C.-B@osuna-beauraing.github.io
-DTSTAMP:20260724T083106Z
+DTSTAMP:20260818T135235Z
 DTSTART;TZID=Europe/Brussels:20260927T173000
 DTEND;TZID=Europe/Brussels:20260927T193000
 SUMMARY:Floor F V.C. B - Osuna Volley Beauraing
@@ -55,7 +55,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:Promotion-Messieurs-2026-10-03-BW-Nivelles-Volley-D@osuna-beauraing.git
  hub.io
-DTSTAMP:20260724T083106Z
+DTSTAMP:20260818T135235Z
 DTSTART;TZID=Europe/Brussels:20261003T170000
 DTEND;TZID=Europe/Brussels:20261003T190000
 SUMMARY:Osuna Volley Beauraing - BW Nivelles Volley D
@@ -65,7 +65,7 @@ DESCRIPTION:Équipe : Promotion Messieurs\nMatch à domicile
 END:VEVENT
 BEGIN:VEVENT
 UID:Promotion-Messieurs-2026-10-11-NAMUR-VOLLEY-B@osuna-beauraing.github.io
-DTSTAMP:20260724T083106Z
+DTSTAMP:20260818T135235Z
 DTSTART;TZID=Europe/Brussels:20261011T180000
 DTEND;TZID=Europe/Brussels:20261011T200000
 SUMMARY:NAMUR VOLLEY B - Osuna Volley Beauraing
@@ -75,7 +75,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:Promotion-Messieurs-2026-10-17-VBC-Guibertin-E@osuna-beauraing.github.i
  o
-DTSTAMP:20260724T083106Z
+DTSTAMP:20260818T135235Z
 DTSTART;TZID=Europe/Brussels:20261017T170000
 DTEND;TZID=Europe/Brussels:20261017T190000
 SUMMARY:Osuna Volley Beauraing - VBC Guibertin E
@@ -86,7 +86,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:Promotion-Messieurs-2026-11-08-Bruxelles-Est-V.C.-B@osuna-beauraing.git
  hub.io
-DTSTAMP:20260724T083106Z
+DTSTAMP:20260818T135235Z
 DTSTART;TZID=Europe/Brussels:20261108T143000
 DTEND;TZID=Europe/Brussels:20261108T163000
 SUMMARY:Bruxelles Est V.C. B - Osuna Volley Beauraing
@@ -97,7 +97,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:Promotion-Messieurs-2026-11-22-Bruxelles-Est-V.C.-C@osuna-beauraing.git
  hub.io
-DTSTAMP:20260724T083106Z
+DTSTAMP:20260818T135235Z
 DTSTART;TZID=Europe/Brussels:20261122T183000
 DTEND;TZID=Europe/Brussels:20261122T203000
 SUMMARY:Bruxelles Est V.C. C - Osuna Volley Beauraing
@@ -108,7 +108,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:Promotion-Messieurs-2026-11-29-VC-Lesse-et-Lhomme-B@osuna-beauraing.git
  hub.io
-DTSTAMP:20260724T083106Z
+DTSTAMP:20260818T135235Z
 DTSTART;TZID=Europe/Brussels:20261129T180000
 DTEND;TZID=Europe/Brussels:20261129T200000
 SUMMARY:VC Lesse et Lhomme B - Osuna Volley Beauraing
@@ -118,7 +118,7 @@ DESCRIPTION:Équipe : Promotion Messieurs\nMatch à l'extérieur
 END:VEVENT
 BEGIN:VEVENT
 UID:Promotion-Messieurs-2026-12-05-Volley-Ohey-A@osuna-beauraing.github.io
-DTSTAMP:20260724T083106Z
+DTSTAMP:20260818T135235Z
 DTSTART;TZID=Europe/Brussels:20261205T210000
 DTEND;TZID=Europe/Brussels:20261205T230000
 SUMMARY:Volley Ohey A - Osuna Volley Beauraing
@@ -128,7 +128,7 @@ DESCRIPTION:Équipe : Promotion Messieurs\nMatch à l'extérieur
 END:VEVENT
 BEGIN:VEVENT
 UID:Promotion-Messieurs-2026-12-12-Floor-F-V.C.-A@osuna-beauraing.github.io
-DTSTAMP:20260724T083106Z
+DTSTAMP:20260818T135235Z
 DTSTART;TZID=Europe/Brussels:20261212T170000
 DTEND;TZID=Europe/Brussels:20261212T190000
 SUMMARY:Osuna Volley Beauraing - Floor F V.C. A
@@ -138,7 +138,7 @@ DESCRIPTION:Équipe : Promotion Messieurs\nMatch à domicile
 END:VEVENT
 BEGIN:VEVENT
 UID:Promotion-Messieurs-2027-01-09-Walhain-V.C.-B@osuna-beauraing.github.io
-DTSTAMP:20260724T083106Z
+DTSTAMP:20260818T135235Z
 DTSTART;TZID=Europe/Brussels:20270109T170000
 DTEND;TZID=Europe/Brussels:20270109T190000
 SUMMARY:Osuna Volley Beauraing - Walhain V.C. B
@@ -149,7 +149,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:Promotion-Messieurs-2027-01-16-Chaumont-V.C.-B@osuna-beauraing.github.i
  o
-DTSTAMP:20260724T083106Z
+DTSTAMP:20260818T135235Z
 DTSTART;TZID=Europe/Brussels:20270116T203000
 DTEND;TZID=Europe/Brussels:20270116T223000
 SUMMARY:Chaumont V.C. B - Osuna Volley Beauraing
@@ -159,7 +159,7 @@ DESCRIPTION:Équipe : Promotion Messieurs\nMatch à l'extérieur
 END:VEVENT
 BEGIN:VEVENT
 UID:Promotion-Messieurs-2027-01-23-Floor-F-V.C.-B@osuna-beauraing.github.io
-DTSTAMP:20260724T083106Z
+DTSTAMP:20260818T135235Z
 DTSTART;TZID=Europe/Brussels:20270123T170000
 DTEND;TZID=Europe/Brussels:20270123T190000
 SUMMARY:Osuna Volley Beauraing - Floor F V.C. B
@@ -170,7 +170,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:Promotion-Messieurs-2027-01-30-BW-Nivelles-Volley-D@osuna-beauraing.git
  hub.io
-DTSTAMP:20260724T083106Z
+DTSTAMP:20260818T135235Z
 DTSTART;TZID=Europe/Brussels:20270130T203000
 DTEND;TZID=Europe/Brussels:20270130T223000
 SUMMARY:BW Nivelles Volley D - Osuna Volley Beauraing
@@ -180,7 +180,7 @@ DESCRIPTION:Équipe : Promotion Messieurs\nMatch à l'extérieur
 END:VEVENT
 BEGIN:VEVENT
 UID:Promotion-Messieurs-2027-02-06-NAMUR-VOLLEY-B@osuna-beauraing.github.io
-DTSTAMP:20260724T083106Z
+DTSTAMP:20260818T135235Z
 DTSTART;TZID=Europe/Brussels:20270206T170000
 DTEND;TZID=Europe/Brussels:20270206T190000
 SUMMARY:Osuna Volley Beauraing - NAMUR VOLLEY B
@@ -191,7 +191,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:Promotion-Messieurs-2027-02-12-VBC-Guibertin-E@osuna-beauraing.github.i
  o
-DTSTAMP:20260724T083106Z
+DTSTAMP:20260818T135235Z
 DTSTART;TZID=Europe/Brussels:20270212T213000
 DTEND;TZID=Europe/Brussels:20270212T233000
 SUMMARY:VBC Guibertin E - Osuna Volley Beauraing
@@ -202,7 +202,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:Promotion-Messieurs-2027-03-06-Bruxelles-Est-V.C.-B@osuna-beauraing.git
  hub.io
-DTSTAMP:20260724T083106Z
+DTSTAMP:20260818T135235Z
 DTSTART;TZID=Europe/Brussels:20270306T170000
 DTEND;TZID=Europe/Brussels:20270306T190000
 SUMMARY:Osuna Volley Beauraing - Bruxelles Est V.C. B
@@ -212,7 +212,7 @@ DESCRIPTION:Équipe : Promotion Messieurs\nMatch à domicile
 END:VEVENT
 BEGIN:VEVENT
 UID:Promotion-Messieurs-2027-03-13-Floor-F-V.C.-A@osuna-beauraing.github.io
-DTSTAMP:20260724T083106Z
+DTSTAMP:20260818T135235Z
 DTSTART;TZID=Europe/Brussels:20270313T210000
 DTEND;TZID=Europe/Brussels:20270313T230000
 SUMMARY:Floor F V.C. A - Osuna Volley Beauraing
@@ -222,7 +222,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:Promotion-Messieurs-2027-03-20-Bruxelles-Est-V.C.-C@osuna-beauraing.git
  hub.io
-DTSTAMP:20260724T083106Z
+DTSTAMP:20260818T135235Z
 DTSTART;TZID=Europe/Brussels:20270320T170000
 DTEND;TZID=Europe/Brussels:20270320T190000
 SUMMARY:Osuna Volley Beauraing - Bruxelles Est V.C. C
@@ -233,7 +233,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:Promotion-Messieurs-2027-04-10-VC-Lesse-et-Lhomme-B@osuna-beauraing.git
  hub.io
-DTSTAMP:20260724T083106Z
+DTSTAMP:20260818T135235Z
 DTSTART;TZID=Europe/Brussels:20270410T170000
 DTEND;TZID=Europe/Brussels:20270410T190000
 SUMMARY:Osuna Volley Beauraing - VC Lesse et Lhomme B
@@ -243,7 +243,7 @@ DESCRIPTION:Équipe : Promotion Messieurs\nMatch à domicile
 END:VEVENT
 BEGIN:VEVENT
 UID:Promotion-Messieurs-2027-04-17-Volley-Ohey-A@osuna-beauraing.github.io
-DTSTAMP:20260724T083106Z
+DTSTAMP:20260818T135235Z
 DTSTART;TZID=Europe/Brussels:20270417T170000
 DTEND;TZID=Europe/Brussels:20270417T190000
 SUMMARY:Osuna Volley Beauraing - Volley Ohey A
@@ -253,7 +253,7 @@ DESCRIPTION:Équipe : Promotion Messieurs\nMatch à domicile
 END:VEVENT
 BEGIN:VEVENT
 UID:Promotion-Messieurs-2026-10-31-Walhain-V.C.-C@osuna-beauraing.github.io
-DTSTAMP:20260724T083106Z
+DTSTAMP:20260818T135235Z
 DTSTART;VALUE=DATE:20261031
 DTEND;VALUE=DATE:20261031
 SUMMARY:Walhain V.C. C - Osuna Volley Beauraing

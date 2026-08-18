@@ -1,7 +1,7 @@
 {
-  "derniere_maj": "2026-07-24",
+  "derniere_maj": "2026-08-18",
   "club": "Osuna Volley Beauraing",
-  "_note": "Saison 2026-2027. La colonne 'Compétition' indique désormais l'équipe du club concernée ; le champ 'coupe' (true/false) signale les matchs de coupe provinciale, affichés avec un badge dédié sur le site. Heure du match P2 Dames vs Floor F V.C. E (05/09) encore à confirmer. Promotion Messieurs et toutes les autres équipes ont leur championnat complet avec salles. U13 Filles : pas encore de série trouvée. La synchronisation quotidienne (easyscore.be) prendra le relais automatiquement une fois ce site miroir à jour (le script scripts/update-horaires.mjs devra alors être adapté pour reproduire ce même format 'coupe').",
+  "_note": "Saison 2026-2027. Horaires verifies et corriges le 18/08/2026 a partir du tableau officiel du club (document partage). Le champ 'coupe' (true/false) signale les matchs de coupe/pre-tour, affiches avec un badge dedie. Attention : si la synchronisation automatique easyscore.be est reactivee, elle peut reecraser ces corrections manuelles ; le tableau du club fait foi.",
   "equipes": [
     {
       "id": "prom-h",
@@ -454,16 +454,6 @@
           "salle": "Beauraing Complexe Communal - C1",
           "adresse": "rue de la Couture, 46, 5570 Beauraing",
           "coupe": false
-        },
-        {
-          "competition": "Promotion Dames",
-          "date": "2027-09-26",
-          "heure": "14:00",
-          "adversaire": "ANHEE V.C. A",
-          "lieu": "exterieur",
-          "salle": "Anhee Complexe Sportif - C1",
-          "adresse": "Chemin Saint-Stampe, 1, 5537 Anhee",
-          "coupe": false
         }
       ]
     },
@@ -534,7 +524,7 @@
         },
         {
           "competition": "P1 Messieurs",
-          "date": "2026-11-07",
+          "date": "2026-11-15",
           "heure": "18:00",
           "adversaire": "Gembloux V.C. A",
           "lieu": "exterieur",
@@ -791,8 +781,8 @@
         },
         {
           "competition": "P2 Messieurs",
-          "date": "2026-12-13",
-          "heure": "11:00",
+          "date": "2026-12-19",
+          "heure": "13:00",
           "adversaire": "Couvin U.S.V. 86 A",
           "lieu": "exterieur",
           "salle": "Couvidome Bernard Pignon - L2",
@@ -1059,7 +1049,7 @@
         {
           "competition": "P2 Dames",
           "date": "2027-01-24",
-          "heure": "18:00",
+          "heure": "14:00",
           "adversaire": "VC Lesse et Lhomme C",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - L2",
@@ -1159,7 +1149,7 @@
         {
           "competition": "P2 Dames",
           "date": "2026-09-05",
-          "heure": "?",
+          "heure": "15:00",
           "adversaire": "Floor F V.C. E",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal",
@@ -1326,7 +1316,7 @@
         {
           "competition": "P4 Dames",
           "date": "2027-03-20",
-          "heure": "17:00",
+          "heure": "13:30",
           "adversaire": "Gembloux V.C. B",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal - L2",
