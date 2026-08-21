@@ -9,8 +9,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <style>
-  /* Le tableau déborde le conteneur pour occuper toute la largeur de la fenêtre */
-  .taches-tableau-wrap {
+  /* Consigne d'utilisation */
+  .taches-consigne {
+    background: rgba(232,162,61,0.10);
+    border-left: 3px solid var(--ambre);
+    border-radius: 4px;
+    padding: 12px 16px;
+    margin: 0 0 16px;
+    color: var(--creme);
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+  /* Bloc "fenêtre" (barre + tableau) déborde sur toute la largeur de la fenêtre */
+  .taches-bloc {
     width: 100vw;
     position: relative;
     left: 50%;
@@ -20,14 +31,70 @@
     padding: 0 clamp(12px, 3vw, 40px);
     box-sizing: border-box;
   }
+  .taches-barre {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--marine-700);
+    border: 1px solid var(--ligne);
+    border-bottom: none;
+    border-radius: 6px 6px 0 0;
+    padding: 10px 16px;
+  }
+  .taches-barre-label {
+    font-family: var(--police-affiche);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.8rem;
+    color: var(--creme-dim);
+  }
+  .taches-barre-btn {
+    display: inline-block;
+    background: var(--ambre);
+    color: var(--marine-950);
+    font-family: var(--police-affiche);
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    font-size: 0.85rem;
+    padding: 9px 18px;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  .taches-barre-btn:hover { background: var(--ambre-vif); }
   .taches-tableau {
     display: block;
     width: 100%;
-    height: 88vh;
-    min-height: 600px;
+    height: 82vh;
+    min-height: 560px;
     border: 1px solid var(--ligne);
-    border-radius: 6px;
+    border-radius: 0 0 6px 6px;
     background: #fff;
+  }
+  /* Section "Comment faire" : vidéo + documents */
+  .aide-taches {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    align-items: start;
+  }
+  .aide-carte {
+    background: var(--marine-800);
+    border: 1px solid var(--ligne);
+    border-left: 3px solid var(--ambre);
+    border-radius: 6px;
+    padding: 18px 20px;
+  }
+  .aide-carte h3 { margin: 0 0 6px; font-size: 1.05rem; }
+  .aide-carte p { margin: 0 0 14px; color: var(--creme-dim); font-size: 0.92rem; }
+  .aide-video {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 6px;
+    background: #000;
+    border: 1px solid var(--ligne);
   }
 </style>
 </head>
@@ -73,20 +140,43 @@
     </p>
   </div>
 
-  <p style="margin:0 0 14px;">
-    <a href="https://docs.google.com/spreadsheets/d/1YRMdIEwZAYK7BZ5H-mEbVTjOYS11-Mg8/edit?usp=sharing" target="_blank" rel="noopener"
-       style="display:inline-block; background:var(--ambre); color:var(--marine-950); font-family:var(--police-affiche); text-transform:uppercase; letter-spacing:0.3px; font-size:0.8rem; padding:9px 16px; border-radius:4px; text-decoration:none;">
-      Inscris-toi aux tâches
-    </a>
+  <p class="taches-consigne">
+    👉 Pour <strong>t'inscrire</strong>, clique sur le bouton orange <strong>« Inscris-toi aux tâches »</strong> ci-dessous : il ouvre le tableau que tu peux modifier.<br>
+    Le tableau affiché ici est seulement un <strong>aperçu en lecture seule</strong> — tu ne peux pas écrire directement dedans.
   </p>
 
-  <div class="taches-tableau-wrap">
-    <iframe class="taches-tableau" src="https://docs.google.com/spreadsheets/d/1YRMdIEwZAYK7BZ5H-mEbVTjOYS11-Mg8/preview" title="Tableau des tâches de la saison" loading="lazy"></iframe>
+  <div class="taches-bloc">
+    <div class="taches-barre">
+      <span class="taches-barre-label">📋 Aperçu du tableau — lecture seule</span>
+      <a href="https://docs.google.com/spreadsheets/d/1YRMdIEwZAYK7BZ5H-mEbVTjOYS11-Mg8/edit?usp=sharing" target="_blank" rel="noopener" class="taches-barre-btn">
+        ✏️ Inscris-toi aux tâches
+      </a>
+    </div>
+    <iframe class="taches-tableau" src="https://docs.google.com/spreadsheets/d/1YRMdIEwZAYK7BZ5H-mEbVTjOYS11-Mg8/preview" title="Aperçu du tableau des tâches (lecture seule)" loading="lazy"></iframe>
   </div>
 
   <p style="color:var(--creme-dim); font-size:0.8rem; margin-top:12px;">
     Le tableau ci-dessus est le document partagé du club. Il se met à jour tout seul dès qu'une modification y est faite. S'il ne s'affiche pas, vérifie que le partage du document est réglé sur « Tout utilisateur disposant du lien&nbsp;: Lecteur ».
   </p>
+
+  <h2 class="section-titre">Comment réaliser certaines tâches</h2>
+
+  <div class="aide-taches">
+    <div class="aide-carte">
+      <h3>🎬 Fermeture des portes coulissantes (le soir)</h3>
+      <p>Le tuto vidéo pour fermer correctement la salle quand tu as une tâche le soir.</p>
+      <video class="aide-video" controls preload="metadata" playsinline>
+        <source src="fermeture-piscine.mp4" type="video/mp4">
+        Ton navigateur ne peut pas lire la vidéo — <a href="fermeture-piscine.mp4">télécharge-la ici</a>.
+      </video>
+    </div>
+
+    <div class="aide-carte">
+      <h3>🍺 Tenir le bar — le processus</h3>
+      <p>Tout ce qu'implique la tâche du bar, du début du service à la fermeture : inventaires, roulement des frigos, croques, rangement…</p>
+      <a href="tache-bar.pdf" target="_blank" rel="noopener" class="bouton-abonnement">⬇ Télécharger le document (PDF)</a>
+    </div>
+  </div>
 
 </main>
 
