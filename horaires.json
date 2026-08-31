@@ -1,48 +1,132 @@
 {
-  "derniere_maj": "2026-08-30",
+  "derniere_maj": "2026-08-31",
   "club": "Osuna Volley Beauraing",
   "equipes": [
     {
       "id": "prom-h",
       "nom": "Promotion Messieurs",
       "team_id": 306672,
-      "matchs": []
+      "matchs": [
+        {
+          "competition": "Promotion Messieurs",
+          "coupe": false,
+          "date": "undefined-undefined- event_label: isPwa ? 'standalone' : 'browser' });",
+          "heure": null,
+          "adversaire": "'pwa_launch'",
+          "lieu": "exterieur",
+          "salle": null,
+          "adresse": null,
+          "match_id": null
+        }
+      ]
     },
     {
       "id": "prom-d",
       "nom": "Promotion Dames",
       "team_id": 309326,
-      "matchs": []
+      "matchs": [
+        {
+          "competition": "Promotion Dames",
+          "coupe": false,
+          "date": "undefined-undefined- event_label: isPwa ? 'standalone' : 'browser' });",
+          "heure": null,
+          "adversaire": "'pwa_launch'",
+          "lieu": "exterieur",
+          "salle": null,
+          "adresse": null,
+          "match_id": null
+        }
+      ]
     },
     {
       "id": "p1-h",
       "nom": "P1 Messieurs",
       "team_id": 312389,
-      "matchs": []
+      "matchs": [
+        {
+          "competition": "P1 Messieurs",
+          "coupe": false,
+          "date": "undefined-undefined- event_label: isPwa ? 'standalone' : 'browser' });",
+          "heure": null,
+          "adversaire": "'pwa_launch'",
+          "lieu": "exterieur",
+          "salle": null,
+          "adresse": null,
+          "match_id": null
+        }
+      ]
     },
     {
       "id": "p2-h",
       "nom": "P2 Messieurs",
       "team_id": 317669,
-      "matchs": []
+      "matchs": [
+        {
+          "competition": "P2 Messieurs",
+          "coupe": false,
+          "date": "undefined-undefined- event_label: isPwa ? 'standalone' : 'browser' });",
+          "heure": null,
+          "adversaire": "'pwa_launch'",
+          "lieu": "exterieur",
+          "salle": null,
+          "adresse": null,
+          "match_id": null
+        }
+      ]
     },
     {
       "id": "p2-d",
       "nom": "P2 Dames",
       "team_id": 315029,
-      "matchs": []
+      "matchs": [
+        {
+          "competition": "P2 Dames",
+          "coupe": false,
+          "date": "undefined-undefined- event_label: isPwa ? 'standalone' : 'browser' });",
+          "heure": null,
+          "adversaire": "'pwa_launch'",
+          "lieu": "exterieur",
+          "salle": null,
+          "adresse": null,
+          "match_id": null
+        }
+      ]
     },
     {
       "id": "p4-d",
       "nom": "P4 Dames",
       "team_id": 317999,
-      "matchs": []
+      "matchs": [
+        {
+          "competition": "P4 Dames",
+          "coupe": false,
+          "date": "undefined-undefined- event_label: isPwa ? 'standalone' : 'browser' });",
+          "heure": null,
+          "adversaire": "'pwa_launch'",
+          "lieu": "exterieur",
+          "salle": null,
+          "adresse": null,
+          "match_id": null
+        }
+      ]
     },
     {
       "id": "u13-d",
       "nom": "U13 Filles",
       "team_id": 310646,
-      "matchs": []
+      "matchs": [
+        {
+          "competition": "U13 Filles",
+          "coupe": false,
+          "date": "undefined-undefined- event_label: isPwa ? 'standalone' : 'browser' });",
+          "heure": null,
+          "adversaire": "'pwa_launch'",
+          "lieu": "exterieur",
+          "salle": null,
+          "adresse": null,
+          "match_id": null
+        }
+      ]
     }
   ]
 }
