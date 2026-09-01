@@ -24,7 +24,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:P1-Messieurs-2026-09-12-Floor-F-V.C.-D@osuna-beauraing.github.io
-DTSTAMP:20260818T135235Z
+DTSTAMP:20260901T163221Z
 DTSTART;TZID=Europe/Brussels:20260912T170000
 DTEND;TZID=Europe/Brussels:20260912T190000
 SUMMARY:Osuna Volley Beauraing - Floor F V.C. D
@@ -34,7 +34,7 @@ DESCRIPTION:Équipe : P1 Messieurs\nMatch à domicile
 END:VEVENT
 BEGIN:VEVENT
 UID:P1-Messieurs-2026-09-19-Floor-F-V.C.-C@osuna-beauraing.github.io
-DTSTAMP:20260818T135235Z
+DTSTAMP:20260901T163221Z
 DTSTART;TZID=Europe/Brussels:20260919T173000
 DTEND;TZID=Europe/Brussels:20260919T193000
 SUMMARY:Floor F V.C. C - Osuna Volley Beauraing
@@ -43,7 +43,7 @@ DESCRIPTION:Équipe : P1 Messieurs\nMatch à l'extérieur
 END:VEVENT
 BEGIN:VEVENT
 UID:P1-Messieurs-2026-09-26-VC-Lesse-et-Lhomme-C@osuna-beauraing.github.io
-DTSTAMP:20260818T135235Z
+DTSTAMP:20260901T163221Z
 DTSTART;TZID=Europe/Brussels:20260926T133000
 DTEND;TZID=Europe/Brussels:20260926T153000
 SUMMARY:Osuna Volley Beauraing - VC Lesse et Lhomme C
@@ -53,7 +53,7 @@ DESCRIPTION:Équipe : P1 Messieurs\nMatch à domicile
 END:VEVENT
 BEGIN:VEVENT
 UID:P1-Messieurs-2026-10-03-Ciney-V.C.-A@osuna-beauraing.github.io
-DTSTAMP:20260818T135235Z
+DTSTAMP:20260901T163221Z
 DTSTART;TZID=Europe/Brussels:20261003T201500
 DTEND;TZID=Europe/Brussels:20261003T221500
 SUMMARY:Ciney V.C. A - Osuna Volley Beauraing
@@ -62,7 +62,7 @@ DESCRIPTION:Équipe : P1 Messieurs\nMatch à l'extérieur
 END:VEVENT
 BEGIN:VEVENT
 UID:P1-Messieurs-2026-10-10-Walhain-V.C.-C@osuna-beauraing.github.io
-DTSTAMP:20260818T135235Z
+DTSTAMP:20260901T163221Z
 DTSTART;TZID=Europe/Brussels:20261010T133000
 DTEND;TZID=Europe/Brussels:20261010T153000
 SUMMARY:Osuna Volley Beauraing - Walhain V.C. C
@@ -72,7 +72,7 @@ DESCRIPTION:Équipe : P1 Messieurs\nMatch à domicile
 END:VEVENT
 BEGIN:VEVENT
 UID:P1-Messieurs-2026-10-17-Jemeppe-V.C.-A@osuna-beauraing.github.io
-DTSTAMP:20260818T135235Z
+DTSTAMP:20260901T163221Z
 DTSTART;TZID=Europe/Brussels:20261017T203000
 DTEND;TZID=Europe/Brussels:20261017T223000
 SUMMARY:Osuna Volley Beauraing - Jemeppe V.C. A
@@ -81,8 +81,18 @@ LOCATION:Beauraing Complexe Communal - C1\, rue de la Couture\, 46\, 5570 B
 DESCRIPTION:Équipe : P1 Messieurs\nMatch à domicile
 END:VEVENT
 BEGIN:VEVENT
+UID:P1-Messieurs-2026-10-31-ANHEE-V.C.-B@osuna-beauraing.github.io
+DTSTAMP:20260901T163221Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261031
+SUMMARY:ANHEE V.C. B - Osuna Volley Beauraing
+LOCATION:Salle à confirmer
+DESCRIPTION:Équipe : P1 Messieurs\nMatch de coupe provinciale\nMatch à l'ex
+ térieur\nHeure encore à confirmer
+END:VEVENT
+BEGIN:VEVENT
 UID:P1-Messieurs-2026-11-15-Gembloux-V.C.-A@osuna-beauraing.github.io
-DTSTAMP:20260818T135235Z
+DTSTAMP:20260901T163221Z
 DTSTART;TZID=Europe/Brussels:20261115T180000
 DTEND;TZID=Europe/Brussels:20261115T200000
 SUMMARY:Gembloux V.C. A - Osuna Volley Beauraing
@@ -92,7 +102,7 @@ DESCRIPTION:Équipe : P1 Messieurs\nMatch à l'extérieur
 END:VEVENT
 BEGIN:VEVENT
 UID:P1-Messieurs-2026-11-28-NAMUR-VOLLEY-C@osuna-beauraing.github.io
-DTSTAMP:20260818T135235Z
+DTSTAMP:20260901T163221Z
 DTSTART;TZID=Europe/Brussels:20261128T163000
 DTEND;TZID=Europe/Brussels:20261128T183000
 SUMMARY:NAMUR VOLLEY C - Osuna Volley Beauraing
@@ -102,7 +112,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:P1-Messieurs-2026-12-05-Etoile-Volley-Arsimont-A@osuna-beauraing.github
  .io
-DTSTAMP:20260818T135235Z
+DTSTAMP:20260901T163221Z
 DTSTART;TZID=Europe/Brussels:20261205T133000
 DTEND;TZID=Europe/Brussels:20261205T153000
 SUMMARY:Osuna Volley Beauraing - Etoile Volley Arsimont A
@@ -112,7 +122,7 @@ DESCRIPTION:Équipe : P1 Messieurs\nMatch à domicile
 END:VEVENT
 BEGIN:VEVENT
 UID:P1-Messieurs-2026-12-12-Volley-Smars-Dinant-A@osuna-beauraing.github.io
-DTSTAMP:20260818T135235Z
+DTSTAMP:20260901T163221Z
 DTSTART;TZID=Europe/Brussels:20261212T203000
 DTEND;TZID=Europe/Brussels:20261212T223000
 SUMMARY:Volley Smars Dinant A - Osuna Volley Beauraing
@@ -122,7 +132,7 @@ DESCRIPTION:Équipe : P1 Messieurs\nMatch à l'extérieur
 END:VEVENT
 BEGIN:VEVENT
 UID:P1-Messieurs-2027-01-09-Floor-F-V.C.-C@osuna-beauraing.github.io
-DTSTAMP:20260818T135235Z
+DTSTAMP:20260901T163221Z
 DTSTART;TZID=Europe/Brussels:20270109T203000
 DTEND;TZID=Europe/Brussels:20270109T223000
 SUMMARY:Osuna Volley Beauraing - Floor F V.C. C
@@ -132,7 +142,7 @@ DESCRIPTION:Équipe : P1 Messieurs\nMatch à domicile
 END:VEVENT
 BEGIN:VEVENT
 UID:P1-Messieurs-2027-01-17-Floor-F-V.C.-D@osuna-beauraing.github.io
-DTSTAMP:20260818T135235Z
+DTSTAMP:20260901T163221Z
 DTSTART;TZID=Europe/Brussels:20270117T140000
 DTEND;TZID=Europe/Brussels:20270117T160000
 SUMMARY:Floor F V.C. D - Osuna Volley Beauraing
@@ -141,7 +151,7 @@ DESCRIPTION:Équipe : P1 Messieurs\nMatch à l'extérieur
 END:VEVENT
 BEGIN:VEVENT
 UID:P1-Messieurs-2027-01-23-Ciney-V.C.-A@osuna-beauraing.github.io
-DTSTAMP:20260818T135235Z
+DTSTAMP:20260901T163221Z
 DTSTART;TZID=Europe/Brussels:20270123T133000
 DTEND;TZID=Europe/Brussels:20270123T153000
 SUMMARY:Osuna Volley Beauraing - Ciney V.C. A
@@ -151,7 +161,7 @@ DESCRIPTION:Équipe : P1 Messieurs\nMatch à domicile
 END:VEVENT
 BEGIN:VEVENT
 UID:P1-Messieurs-2027-01-30-VC-Lesse-et-Lhomme-C@osuna-beauraing.github.io
-DTSTAMP:20260818T135235Z
+DTSTAMP:20260901T163221Z
 DTSTART;TZID=Europe/Brussels:20270130T170000
 DTEND;TZID=Europe/Brussels:20270130T190000
 SUMMARY:VC Lesse et Lhomme C - Osuna Volley Beauraing
@@ -160,7 +170,7 @@ DESCRIPTION:Équipe : P1 Messieurs\nMatch à l'extérieur
 END:VEVENT
 BEGIN:VEVENT
 UID:P1-Messieurs-2027-02-06-Jemeppe-V.C.-A@osuna-beauraing.github.io
-DTSTAMP:20260818T135235Z
+DTSTAMP:20260901T163221Z
 DTSTART;TZID=Europe/Brussels:20270206T210000
 DTEND;TZID=Europe/Brussels:20270206T230000
 SUMMARY:Jemeppe V.C. A - Osuna Volley Beauraing
@@ -170,7 +180,7 @@ DESCRIPTION:Équipe : P1 Messieurs\nMatch à l'extérieur
 END:VEVENT
 BEGIN:VEVENT
 UID:P1-Messieurs-2027-02-13-Walhain-V.C.-C@osuna-beauraing.github.io
-DTSTAMP:20260818T135235Z
+DTSTAMP:20260901T163221Z
 DTSTART;TZID=Europe/Brussels:20270213T170000
 DTEND;TZID=Europe/Brussels:20270213T190000
 SUMMARY:Walhain V.C. C - Osuna Volley Beauraing
@@ -180,7 +190,7 @@ DESCRIPTION:Équipe : P1 Messieurs\nMatch à l'extérieur
 END:VEVENT
 BEGIN:VEVENT
 UID:P1-Messieurs-2027-03-06-Gembloux-V.C.-A@osuna-beauraing.github.io
-DTSTAMP:20260818T135235Z
+DTSTAMP:20260901T163221Z
 DTSTART;TZID=Europe/Brussels:20270306T133000
 DTEND;TZID=Europe/Brussels:20270306T153000
 SUMMARY:Osuna Volley Beauraing - Gembloux V.C. A
@@ -190,7 +200,7 @@ DESCRIPTION:Équipe : P1 Messieurs\nMatch à domicile
 END:VEVENT
 BEGIN:VEVENT
 UID:P1-Messieurs-2027-03-13-Volley-Smars-Dinant-A@osuna-beauraing.github.io
-DTSTAMP:20260818T135235Z
+DTSTAMP:20260901T163221Z
 DTSTART;TZID=Europe/Brussels:20270313T170000
 DTEND;TZID=Europe/Brussels:20270313T190000
 SUMMARY:Osuna Volley Beauraing - Volley Smars Dinant A
@@ -200,7 +210,7 @@ DESCRIPTION:Équipe : P1 Messieurs\nMatch à domicile
 END:VEVENT
 BEGIN:VEVENT
 UID:P1-Messieurs-2027-04-10-NAMUR-VOLLEY-C@osuna-beauraing.github.io
-DTSTAMP:20260818T135235Z
+DTSTAMP:20260901T163221Z
 DTSTART;TZID=Europe/Brussels:20270410T133000
 DTEND;TZID=Europe/Brussels:20270410T153000
 SUMMARY:Osuna Volley Beauraing - NAMUR VOLLEY C
@@ -211,22 +221,12 @@ END:VEVENT
 BEGIN:VEVENT
 UID:P1-Messieurs-2027-04-17-Etoile-Volley-Arsimont-A@osuna-beauraing.github
  .io
-DTSTAMP:20260818T135235Z
+DTSTAMP:20260901T163221Z
 DTSTART;TZID=Europe/Brussels:20270417T194500
 DTEND;TZID=Europe/Brussels:20270417T214500
 SUMMARY:Etoile Volley Arsimont A - Osuna Volley Beauraing
 LOCATION:Auvelais Au relais Sportsa - L2\, Rue des Auges\, 22\, 5060 Auvela
  is
 DESCRIPTION:Équipe : P1 Messieurs\nMatch à l'extérieur
-END:VEVENT
-BEGIN:VEVENT
-UID:P1-Messieurs-2026-10-31-ANHEE-V.C.-B@osuna-beauraing.github.io
-DTSTAMP:20260818T135235Z
-DTSTART;VALUE=DATE:20261031
-DTEND;VALUE=DATE:20261031
-SUMMARY:ANHEE V.C. B - Osuna Volley Beauraing
-LOCATION:Salle à confirmer
-DESCRIPTION:Équipe : P1 Messieurs\nMatch de coupe provinciale\nMatch à l'ex
- térieur\nHeure encore à confirmer par la fédération
 END:VEVENT
 END:VCALENDAR
