@@ -1,0 +1,122 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Osuna Volley Beauraing//Calendrier des matchs//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Osuna Volley Beauraing - U11 Filles B
+X-WR-TIMEZONE:Europe/Brussels
+BEGIN:VTIMEZONE
+TZID:Europe/Brussels
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:U11-Filles-B-2026-09-19-Jemeppe-V.C.-A@osuna-beauraing.github.io
+DTSTAMP:20260913T114906Z
+DTSTART;TZID=Europe/Brussels:20260919T111500
+DTEND;TZID=Europe/Brussels:20260919T131500
+SUMMARY:Osuna Volley Beauraing - Jemeppe V.C. A
+LOCATION:Beauraing Complexe Communal\, rue de la Couture\, 46\, 5570 Beaura
+ ing
+DESCRIPTION:Équipe : U11 Filles B\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:U11-Filles-B-2026-09-26-Romedenne-Smash-V.C.-A@osuna-beauraing.github.i
+ o
+DTSTAMP:20260913T114906Z
+DTSTART;TZID=Europe/Brussels:20260926T093000
+DTEND;TZID=Europe/Brussels:20260926T113000
+SUMMARY:Romedenne Smash V.C. A - Osuna Volley Beauraing
+LOCATION:Romedenne
+DESCRIPTION:Équipe : U11 Filles B\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:U11-Filles-B-2026-10-03-Osuna-Volley-Beauraing-A@osuna-beauraing.github
+ .io
+DTSTAMP:20260913T114906Z
+DTSTART;TZID=Europe/Brussels:20261003T100000
+DTEND;TZID=Europe/Brussels:20261003T120000
+SUMMARY:Osuna Volley Beauraing - Osuna Volley Beauraing A
+LOCATION:Beauraing Complexe Communal\, rue de la Couture\, 46\, 5570 Beaura
+ ing
+DESCRIPTION:Équipe : U11 Filles B\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:U11-Filles-B-2026-10-10-Volley-Ohey-A@osuna-beauraing.github.io
+DTSTAMP:20260913T114906Z
+DTSTART;TZID=Europe/Brussels:20261010T084500
+DTEND;TZID=Europe/Brussels:20261010T104500
+SUMMARY:Osuna Volley Beauraing - Volley Ohey A
+LOCATION:Beauraing Complexe Communal\, rue de la Couture\, 46\, 5570 Beaura
+ ing
+DESCRIPTION:Équipe : U11 Filles B\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:U11-Filles-B-2026-11-07-Floor-F-V.C.-A@osuna-beauraing.github.io
+DTSTAMP:20260913T114906Z
+DTSTART;TZID=Europe/Brussels:20261107T103000
+DTEND;TZID=Europe/Brussels:20261107T123000
+SUMMARY:Floor F V.C. A - Osuna Volley Beauraing
+LOCATION:Floreffe
+DESCRIPTION:Équipe : U11 Filles B\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:U11-Filles-B-2026-11-14-ANHEE-V.C.-A@osuna-beauraing.github.io
+DTSTAMP:20260913T114906Z
+DTSTART;TZID=Europe/Brussels:20261114T110000
+DTEND;TZID=Europe/Brussels:20261114T130000
+SUMMARY:Osuna Volley Beauraing - ANHEE V.C. A
+LOCATION:Beauraing Complexe Communal\, rue de la Couture\, 46\, 5570 Beaura
+ ing
+DESCRIPTION:Équipe : U11 Filles B\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:U11-Filles-B-2026-11-22-ANHEE-V.C.-B@osuna-beauraing.github.io
+DTSTAMP:20260913T114906Z
+DTSTART;TZID=Europe/Brussels:20261122T093000
+DTEND;TZID=Europe/Brussels:20261122T113000
+SUMMARY:ANHEE V.C. B - Osuna Volley Beauraing
+LOCATION:Anhée
+DESCRIPTION:Équipe : U11 Filles B\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:U11-Filles-B-2026-11-28-Volley-Smars-Dinant-A@osuna-beauraing.github.io
+DTSTAMP:20260913T114906Z
+DTSTART;TZID=Europe/Brussels:20261128T100000
+DTEND;TZID=Europe/Brussels:20261128T120000
+SUMMARY:Osuna Volley Beauraing - Volley Smars Dinant A
+LOCATION:Beauraing Complexe Communal\, rue de la Couture\, 46\, 5570 Beaura
+ ing
+DESCRIPTION:Équipe : U11 Filles B\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:U11-Filles-B-2026-12-12-Ciney-V.C.-A@osuna-beauraing.github.io
+DTSTAMP:20260913T114906Z
+DTSTART;TZID=Europe/Brussels:20261212T100000
+DTEND;TZID=Europe/Brussels:20261212T120000
+SUMMARY:Ciney V.C. A - Osuna Volley Beauraing
+LOCATION:Ciney
+DESCRIPTION:Équipe : U11 Filles B\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:U11-Filles-B-2027-01-09-Jemeppe-V.C.-A@osuna-beauraing.github.io
+DTSTAMP:20260913T114906Z
+DTSTART;TZID=Europe/Brussels:20270109T090000
+DTEND;TZID=Europe/Brussels:20270109T110000
+SUMMARY:Jemeppe V.C. A - Osuna Volley Beauraing
+LOCATION:Jemeppe
+DESCRIPTION:Équipe : U11 Filles B\nMatch à l'extérieur
+END:VEVENT
+END:VCALENDAR

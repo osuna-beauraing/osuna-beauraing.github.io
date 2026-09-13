@@ -22,4 +22,137 @@ DTSTART:19701025T030000
 RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
+BEGIN:VEVENT
+UID:U13-Filles-2026-09-19-Ciney-V.C.-B@osuna-beauraing.github.io
+DTSTAMP:20260913T114906Z
+DTSTART;TZID=Europe/Brussels:20260919T100000
+DTEND;TZID=Europe/Brussels:20260919T120000
+SUMMARY:Ciney V.C. B - Osuna Volley Beauraing
+LOCATION:Ciney
+DESCRIPTION:Équipe : U13 Filles\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:U13-Filles-2026-09-26-Doische-V.-Fagnard-A@osuna-beauraing.github.io
+DTSTAMP:20260913T114906Z
+DTSTART;TZID=Europe/Brussels:20260926T090000
+DTEND;TZID=Europe/Brussels:20260926T110000
+SUMMARY:Osuna Volley Beauraing - Doische V. Fagnard A
+LOCATION:Beauraing Complexe Communal\, rue de la Couture\, 46\, 5570 Beaura
+ ing
+DESCRIPTION:Équipe : U13 Filles\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:U13-Filles-2026-10-04-Volley-Smars-Dinant-A@osuna-beauraing.github.io
+DTSTAMP:20260913T114906Z
+DTSTART;TZID=Europe/Brussels:20261004T090000
+DTEND;TZID=Europe/Brussels:20261004T110000
+SUMMARY:Volley Smars Dinant A - Osuna Volley Beauraing
+LOCATION:Dinant
+DESCRIPTION:Équipe : U13 Filles\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:U13-Filles-2026-10-10-ANHEE-V.C.@osuna-beauraing.github.io
+DTSTAMP:20260913T114906Z
+DTSTART;TZID=Europe/Brussels:20261010T084500
+DTEND;TZID=Europe/Brussels:20261010T104500
+SUMMARY:Osuna Volley Beauraing - ANHEE V.C.
+LOCATION:Beauraing Complexe Communal\, rue de la Couture\, 46\, 5570 Beaura
+ ing
+DESCRIPTION:Équipe : U13 Filles\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:U13-Filles-2026-11-07-Ciney-V.C.-A@osuna-beauraing.github.io
+DTSTAMP:20260913T114906Z
+DTSTART;TZID=Europe/Brussels:20261107T090000
+DTEND;TZID=Europe/Brussels:20261107T110000
+SUMMARY:Osuna Volley Beauraing - Ciney V.C. A
+LOCATION:Beauraing Complexe Communal\, rue de la Couture\, 46\, 5570 Beaura
+ ing
+DESCRIPTION:Équipe : U13 Filles\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:U13-Filles-2026-11-14-Romedenne-Smash-V.C.-A@osuna-beauraing.github.io
+DTSTAMP:20260913T114906Z
+DTSTART;TZID=Europe/Brussels:20261114T093000
+DTEND;TZID=Europe/Brussels:20261114T113000
+SUMMARY:Romedenne Smash V.C. A - Osuna Volley Beauraing
+LOCATION:Romedenne
+DESCRIPTION:Équipe : U13 Filles\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:U13-Filles-2026-11-21-Gedinne-V.C.@osuna-beauraing.github.io
+DTSTAMP:20260913T114906Z
+DTSTART;TZID=Europe/Brussels:20261121T090000
+DTEND;TZID=Europe/Brussels:20261121T110000
+SUMMARY:Osuna Volley Beauraing - Gedinne V.C.
+LOCATION:Beauraing Complexe Communal\, rue de la Couture\, 46\, 5570 Beaura
+ ing
+DESCRIPTION:Équipe : U13 Filles\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:U13-Filles-2026-11-28-Ciney-V.C.-B@osuna-beauraing.github.io
+DTSTAMP:20260913T114906Z
+DTSTART;TZID=Europe/Brussels:20261128T084500
+DTEND;TZID=Europe/Brussels:20261128T104500
+SUMMARY:Osuna Volley Beauraing - Ciney V.C. B
+LOCATION:Beauraing Complexe Communal\, rue de la Couture\, 46\, 5570 Beaura
+ ing
+DESCRIPTION:Équipe : U13 Filles\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:U13-Filles-2026-12-06-Doische-V.-Fagnard-A@osuna-beauraing.github.io
+DTSTAMP:20260913T114906Z
+DTSTART;TZID=Europe/Brussels:20261206T100000
+DTEND;TZID=Europe/Brussels:20261206T120000
+SUMMARY:Doische V. Fagnard A - Osuna Volley Beauraing
+LOCATION:Doische
+DESCRIPTION:Équipe : U13 Filles\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:U13-Filles-2026-12-12-Volley-Smars-Dinant-A@osuna-beauraing.github.io
+DTSTAMP:20260913T114906Z
+DTSTART;TZID=Europe/Brussels:20261212T090000
+DTEND;TZID=Europe/Brussels:20261212T110000
+SUMMARY:Osuna Volley Beauraing - Volley Smars Dinant A
+LOCATION:Beauraing Complexe Communal\, rue de la Couture\, 46\, 5570 Beaura
+ ing
+DESCRIPTION:Équipe : U13 Filles\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:U13-Filles-2027-01-10-ANHEE-V.C.@osuna-beauraing.github.io
+DTSTAMP:20260913T114906Z
+DTSTART;TZID=Europe/Brussels:20270110T110000
+DTEND;TZID=Europe/Brussels:20270110T130000
+SUMMARY:ANHEE V.C. - Osuna Volley Beauraing
+LOCATION:Anhée
+DESCRIPTION:Équipe : U13 Filles\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:U13-Filles-2027-01-16-Ciney-V.C.-A@osuna-beauraing.github.io
+DTSTAMP:20260913T114906Z
+DTSTART;TZID=Europe/Brussels:20270116T100000
+DTEND;TZID=Europe/Brussels:20270116T120000
+SUMMARY:Ciney V.C. A - Osuna Volley Beauraing
+LOCATION:Ciney
+DESCRIPTION:Équipe : U13 Filles\nMatch à l'extérieur
+END:VEVENT
+BEGIN:VEVENT
+UID:U13-Filles-2027-01-23-Romedenne-Smash-V.C.-A@osuna-beauraing.github.io
+DTSTAMP:20260913T114906Z
+DTSTART;TZID=Europe/Brussels:20270123T090000
+DTEND;TZID=Europe/Brussels:20270123T110000
+SUMMARY:Osuna Volley Beauraing - Romedenne Smash V.C. A
+LOCATION:Beauraing Complexe Communal\, rue de la Couture\, 46\, 5570 Beaura
+ ing
+DESCRIPTION:Équipe : U13 Filles\nMatch à domicile
+END:VEVENT
+BEGIN:VEVENT
+UID:U13-Filles-2027-01-30-Gedinne-V.C.-A@osuna-beauraing.github.io
+DTSTAMP:20260913T114906Z
+DTSTART;TZID=Europe/Brussels:20270130T100000
+DTEND;TZID=Europe/Brussels:20270130T120000
+SUMMARY:Gedinne V.C. A - Osuna Volley Beauraing
+LOCATION:Gedinne
+DESCRIPTION:Équipe : U13 Filles\nMatch à l'extérieur
+END:VEVENT
 END:VCALENDAR
