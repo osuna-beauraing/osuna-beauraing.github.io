@@ -7,7 +7,6 @@
       "matchs": [
         {
           "equipe": "Promotion Messieurs",
-          "type": "Première",
           "adversaire": "Walhain V.C. B",
           "lieu": "exterieur",
           "score_osuna": 1,
@@ -15,17 +14,7 @@
           "coupe": false
         },
         {
-          "equipe": "Promotion Messieurs",
-          "type": "Réserve",
-          "adversaire": "Walhain V.C. B",
-          "lieu": "exterieur",
-          "score_osuna": 2,
-          "score_adversaire": 1,
-          "coupe": false
-        },
-        {
           "equipe": "Promotion Dames",
-          "type": "Première",
           "adversaire": "Stabulois Etalle V.C. A",
           "lieu": "domicile",
           "score_osuna": 0,
@@ -34,7 +23,6 @@
         },
         {
           "equipe": "P1 Messieurs",
-          "type": "Première",
           "adversaire": "Floor F V.C. D",
           "lieu": "domicile",
           "score_osuna": 3,
@@ -42,17 +30,7 @@
           "coupe": false
         },
         {
-          "equipe": "P1 Messieurs",
-          "type": "Réserve",
-          "adversaire": "Floor F V.C. D",
-          "lieu": "domicile",
-          "score_osuna": 3,
-          "score_adversaire": 0,
-          "coupe": false
-        },
-        {
           "equipe": "P2 Messieurs",
-          "type": "Première",
           "adversaire": "Floor F V.C. E",
           "lieu": "domicile",
           "score_osuna": 1,
@@ -61,7 +39,6 @@
         },
         {
           "equipe": "P2 Dames",
-          "type": "Première",
           "adversaire": "NAMUR VOLLEY C",
           "lieu": "exterieur",
           "score_osuna": 0,
@@ -69,17 +46,7 @@
           "coupe": false
         },
         {
-          "equipe": "P2 Dames",
-          "type": "Réserve",
-          "adversaire": "NAMUR VOLLEY C",
-          "lieu": "exterieur",
-          "score_osuna": 1,
-          "score_adversaire": 2,
-          "coupe": false
-        },
-        {
           "equipe": "P4 Dames",
-          "type": "Première",
           "adversaire": "Gedinne V.C. C",
           "lieu": "domicile",
           "score_osuna": 3,
