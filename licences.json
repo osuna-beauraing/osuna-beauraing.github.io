@@ -1,16 +1,453 @@
 {
-  "derniere_maj": "2026-07-24",
-  "_note": "Exemple de structure en attendant la connexion au formulaire Google. Une fois le formulaire créé, ce fichier sera régénéré automatiquement à partir des réponses.",
+  "derniere_maj": "2026-09-16",
   "equipes": [
-    { "id": "prom-h", "nom": "Promotion Messieurs", "joueurs": [
-      { "nom": "Exemple Joueur 1", "licence": "000000", "vareuse": "4" },
-      { "nom": "Exemple Joueur 2", "licence": "000000", "vareuse": "7" }
-    ] },
-    { "id": "prom-d", "nom": "Promotion Dames", "joueurs": [] },
-    { "id": "p1-h", "nom": "P1 Messieurs", "joueurs": [] },
-    { "id": "p2-h", "nom": "P2 Messieurs", "joueurs": [] },
-    { "id": "p2-d", "nom": "P2 Dames", "joueurs": [] },
-    { "id": "p4-d", "nom": "P4 Dames", "joueurs": [] },
-    { "id": "u13-d", "nom": "U13 Filles", "joueurs": [] }
+    {
+      "id": "prom-h",
+      "nom": "Promotion Messieurs",
+      "joueurs": [
+        {
+          "nom": "Raphaël Christian Bador",
+          "licence": "450601170",
+          "vareuse": ""
+        },
+        {
+          "nom": "Geoffrey Boitrelle",
+          "licence": "450504112",
+          "vareuse": ""
+        },
+        {
+          "nom": "Florian Degueldre",
+          "licence": "450495019",
+          "vareuse": ""
+        },
+        {
+          "nom": "Bertrand Detal",
+          "licence": "450533157",
+          "vareuse": ""
+        },
+        {
+          "nom": "Martin Dubois",
+          "licence": "450502254",
+          "vareuse": ""
+        },
+        {
+          "nom": "Antonin Alexandre Michel",
+          "licence": "450607951",
+          "vareuse": ""
+        },
+        {
+          "nom": "Louis Philippart",
+          "licence": "450498083",
+          "vareuse": ""
+        },
+        {
+          "nom": "Martin Didier Philippart",
+          "licence": "450643261",
+          "vareuse": ""
+        },
+        {
+          "nom": "Amaury Simon",
+          "licence": "450496946",
+          "vareuse": ""
+        },
+        {
+          "nom": "Côme Sowa",
+          "licence": "450643062",
+          "vareuse": ""
+        },
+        {
+          "nom": "Maxence Sowa",
+          "licence": "450492192",
+          "vareuse": ""
+        },
+        {
+          "nom": "Wilson Bulaqui Tchipamba",
+          "licence": "450547218",
+          "vareuse": ""
+        },
+        {
+          "nom": "Martin Versadet",
+          "licence": "450492724",
+          "vareuse": ""
+        },
+        {
+          "nom": "Frédéric Rodrique (coach)",
+          "licence": "450641083",
+          "vareuse": ""
+        }
+      ]
+    },
+    {
+      "id": "prom-d",
+      "nom": "Promotion Dames",
+      "joueurs": [
+        {
+          "nom": "Julie Champagne",
+          "licence": "450491769",
+          "vareuse": ""
+        },
+        {
+          "nom": "Stacy Cabaret",
+          "licence": "450495220",
+          "vareuse": ""
+        },
+        {
+          "nom": "Aurélie Moreau",
+          "licence": "450495960",
+          "vareuse": ""
+        },
+        {
+          "nom": "Justine Gillard",
+          "licence": "450498438",
+          "vareuse": ""
+        },
+        {
+          "nom": "Laure Decuber",
+          "licence": "450499351",
+          "vareuse": ""
+        },
+        {
+          "nom": "Pauline Servotte",
+          "licence": "450499499",
+          "vareuse": ""
+        },
+        {
+          "nom": "Floriane Mathieu",
+          "licence": "450500441",
+          "vareuse": ""
+        },
+        {
+          "nom": "Zélie Kromer",
+          "licence": "450541828",
+          "vareuse": ""
+        },
+        {
+          "nom": "Maëlle Denoncin",
+          "licence": "450545232",
+          "vareuse": ""
+        },
+        {
+          "nom": "Alicia Sbaglia",
+          "licence": "450547265",
+          "vareuse": ""
+        },
+        {
+          "nom": "Marie Dambroise",
+          "licence": "450500353",
+          "vareuse": ""
+        }
+      ]
+    },
+    {
+      "id": "p1-h",
+      "nom": "P1 Messieurs",
+      "joueurs": [
+        {
+          "nom": "Colin Balbeur",
+          "licence": "450548701",
+          "vareuse": ""
+        },
+        {
+          "nom": "Félicien Charlier",
+          "licence": "450548655",
+          "vareuse": ""
+        },
+        {
+          "nom": "Aurélien Gillard",
+          "licence": "450503576",
+          "vareuse": ""
+        },
+        {
+          "nom": "Simon Julien Gillard",
+          "licence": "450621065",
+          "vareuse": ""
+        },
+        {
+          "nom": "Joseph Havenne",
+          "licence": "450526670",
+          "vareuse": ""
+        },
+        {
+          "nom": "Julian Lambremont",
+          "licence": "450503199",
+          "vareuse": ""
+        },
+        {
+          "nom": "Laurent Lhoist",
+          "licence": "450502424",
+          "vareuse": ""
+        },
+        {
+          "nom": "Dorian Nicolas",
+          "licence": "450503288",
+          "vareuse": ""
+        },
+        {
+          "nom": "Pierre-Lou Nihoul",
+          "licence": "450499560",
+          "vareuse": ""
+        },
+        {
+          "nom": "Damien Poncelet",
+          "licence": "450493484",
+          "vareuse": ""
+        },
+        {
+          "nom": "Baptiste Valentin",
+          "licence": "450548651",
+          "vareuse": ""
+        }
+      ]
+    },
+    {
+      "id": "p2-h",
+      "nom": "P2 Messieurs",
+      "joueurs": [
+        {
+          "nom": "Mattéo Baudelet",
+          "licence": "450492720",
+          "vareuse": ""
+        },
+        {
+          "nom": "Thibault Toutee",
+          "licence": "450492960",
+          "vareuse": ""
+        },
+        {
+          "nom": "Marcelin Théate",
+          "licence": "450500971",
+          "vareuse": ""
+        },
+        {
+          "nom": "Alessio Spaccatrosi",
+          "licence": "450504288",
+          "vareuse": ""
+        },
+        {
+          "nom": "Louis Liégeois",
+          "licence": "450548648",
+          "vareuse": ""
+        },
+        {
+          "nom": "Théophile Charlier",
+          "licence": "450548656",
+          "vareuse": ""
+        },
+        {
+          "nom": "Aurélien Dizier",
+          "licence": "450554540",
+          "vareuse": ""
+        },
+        {
+          "nom": "Jean-Philippe Henin",
+          "licence": "450556534",
+          "vareuse": ""
+        },
+        {
+          "nom": "Louis Clémence Goffinet",
+          "licence": "450590515",
+          "vareuse": ""
+        },
+        {
+          "nom": "Borhan Dokarni",
+          "licence": "450650302",
+          "vareuse": ""
+        },
+        {
+          "nom": "Andreas Brants",
+          "licence": "450652691",
+          "vareuse": ""
+        },
+        {
+          "nom": "Milo Mathys Vanderhofstadt",
+          "licence": "450663885",
+          "vareuse": ""
+        },
+        {
+          "nom": "Clément Rouard",
+          "licence": "451694968",
+          "vareuse": ""
+        },
+        {
+          "nom": "Mathys Gailly",
+          "licence": "451698674",
+          "vareuse": ""
+        }
+      ]
+    },
+    {
+      "id": "p2-d",
+      "nom": "P2 Dames",
+      "joueurs": [
+        {
+          "nom": "Amandine Marichal",
+          "licence": "450491929",
+          "vareuse": ""
+        },
+        {
+          "nom": "Jeanne Ansiaux",
+          "licence": "450501089",
+          "vareuse": ""
+        },
+        {
+          "nom": "Joséphine-Charlotte Bullens",
+          "licence": "450548650",
+          "vareuse": ""
+        },
+        {
+          "nom": "Romaine Demlenne",
+          "licence": "450550421",
+          "vareuse": ""
+        },
+        {
+          "nom": "Maëlle Denoncin",
+          "licence": "450545232",
+          "vareuse": ""
+        },
+        {
+          "nom": "Edith Gecchele",
+          "licence": "450544242",
+          "vareuse": ""
+        },
+        {
+          "nom": "Zélie Kromer",
+          "licence": "450541828",
+          "vareuse": ""
+        },
+        {
+          "nom": "Sophie Lambilotte",
+          "licence": "450550589",
+          "vareuse": ""
+        },
+        {
+          "nom": "Rose Martin",
+          "licence": "450555669",
+          "vareuse": ""
+        },
+        {
+          "nom": "Margot Maurenne",
+          "licence": "450500091",
+          "vareuse": ""
+        },
+        {
+          "nom": "Justine Tonon",
+          "licence": "450499366",
+          "vareuse": ""
+        },
+        {
+          "nom": "Léna Warin",
+          "licence": "450552182",
+          "vareuse": ""
+        }
+      ]
+    },
+    {
+      "id": "p4-d",
+      "nom": "P4 Dames",
+      "joueurs": [
+        {
+          "nom": "Léna Warin",
+          "licence": "450552182",
+          "vareuse": ""
+        },
+        {
+          "nom": "Aliki Nikas",
+          "licence": "450554141",
+          "vareuse": ""
+        },
+        {
+          "nom": "Maéva Henrot",
+          "licence": "450555720",
+          "vareuse": ""
+        },
+        {
+          "nom": "Lily Christine Marneffe",
+          "licence": "450568433",
+          "vareuse": ""
+        },
+        {
+          "nom": "Tyana Binet",
+          "licence": "450580932",
+          "vareuse": ""
+        },
+        {
+          "nom": "Flavie Ida Maka",
+          "licence": "450662266",
+          "vareuse": ""
+        },
+        {
+          "nom": "Aurélie Nicole Sidon",
+          "licence": "450556768",
+          "vareuse": ""
+        }
+      ]
+    },
+    {
+      "id": "u13-d",
+      "nom": "U13 Filles",
+      "joueurs": []
+    },
+    {
+      "id": "u11-a",
+      "nom": "U11 Filles A",
+      "joueurs": [
+        {
+          "nom": "Clément Wolf",
+          "licence": "450988752",
+          "vareuse": ""
+        },
+        {
+          "nom": "Loan Francoise",
+          "licence": "451698355",
+          "vareuse": ""
+        },
+        {
+          "nom": "Léon Goryl Ciezkowski",
+          "licence": "451698360",
+          "vareuse": ""
+        },
+        {
+          "nom": "Perrine Bastin (responsable)",
+          "licence": "450581721",
+          "vareuse": ""
+        }
+      ]
+    },
+    {
+      "id": "u11-b",
+      "nom": "U11 Filles B",
+      "joueurs": [
+        {
+          "nom": "Zaé Lambremont",
+          "licence": "450988111",
+          "vareuse": ""
+        },
+        {
+          "nom": "Léonie Hogge",
+          "licence": "450988112",
+          "vareuse": ""
+        },
+        {
+          "nom": "Ysambre Rigo",
+          "licence": "450988113",
+          "vareuse": ""
+        },
+        {
+          "nom": "Capucine Hogge",
+          "licence": "451698398",
+          "vareuse": ""
+        },
+        {
+          "nom": "Adèle Dardenne",
+          "licence": "450970880",
+          "vareuse": ""
+        },
+        {
+          "nom": "Perrine Bastin (responsable)",
+          "licence": "450581721",
+          "vareuse": ""
+        }
+      ]
+    }
   ]
 }
