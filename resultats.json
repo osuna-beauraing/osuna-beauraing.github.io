@@ -1,13 +1,58 @@
 {
-  "derniere_maj": "2026-09-13",
+  "derniere_maj": "2026-09-21",
   "weekends": [
+    {
+      "id": "2026-09-19",
+      "label": "Week-end du 19-20 septembre 2026",
+      "matchs": [
+        {
+          "equipe": "Promotion Messieurs",
+          "adversaire": "Chaumont V.C. B",
+          "lieu": "domicile",
+          "score_osuna": 3,
+          "score_adversaire": 1,
+          "coupe": false
+        },
+        {
+          "equipe": "Promotion Dames",
+          "adversaire": "Jemeppe V.C. A",
+          "lieu": "exterieur",
+          "score_osuna": 3,
+          "score_adversaire": 0,
+          "coupe": false
+        },
+        {
+          "equipe": "P1 Messieurs",
+          "adversaire": "Floor F V.C. C",
+          "lieu": "exterieur",
+          "score_osuna": 3,
+          "score_adversaire": 1,
+          "coupe": false
+        },
+        {
+          "equipe": "P2 Dames",
+          "adversaire": "The Dragonflies V.C Profondeville A",
+          "lieu": "exterieur",
+          "score_osuna": 0,
+          "score_adversaire": 3,
+          "coupe": false
+        },
+        {
+          "equipe": "P2 Messieurs",
+          "adversaire": "Doische V. Fagnard A",
+          "lieu": "exterieur",
+          "score_osuna": 0,
+          "score_adversaire": 3,
+          "coupe": false
+        }
+      ]
+    },
     {
       "id": "2026-09-12",
       "label": "Week-end du 12-13 septembre 2026",
       "matchs": [
         {
           "equipe": "Promotion Messieurs",
-          "type": "Première",
           "adversaire": "Walhain V.C. B",
           "lieu": "exterieur",
           "score_osuna": 1,
@@ -15,17 +60,7 @@
           "coupe": false
         },
         {
-          "equipe": "Promotion Messieurs",
-          "type": "Réserve",
-          "adversaire": "Walhain V.C. B",
-          "lieu": "exterieur",
-          "score_osuna": 2,
-          "score_adversaire": 1,
-          "coupe": false
-        },
-        {
           "equipe": "Promotion Dames",
-          "type": "Première",
           "adversaire": "Stabulois Etalle V.C. A",
           "lieu": "domicile",
           "score_osuna": 0,
@@ -34,7 +69,6 @@
         },
         {
           "equipe": "P1 Messieurs",
-          "type": "Première",
           "adversaire": "Floor F V.C. D",
           "lieu": "domicile",
           "score_osuna": 3,
@@ -42,17 +76,7 @@
           "coupe": false
         },
         {
-          "equipe": "P1 Messieurs",
-          "type": "Réserve",
-          "adversaire": "Floor F V.C. D",
-          "lieu": "domicile",
-          "score_osuna": 3,
-          "score_adversaire": 0,
-          "coupe": false
-        },
-        {
           "equipe": "P2 Messieurs",
-          "type": "Première",
           "adversaire": "Floor F V.C. E",
           "lieu": "domicile",
           "score_osuna": 1,
@@ -61,7 +85,6 @@
         },
         {
           "equipe": "P2 Dames",
-          "type": "Première",
           "adversaire": "NAMUR VOLLEY C",
           "lieu": "exterieur",
           "score_osuna": 0,
@@ -69,17 +92,7 @@
           "coupe": false
         },
         {
-          "equipe": "P2 Dames",
-          "type": "Réserve",
-          "adversaire": "NAMUR VOLLEY C",
-          "lieu": "exterieur",
-          "score_osuna": 1,
-          "score_adversaire": 2,
-          "coupe": false
-        },
-        {
           "equipe": "P4 Dames",
-          "type": "Première",
           "adversaire": "Gedinne V.C. C",
           "lieu": "domicile",
           "score_osuna": 3,
