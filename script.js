@@ -159,7 +159,7 @@
     const corps = document.getElementById("corps-resultats");
     const caption = document.getElementById("caption-resultats");
 
-    const weekends = [...donnees.weekends].sort((a, b) => a.id.localeCompare(b.id)); // ordre chronologique
+    const weekends = [...donnees.weekends].sort((a, b) => b.id.localeCompare(a.id)); // plus récent d'abord
 
     select.innerHTML = weekends
       .map((we) => `<option value="${we.id}">${we.label}</option>`)
@@ -179,7 +179,6 @@
           <td data-label="Lieu"><span class="badge ${badgeCls}">${badgeTxt}</span></td>
           <td data-label="Score">
             <span class="badge ${victoire ? "domicile" : "exterieur"}">${scoreTxt}</span>
-            ${m.detail ? `<div style="font-size:0.78rem; color:var(--creme-dim); margin-top:4px;">${m.detail}</div>` : ""}
           </td>
         </tr>`;
     }
