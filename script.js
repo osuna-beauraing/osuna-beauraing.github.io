@@ -159,7 +159,7 @@
     const corps = document.getElementById("corps-resultats");
     const caption = document.getElementById("caption-resultats");
 
-    const weekends = [...donnees.weekends].sort((a, b) => b.id.localeCompare(a.id)); // plus récent d'abord
+    const weekends = [...donnees.weekends].sort((a, b) => a.id.localeCompare(b.id)); // ordre chronologique
 
     select.innerHTML = weekends
       .map((we) => `<option value="${we.id}">${we.label}</option>`)
@@ -179,6 +179,7 @@
           <td data-label="Lieu"><span class="badge ${badgeCls}">${badgeTxt}</span></td>
           <td data-label="Score">
             <span class="badge ${victoire ? "domicile" : "exterieur"}">${scoreTxt}</span>
+            ${m.detail ? `<div style="font-size:0.78rem; color:var(--creme-dim); margin-top:4px;">${m.detail}</div>` : ""}
           </td>
         </tr>`;
     }
@@ -195,8 +196,12 @@
     select.addEventListener("change", () => afficherWeekend(select.value));
 
     if (weekends.length) {
-      select.value = weekends[0].id;
-      afficherWeekend(weekends[0].id);
+      // Dropdown en ordre chronologique, mais on ouvre sur le dernier week-end
+      // qui contient effectivement des résultats (sinon le premier de la saison).
+      const avecResultats = weekends.filter((w) => w.matchs && w.matchs.length > 0);
+      const defaut = avecResultats.length ? avecResultats[avecResultats.length - 1] : weekends[0];
+      select.value = defaut.id;
+      afficherWeekend(defaut.id);
     } else {
       corps.innerHTML = `<tr><td colspan="4">Aucun résultat enregistré pour l'instant.</td></tr>`;
     }
