@@ -96,6 +96,33 @@
     background: #000;
     border: 1px solid var(--ligne);
   }
+
+  /* Section tablette : tutos vidéo (gestion des matchs) */
+  .tablette-section { margin-top: 42px; }
+  .tablette-intro { color: var(--creme-dim); font-size: 0.95rem; margin: 0 0 18px; max-width: 720px; line-height: 1.55; }
+  .tablette-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    align-items: start;
+  }
+  .tablette-carte {
+    background: var(--marine-800);
+    border: 1px solid var(--ligne);
+    border-left: 3px solid var(--ambre);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .tablette-tete { display: flex; gap: 12px; align-items: flex-start; padding: 16px 18px 12px; }
+  .tablette-num {
+    flex: none; width: 34px; height: 34px; border-radius: 50%;
+    background: var(--ambre); color: var(--marine-950);
+    font-family: var(--police-affiche); font-weight: 700; font-size: 1.05rem;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .tablette-carte h3 { margin: 2px 0 0; font-size: 1rem; line-height: 1.2; }
+  .tablette-carte p { margin: 4px 0 0; color: var(--creme-dim); font-size: 0.88rem; line-height: 1.5; }
+  .tablette-carte video { display: block; width: 100%; height: auto; background: #000; border-top: 1px solid var(--ligne); }
 </style>
 </head>
 <body>
@@ -177,6 +204,79 @@
       <a href="tache-bar.pdf" target="_blank" rel="noopener" class="bouton-abonnement">⬇ Télécharger le document (PDF)</a>
     </div>
   </div>
+
+
+  <section class="tablette-section">
+    <h2 class="section-titre">La tablette — gestion des matchs</h2>
+    <p class="tablette-intro">Mode d'emploi en vidéo pour les responsables de table : comment utiliser la tablette et l'application <strong>Volley Spike</strong> (la feuille de match électronique FVWB), du téléchargement de la rencontre à l'envoi de la feuille.</p>
+    <div class="tablette-grid">
+      <div class="tablette-carte">
+        <div class="tablette-tete">
+          <div class="tablette-num">1</div>
+          <div>
+            <h3>Ouverture de l'app &amp; téléchargement du match</h3>
+            <p>Allumer la tablette, ouvrir Volley Spike et télécharger la rencontre du jour (sélection de la série et du match).</p>
+          </div>
+        </div>
+        <video controls preload="metadata" playsinline>
+          <source src="videos/tuto-tablette-1.mp4" type="video/mp4">
+          Ton navigateur ne peut pas lire la vidéo — <a href="videos/tuto-tablette-1.mp4">télécharge-la ici</a>.
+        </video>
+      </div>
+      <div class="tablette-carte">
+        <div class="tablette-tete">
+          <div class="tablette-num">2</div>
+          <div>
+            <h3>Configuration et infos du match</h3>
+            <p>Vérifier et confirmer les informations de la rencontre (équipes, format) avant le coup d'envoi.</p>
+          </div>
+        </div>
+        <video controls preload="metadata" playsinline>
+          <source src="videos/tuto-tablette-2.mp4" type="video/mp4">
+          Ton navigateur ne peut pas lire la vidéo — <a href="videos/tuto-tablette-2.mp4">télécharge-la ici</a>.
+        </video>
+      </div>
+      <div class="tablette-carte">
+        <div class="tablette-tete">
+          <div class="tablette-num">3</div>
+          <div>
+            <h3>Backup &amp; gestionnaire d'envoi</h3>
+            <p>Accéder au gestionnaire de sauvegarde / envoi de l'application (Backup / Upload Manager).</p>
+          </div>
+        </div>
+        <video controls preload="metadata" playsinline>
+          <source src="videos/tuto-tablette-3.mp4" type="video/mp4">
+          Ton navigateur ne peut pas lire la vidéo — <a href="videos/tuto-tablette-3.mp4">télécharge-la ici</a>.
+        </video>
+      </div>
+      <div class="tablette-carte">
+        <div class="tablette-tete">
+          <div class="tablette-num">4</div>
+          <div>
+            <h3>Envoi des feuilles de match</h3>
+            <p>Envoyer les feuilles encodées et vérifier leur statut (terminé, signé, téléchargé).</p>
+          </div>
+        </div>
+        <video controls preload="metadata" playsinline>
+          <source src="videos/tuto-tablette-4.mp4" type="video/mp4">
+          Ton navigateur ne peut pas lire la vidéo — <a href="videos/tuto-tablette-4.mp4">télécharge-la ici</a>.
+        </video>
+      </div>
+      <div class="tablette-carte">
+        <div class="tablette-tete">
+          <div class="tablette-num">5</div>
+          <div>
+            <h3>Résultats &amp; signature de fin de match</h3>
+            <p>Consulter le tableau des résultats et signer la feuille en fin de rencontre.</p>
+          </div>
+        </div>
+        <video controls preload="metadata" playsinline>
+          <source src="videos/tuto-tablette-5.mp4" type="video/mp4">
+          Ton navigateur ne peut pas lire la vidéo — <a href="videos/tuto-tablette-5.mp4">télécharge-la ici</a>.
+        </video>
+      </div>
+    </div>
+  </section>
 
 </main>
 
