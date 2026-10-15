@@ -1,5 +1,5 @@
 {
-  "derniere_maj": "2026-10-06",
+  "derniere_maj": "2026-10-15",
   "weekends": [
     {
       "id": "2026-09-05",
@@ -217,7 +217,48 @@
     {
       "id": "2026-10-10",
       "label": "10-11 octobre 2026",
-      "matchs": []
+      "matchs": [
+        {
+          "equipe": "Promotion Messieurs",
+          "adversaire": "NAMUR VOLLEY B",
+          "lieu": "exterieur",
+          "score_osuna": 3,
+          "score_adversaire": 2,
+          "coupe": false
+        },
+        {
+          "equipe": "Promotion Dames",
+          "adversaire": "Chaumont V.C. C",
+          "lieu": "domicile",
+          "score_osuna": 2,
+          "score_adversaire": 3,
+          "coupe": false
+        },
+        {
+          "equipe": "P1 Messieurs",
+          "adversaire": "Walhain V.C. C",
+          "lieu": "domicile",
+          "score_osuna": 2,
+          "score_adversaire": 3,
+          "coupe": false
+        },
+        {
+          "equipe": "P2 Dames",
+          "adversaire": "Volley Ohey C",
+          "lieu": "exterieur",
+          "score_osuna": 0,
+          "score_adversaire": 3,
+          "coupe": false
+        },
+        {
+          "equipe": "P2 Messieurs",
+          "adversaire": "Volley Ohey B",
+          "lieu": "domicile",
+          "score_osuna": 0,
+          "score_adversaire": 3,
+          "coupe": false
+        }
+      ]
     },
     {
       "id": "2026-10-17",
