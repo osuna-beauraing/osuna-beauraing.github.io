@@ -1,5 +1,5 @@
 {
-  "derniere_maj": "2026-09-13",
+  "derniere_maj": "2026-10-15",
   "club": "Osuna Volley Beauraing",
   "_note": "Saison 2026-2027. Horaires verifies et corriges a partir du tableau officiel du club (source unique interne). La synchronisation easyscore.be est ABANDONNEE (le miroir a change et corrompait les donnees). Le champ 'coupe' signale les matchs de coupe/pre-tour.",
   "equipes": [
@@ -1373,15 +1373,6 @@
         {
           "competition": "U13 Filles",
           "coupe": false,
-          "date": "2026-09-19",
-          "heure": "10:00",
-          "adversaire": "Ciney V.C. B",
-          "lieu": "exterieur",
-          "salle": "Ciney"
-        },
-        {
-          "competition": "U13 Filles",
-          "coupe": false,
           "date": "2026-09-26",
           "heure": "09:00",
           "adversaire": "Doische V. Fagnard A",
@@ -1411,6 +1402,15 @@
         {
           "competition": "U13 Filles",
           "coupe": false,
+          "date": "2026-10-17",
+          "heure": "10:00",
+          "adversaire": "Ciney V.C. B",
+          "lieu": "exterieur",
+          "salle": "Ciney"
+        },
+        {
+          "competition": "U13 Filles",
+          "coupe": false,
           "date": "2026-11-07",
           "heure": "09:00",
           "adversaire": "Ciney V.C. A",
@@ -1422,17 +1422,18 @@
           "competition": "U13 Filles",
           "coupe": false,
           "date": "2026-11-14",
-          "heure": "09:30",
+          "heure": "09:00",
           "adversaire": "Romedenne Smash V.C. A",
-          "lieu": "exterieur",
-          "salle": "Romedenne"
+          "lieu": "domicile",
+          "salle": "Beauraing Complexe Communal",
+          "adresse": "rue de la Couture, 46, 5570 Beauraing"
         },
         {
           "competition": "U13 Filles",
           "coupe": false,
           "date": "2026-11-21",
           "heure": "09:00",
-          "adversaire": "Gedinne V.C.",
+          "adversaire": "Gedinne V.C. A",
           "lieu": "domicile",
           "salle": "Beauraing Complexe Communal",
           "adresse": "rue de la Couture, 46, 5570 Beauraing"
@@ -1488,11 +1489,10 @@
           "competition": "U13 Filles",
           "coupe": false,
           "date": "2027-01-23",
-          "heure": "09:00",
+          "heure": "11:00",
           "adversaire": "Romedenne Smash V.C. A",
-          "lieu": "domicile",
-          "salle": "Beauraing Complexe Communal",
-          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+          "lieu": "exterieur",
+          "salle": "Romedenne"
         },
         {
           "competition": "U13 Filles",
@@ -1523,7 +1523,7 @@
         {
           "competition": "U11 Filles A",
           "coupe": false,
-          "date": "2026-09-26",
+          "date": "2026-09-27",
           "heure": "10:30",
           "adversaire": "Volley Ohey A",
           "lieu": "exterieur",
@@ -1604,6 +1604,83 @@
           "adversaire": "Romedenne Smash V.C. A",
           "lieu": "exterieur",
           "salle": "Romedenne"
+        },
+        {
+          "competition": "U11 Filles A",
+          "coupe": false,
+          "date": "2027-01-16",
+          "heure": "10:00",
+          "adversaire": "Volley Ohey A",
+          "lieu": "domicile",
+          "salle": "Beauraing Complexe Communal",
+          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+        },
+        {
+          "competition": "U11 Filles A",
+          "coupe": false,
+          "date": "2027-01-23",
+          "heure": "10:00",
+          "adversaire": "Osuna Volley Beauraing B",
+          "lieu": "domicile",
+          "salle": "Beauraing Complexe Communal",
+          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+        },
+        {
+          "competition": "U11 Filles A",
+          "coupe": false,
+          "date": "2027-01-30",
+          "heure": "10:30",
+          "adversaire": "Floor F V.C. A",
+          "lieu": "exterieur",
+          "salle": "Floreffe"
+        },
+        {
+          "competition": "U11 Filles A",
+          "coupe": false,
+          "date": "2027-02-06",
+          "heure": "09:00",
+          "adversaire": "ANHEE V.C. A",
+          "lieu": "domicile",
+          "salle": "Beauraing Complexe Communal",
+          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+        },
+        {
+          "competition": "U11 Filles A",
+          "coupe": false,
+          "date": "2027-02-14",
+          "heure": "09:30",
+          "adversaire": "ANHEE V.C. B",
+          "lieu": "exterieur",
+          "salle": "Anhée"
+        },
+        {
+          "competition": "U11 Filles A",
+          "coupe": false,
+          "date": "2027-03-13",
+          "heure": "10:00",
+          "adversaire": "Volley Smars Dinant A",
+          "lieu": "domicile",
+          "salle": "Beauraing Complexe Communal",
+          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+        },
+        {
+          "competition": "U11 Filles A",
+          "coupe": false,
+          "date": "2027-03-20",
+          "heure": "10:00",
+          "adversaire": "Ciney V.C. A",
+          "lieu": "exterieur",
+          "salle": "Ciney"
+        },
+        {
+          "competition": "U11 Filles A",
+          "coupe": false,
+          "date": "2027-03-27",
+          "heure": "11:15",
+          "adversaire": "Jemeppe V.C. A",
+          "lieu": "domicile",
+          "salle": "Beauraing Complexe Communal",
+          "adresse": "rue de la Couture, 46, 5570 Beauraing"
         }
       ]
     },
@@ -1655,7 +1732,7 @@
           "competition": "U11 Filles B",
           "coupe": false,
           "date": "2026-11-07",
-          "heure": "10:30",
+          "heure": "09:30",
           "adversaire": "Floor F V.C. A",
           "lieu": "exterieur",
           "salle": "Floreffe"
@@ -1674,7 +1751,7 @@
           "competition": "U11 Filles B",
           "coupe": false,
           "date": "2026-11-22",
-          "heure": "09:30",
+          "heure": "11:00",
           "adversaire": "ANHEE V.C. B",
           "lieu": "exterieur",
           "salle": "Anhée"
@@ -1706,6 +1783,83 @@
           "adversaire": "Jemeppe V.C. A",
           "lieu": "exterieur",
           "salle": "Jemeppe"
+        },
+        {
+          "competition": "U11 Filles B",
+          "coupe": false,
+          "date": "2027-01-16",
+          "heure": "10:00",
+          "adversaire": "Romedenne Smash V.C. A",
+          "lieu": "domicile",
+          "salle": "Beauraing Complexe Communal",
+          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+        },
+        {
+          "competition": "U11 Filles B",
+          "coupe": false,
+          "date": "2027-01-23",
+          "heure": "10:00",
+          "adversaire": "Osuna Volley Beauraing A",
+          "lieu": "domicile",
+          "salle": "Beauraing Complexe Communal",
+          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+        },
+        {
+          "competition": "U11 Filles B",
+          "coupe": false,
+          "date": "2027-01-31",
+          "heure": "10:30",
+          "adversaire": "Volley Ohey A",
+          "lieu": "exterieur",
+          "salle": "Ohey"
+        },
+        {
+          "competition": "U11 Filles B",
+          "coupe": false,
+          "date": "2027-02-06",
+          "heure": "10:00",
+          "adversaire": "Floor F V.C. A",
+          "lieu": "domicile",
+          "salle": "Beauraing Complexe Communal",
+          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+        },
+        {
+          "competition": "U11 Filles B",
+          "coupe": false,
+          "date": "2027-02-14",
+          "heure": "11:00",
+          "adversaire": "ANHEE V.C. A",
+          "lieu": "exterieur",
+          "salle": "Anhée"
+        },
+        {
+          "competition": "U11 Filles B",
+          "coupe": false,
+          "date": "2027-03-13",
+          "heure": "10:00",
+          "adversaire": "ANHEE V.C. B",
+          "lieu": "domicile",
+          "salle": "Beauraing Complexe Communal",
+          "adresse": "rue de la Couture, 46, 5570 Beauraing"
+        },
+        {
+          "competition": "U11 Filles B",
+          "coupe": false,
+          "date": "2027-03-21",
+          "heure": "10:30",
+          "adversaire": "Volley Smars Dinant A",
+          "lieu": "exterieur",
+          "salle": "Dinant"
+        },
+        {
+          "competition": "U11 Filles B",
+          "coupe": false,
+          "date": "2027-03-27",
+          "heure": "10:00",
+          "adversaire": "Ciney V.C. A",
+          "lieu": "domicile",
+          "salle": "Beauraing Complexe Communal",
+          "adresse": "rue de la Couture, 46, 5570 Beauraing"
         }
       ]
     }
